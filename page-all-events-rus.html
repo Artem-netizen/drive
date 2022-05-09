@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Language" content="en">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Кабинет организатора</title>
+        <!-- animate -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <!-- styles -->
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+<body class="profile__body" style="font-family: 'HelveticaNeueCyr';">
+    <!-- mobile menu -->
+    <div class="mobile__menu menu-profile">
+        <div class="menu-btn"></div>
+        <div class="mobile__list">
+            <div class="mobile__social submenu__list">
+                <a href="#" class="header__login-icon open-login">
+                    <img src="./img/header/person.svg" alt="Войти/Зарегистрироваться">
+                    <span class="header__login-text page-text">
+                        Log in
+                    </span>
+                </a>
+                <ul class="language">
+                    <li class="language__item">
+                        <div class="row-list">
+                            <button class="btn__language page-text eng" type="button" data-aos="fade-in" data-aos-delay="100">
+                                Eng
+                            </button>
+                            <img class="lang-arrow" src="../img/steps/review-check/arrow.svg" alt="">
+                        </div>
+                        <ul class="language__list-sub">
+                            <li>
+                                <button class="btn__language page-text rus" type="button" data-aos="fade-in" data-aos-delay="100">
+                                    Rus
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <ul class="mobile__menu-list">
+                <li class="mobile__menu-item">
+                    <a href="./tikets.html" class="mobile__menu-link info-text">
+                        Events
+                    </a>
+                </li>
+                <li class="mobile__menu-item">
+                    <a href="#" class="mobile__menu-link info-text">
+                        Community
+                    </a>
+                </li>
+                <li class="mobile__menu-item">
+                    <a href="#" class="mobile__menu-link info-text">
+                        Rating
+                    </a>
+                </li>
+                <li class="mobile__menu-item mobile-open__menu">
+                    <div class="mobile__menu-item mobile-dropdown jcsb row-list">
+                        <p class="mobile__menu-link info-text">
+                            My profile
+                        </p>
+                        <ion-icon class="down" name="chevron-down-outline"></ion-icon>
+                    </div>
+                    <ul class="submenu__list submenu-dropdown">
+                        <li class="submenu__item">
+                            <a href="profile.html" class="navbar__link info-text row-list">
+                                <img class="navbar__image" src="./img/profile/profile.svg" alt="profile">
+                                Profile
+                            </a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="navbar__link info-text row-list">
+                                <img class="navbar__image" src="./img/profile/documents.svg" alt="document">
+                                Documents
+                            </a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="navbar__link info-text row-list">
+                                <img class="navbar__image" src="./img/profile/ticket.svg" alt="tikets">
+                                Tickets
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile__menu-item mobile-open__menu">
+                    <div class="mobile__menu-item jcsb row-list">
+                        <p class="mobile__menu-link info-text">
+                            Organizer's office
+                        </p>
+                        <ion-icon class="down" name="chevron-down-outline"></ion-icon>
+                    </div>
+                    <ul class="submenu__list">
+                        <li class="submenu__item">
+                            <a href="profile.html" class="info-text row-list">
+                                <img class="navbar__image" src="./img/profile/check.svg" alt="profile">
+                                Заказ услуг
+                            </a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="info-text row-list">
+                                <img class="navbar__image" src="./img/profile/documents.svg" alt="documents">
+                                Документы
+                            </a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="info-text row-list">
+                                <img class="navbar__image" src="./img/profile/profile.svg" alt="profile">
+                                Участники
+                            </a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="info-text row-list">
+                                <img class="navbar__image" src="./img/profile/terms.svg" alt="terms">
+                                Присвоение номеров
+                            </a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="info-text row-list">
+                                <img class="navbar__image" src="./img/profile/pay.svg" alt="pay">
+                                Продажи
+                            </a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="info-text row-list">
+                                <img class="navbar__image" src="./img/profile/ticket.svg" alt="tikets">
+                                Промо-коды
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <section class="profile">
+        <div class="profile__wrapper tabs">
+            <!-- navbar right -->
+            <div class="navbar">
+                <div class="navbar-full">
+                    <div class="profile-logo">
+                        <a href="index.html" class="header__logo">
+                            <img src="./img/header/logo.svg" alt="Drive" data-aos="fade-in">                      
+                        </a>
+                    </div>
+                    <div class="navbar-inner">
+                        <ul class="navbar__list">
+                            <li class="navbar__item" data-aos="fade-in" data-aos-delay="250">
+                                <div class="navbar__main-title navbar-icon row-list">
+                                    <a href="./page-company.html" class="navbar__link black__text row-list">
+                                        <img class="navbar__image" src="./img/profile/company.svg" alt="company">
+                                        Компания
+                                    </a>
+                                    <svg class="arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="8" cy="8" r="7.5" stroke="#0FD7CB"/>
+                                        <path d="M6.66675 12L10.6667 8L6.66675 4" stroke="#0FD7CB"/>
+                                    </svg>
+                                </div>
+                                <ul class="navbar__sub-list">
+                                    <li>
+                                        <a class="navbar__link tab-link black__text" href="./page-company.html">
+                                            ООО Спортлайф
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="navbar__item" data-aos="fade-in" data-aos-delay="250">
+                                <div class="navbar__main-title navbar-icon row-list">
+                                    <a href="./page-events.html" class="navbar__link tab-link black__text row-list">
+                                        <img class="navbar__image" src="./img/profile/medal.svg" alt="medal">
+                                        События
+                                    </a>
+                                    <svg class="arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="8" cy="8" r="7.5" stroke="#0FD7CB"/>
+                                        <path d="M6.66675 12L10.6667 8L6.66675 4" stroke="#0FD7CB"/>
+                                    </svg>
+                                </div>
+                                <ul class="navbar__sub-list">
+                                    <li>
+                                        <a class="navbar__link tab-link black__text" href="#">
+                                            Challenge Moscow
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar__link tab-link black__text tab-link--active" href="./page-all-events.html">
+                                            Все события
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="navbar__item" data-aos="fade-in" data-aos-delay="250">
+                                <div class="navbar__main-title navbar-icon row-list">
+                                    <a href="./page-competitions.html" class="navbar__link tab-link black__text row-list">
+                                        <img class="navbar__image" src="./img/profile/club.svg" alt="club">
+                                        Соревнования
+                                    </a>
+                                    <svg class="arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="8" cy="8" r="7.5" stroke="#0FD7CB"/>
+                                        <path d="M6.66675 12L10.6667 8L6.66675 4" stroke="#0FD7CB"/>
+                                    </svg>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="navbar__list">
+                            <li class="navbar__item navbar-icon row-list" data-aos="fade-in" data-aos-delay="250">
+                                <a href="./page-services.html" class="navbar__link tab-link info-text row-list">
+                                    <img class="navbar__image" src="./img/profile/check.svg" alt="услуги">
+                                    Заказ услуг
+                                </a>
+                            </li>
+                            <li class="navbar__item navbar-icon row-list" data-aos="fade-in" data-aos-delay="250">
+                                <a href="./page-documents.html" class="navbar__link tab-link info-text row-list">
+                                    <img class="navbar__image" src="./img/profile/documents.svg" alt="Документы">
+                                    Документы
+                                </a>
+                            </li>
+                            <li class="navbar__item navbar-icon row-list" data-aos="fade-in" data-aos-delay="250">
+                                <a href="./page-paticipants.html" class="navbar__link tab-link info-text row-list">
+                                    <img class="navbar__image" src="./img/profile/profile.svg" alt="Участники">
+                                    Участники
+                                </a>
+                            </li>
+                            <li class="navbar__item navbar-icon row-list" data-aos="fade-in" data-aos-delay="250">
+                                <a href="./page-assignment-number.html" class="navbar__link tab-link info-text row-list">
+                                    <img class="navbar__image" src="./img/profile/terms.svg" alt=" Присвоение номеров">
+                                    Присвоение номеров
+                                </a>
+                            </li>
+                            <li class="navbar__item navbar-icon row-list" data-aos="fade-in" data-aos-delay="250">
+                                <a href="./page-sales.html" class="navbar__link tab-link info-text row-list">
+                                    <img class="navbar__image" src="./img/profile/pay.svg" alt="Продажи">
+                                    Продажи
+                                </a>
+                            </li>
+                            <li class="navbar__item navbar-icon row-list" data-aos="fade-in" data-aos-delay="250">
+                                <a href="./page-promo.html" class="navbar__link tab-link info-text row-list">
+                                    <img class="navbar__image" src="./img/profile/ticket.svg" alt="Промо">
+                                    Промо-коды
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="center-submit">
+                        <a href="#" class="write-btn register__link page-text">
+                            Написать нам
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- left information -->
+            <div class="wrapper">
+                <div class="main-content">
+                    <div class="profile__top-info" >
+                        <div class="profile-inform full__header-profile row-list">
+                            <div class="info-users__language row-list">
+                                <a class="organizer__office tab-link row-list tab-cabinet__active" href="./cabinet-organizer.html">
+                                    <svg class="cabinet-img" width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.0034 4.02439C16.0034 4.40854 16.0034 4.77439 16.0034 5.15854C16.0034 5.19513 15.9853 5.23171 15.9853 5.2683C15.8216 6.42074 15.1671 7.17074 14.058 7.50001C12.3489 8.0122 10.6398 8.5061 8.9489 9.00001C8.33072 9.18293 7.73072 9.18293 7.11253 9.00001C5.40344 8.48781 3.69435 7.99391 1.98526 7.50001C1.05799 7.22561 0.421625 6.62196 0.130715 5.68903C-0.0329209 5.23171 0.00344271 4.7561 0.00344271 4.29878C0.00344271 3.29269 0.694352 2.61586 1.69435 2.61586C2.7489 2.61586 3.80344 2.61586 4.85799 2.61586C4.91253 2.61586 4.98526 2.61586 5.05799 2.61586C5.05799 2.54268 5.05799 2.48781 5.05799 2.43293C5.05799 2.04878 5.05799 1.64634 5.05799 1.2622C5.07617 0.567074 5.56708 0.0365854 6.25799 0.0365854C7.42163 0 8.58526 0 9.76708 0C10.458 0 10.9489 0.530488 10.9671 1.22561C10.9671 1.60976 10.9671 2.0122 10.9671 2.39634C10.9671 2.45122 10.9671 2.5061 10.9671 2.57927C11.0398 2.57927 11.1125 2.57927 11.1671 2.57927C12.2398 2.57927 13.3125 2.57927 14.3853 2.57927C15.1125 2.57927 15.7125 3.01829 15.9307 3.69512C15.9489 3.82317 15.9671 3.91464 16.0034 4.02439ZM6.05799 2.59756C7.36708 2.59756 8.63981 2.59756 9.93072 2.59756C9.93072 2.15854 9.93072 1.73781 9.93072 1.29878C9.93072 1.07927 9.87617 1.02439 9.65799 1.02439C8.69435 1.02439 7.73072 1.02439 6.7489 1.02439C6.58526 1.02439 6.42163 1.02439 6.25799 1.02439C6.13072 1.02439 6.05799 1.09756 6.05799 1.20732C6.05799 1.68293 6.05799 2.12195 6.05799 2.59756Z" fill="#323232"/>
+                                        <path d="M16.0034 13.6098C15.9671 13.7012 15.9489 13.811 15.9125 13.9025C15.6943 14.5793 15.0943 15 14.3307 15C12.9852 15 11.6398 15 10.2943 15C7.4216 15 4.56705 15 1.69433 15C0.930691 15 0.330691 14.5976 0.0943271 13.9025C0.0397816 13.7378 0.00341797 13.5732 0.00341797 13.3903C0.00341797 11.7988 0.00341797 10.2073 0.00341797 8.61588C0.00341797 8.59758 0.00341797 8.57929 0.00341797 8.54271C0.0397816 8.561 0.0761452 8.57929 0.0943271 8.61588C0.548873 9.01832 1.05796 9.311 1.63978 9.47563C3.29433 9.96954 4.96705 10.4451 6.6216 10.939C7.13069 11.0854 7.63978 11.2317 8.18524 11.1769C8.60342 11.122 9.0216 11.0488 9.4216 10.9208C11.0943 10.4451 12.7671 9.95124 14.4398 9.45734C15.0034 9.29271 15.4943 9.00002 15.9125 8.59759C15.9489 8.561 15.9671 8.54271 16.0034 8.52441C16.0034 10.2073 16.0034 11.9086 16.0034 13.6098Z" fill="#323232"/>
+                                    </svg>
+                                    Кабинет организатора
+                                </a>
+                                <a class="organizer__office tab-link row-list" href="./profile-main.html">
+                                    <svg class="cabinet-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 8C10.21 8 12 6.21 12 4C12 1.79 10.21 0 8 0C5.79 0 4 1.79 4 4C4 6.21 5.79 8 8 8ZM8 10C5.33 10 0 11.34 0 14V16H16V14C16 11.34 10.67 10 8 10Z" fill="#323232"/>
+                                    </svg>
+                                    Кабинет участника
+                                </a>
+                                <div class="profile-lang">
+                                    <button class="profile-lang__btn grey-text current-btn">
+                                        ru
+                                    </button>
+                                    <button class="profile-lang__btn grey-text">
+                                        en
+                                    </button>
+                                </div>
+                            </div>
+                            <a class="exit row-list" href="#" id="exit">
+                                <div class="exit-image">
+                                    <img src="./img/profile/exit.svg" alt="выход">
+                                </div>
+                                Выход
+                            </a>
+                        </div>
+                    </div>
+                    <div class="profile__main-content tabs">
+                        <form class="form__profile new__form-profile profile-inform" action="#" method="post" id="prof-form">
+                            <!-- all events -->
+                            <div class="page__content all-events" data-aos="fade-left" data-aos-delay="250">
+                                <article class="article-block">
+                                    <h2 class="article-block__title text-bold text-indent">
+                                        Все события
+                                    </h2>
+                                    <div class="choose__status">
+                                        <div class="choose__status-inputs row-list">
+                                            <div class="select-box article-input input-indent">
+                                                <ul class="options-container">
+                                                    <li class="option-item">
+                                                        <input type="radio" class="radio" id="status_1" name="category">
+                                                        <label class="info-text" for="status_1">Дисциплина1</label>
+                                                    </li>
+                                                    <li class="option-item">
+                                                        <input type="radio" class="radio" id="status_2" name="category">
+                                                        <label class="info-text" for="status_2">Дисциплина2</label>
+                                                    </li>
+                                                    <li class="option-item">
+                                                        <input type="radio" class="radio" id="status_3" name="category">
+                                                        <label class="info-text" for="status_3">Дисциплина3</label>
+                                                    </li>
+                                                </ul>
+                                                <div class="selected info-text info-grey">
+                                                    Статус события
+                                                </div>
+                                            </div>
+                                            <label class="choose__status-label article-input input-icon label input-indent" for="eventFrom">
+                                                <input class="input" type="text" id="eventFrom" placeholder="Дата события от" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'">
+                                            </label>
+                                            <label class="choose__status-label article-input input-icon label input-indent" for="eventFrom">
+                                                <input class="input" type="text" id="eventFrom" placeholder="Дата события до" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'">
+                                            </label>
+                                            <button class="write-btn register__link page-text" type="button">
+                                                Применить
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <div class="delete-create row-list">
+                                    <button class="write-btn register__link page-text" type="button" disabled="true">
+                                        Удалить
+                                    </button>
+                                    <a class="build-btn row-list page-text" href="./page-create-events.html">
+                                        <span class="create-btn">
+                                            <img src="./img/profile/plus.svg" alt="Создать">
+                                        </span>
+                                        Создать
+                                    </a>
+                                </div>
+                                <div class="table-wrapper table-indent">
+                                    <table class="table-info">
+                                        <thead class="main__info-thead">
+                                            <tr>
+                                                <th class="table-info-th middle-text">
+                                                    Событие
+                                                </th>
+                                                <th class="table-info-th text-center middle-text">
+                                                    Дата 
+                                                </th>
+                                                <th class="table-info-th middle-text">
+                                                    Соревнования
+                                                </th>
+                                                <th class="table-info-th text-center middle-text">
+                                                    Участники
+                                                </th>
+                                                <th class="table-info-th text-center middle-text">
+                                                    Оплачено
+                                                </th>
+                                                <th class="table-info-th text-center middle-text">
+                                                    Статус
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="tbody tbody-more">
+                                            <tr>
+                                                <td class="table-border black__text">
+                                                    <div class="option">
+                                                        <input class="option__input" type="checkbox" name="terms-1" id="check_challenge">
+                                                        <label for="check_challenge" class="option__text grey-text">
+                                                            <a href="#">Challenge Moscow</a>
+                                                        </label>    
+                                                    </div>
+                                                </td>
+                                                <td class="table-border text-center info-item__text black__text">26.06.2022</td>
+                                                <td class="table-border info-item__text black__text">
+                                                    <p class="tbody-td__text">
+                                                        Challenge мужчины и женщины
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        Challenge Supersprint Суперспринт
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        Challenge корпоративный кубок Middle Distance
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        Challenge плавание 1,9 км
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        Challenge Middle Distance плавание + велогонка
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        Challenge корпоративный кубок Supersprint
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        Challenge Middle Distance
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        Оставить заявку на участие
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        Challenge дети и юноши
+                                                    </p>
+                                                    <p class="tbody-td__text black__text">
+                                                        Итого
+                                                    </p>
+                                                </td>
+                                                <td class="table-border text-center info-item__text black__text">
+                                                    <p class="tbody-td__text">
+                                                        28
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        126
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        129
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        0
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        6
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        36
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        706
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        48
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        24
+                                                    </p>
+                                                    <p class="tbody-td__text black__text">
+                                                        1103
+                                                    </p>
+                                                </td>
+                                                <td class="table-border text-center info-item__text black__text">
+                                                    <p class="tbody-td__text">
+                                                        130 000 ₽
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        2 124 000 ₽
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        1 331 230 ₽
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        0 ₽
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        111 150 ₽
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        55 200 ₽
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        18 234 400 ₽
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        0 ₽
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        24 000 ₽
+                                                    </p>
+                                                    <p class="tbody-td__text black__text">
+                                                        22 009 980 ₽
+                                                    </p>
+                                                </td>
+                                                <td class="table-border info-item__text text-center black__text">
+                                                    Опубликовано
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="table-border black__text">
+                                                    <div class="option">
+                                                        <input class="option__input" type="checkbox" name="checkChall" id="check_challenge_2">
+                                                        <label for="check_challenge_2" class="option__text grey-text">
+                                                            <a href="#">CHALLENGE MOSCOW 2022</a>
+                                                        </label>    
+                                                    </div>
+                                                </td>
+                                                <td class="table-border text-center info-item__text black__text">13.08.2022</td>
+                                                <td class="table-border info-item__text black__text">
+                                                    <p class="tbody-td__text">
+                                                        Challenge корпоративный кубок Middle Distance
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        Challenge корпоративный кубок Supersprint
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        Challenge дети и юноши
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        Challenge Middle Distance
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        Challenge Middle Distance плавание + велогонка
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        Challenge мужчины и женщины
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        Challenge Supersprint Суперспринт
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        Challenge плавание 1,9 км
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        Challenge Middle Distance плавание + велогонка
+                                                    </p>
+                                                    <p class="tbody-td__text black__text">
+                                                        Итого
+                                                    </p>
+                                                </td>
+                                                <td class="table-border text-center info-item__text black__text">
+                                                    <p class="tbody-td__text">
+                                                        0
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        0
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        0
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        0
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        0
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        0
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        0
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        0
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        0
+                                                    </p>
+                                                    <p class="tbody-td__text black__text">
+                                                        0
+                                                    </p>
+                                                </td>
+                                                <td class="table-border text-center info-item__text black__text">
+                                                    <p class="tbody-td__text">
+                                                        0 ₽
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        0 ₽
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        0 ₽
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        0 ₽
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        0 ₽
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        0 ₽
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        0 ₽
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        0 ₽
+                                                    </p>
+                                                    <p class="tbody-td__text">
+                                                        0 ₽
+                                                    </p>
+                                                    <p class="tbody-td__text black__text">
+                                                        22 009 980 ₽
+                                                    </p>
+                                                </td>
+                                                <td class="table-border info-item__text text-center black__text">
+                                                    Черновик
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <footer class="footer">
+                    <div class="container">
+                        <div class="footer__inner">
+                            <div class="footer__description">
+                                <p class="footer__description-text black__text" data-aos="fade-right" data-aos-delay="100">
+                                    ChallengeDrive
+                                </p>
+                                <p class="footer__description-text middle-text" data-aos="fade-right" data-aos-delay="150">
+                                    Спортивная площадка для продажи билетов на все крупные спортивные мероприятия - марафоны, триатлоны, гонки, трейловые, лыжные гонки, соревнования по плаванию.
+                                </p>
+                                <p class="footer__description-text middle-text" data-aos="fade-right" data-aos-delay="200">
+                                    Мобильное приложение для знакомств, поиска команды
+                                    и тренеров, объединяющих всех любителей здорового образа жизни.
+                                    Цифровой помощник улучшает тренировки и мотивирует
+                                    на практике, анализ результатов обучения, предложение
+                                    календаря тренировок и питания.
+                                </p>
+                                <p class="footer__description-text middle-text" data-aos="fade-right" data-aos-delay="250">
+                                    Мы создали команды!
+                                </p>
+                                <ul class="footer__apps-list indent-top">
+                                    <li class="footer__apps-item">
+                                        <a href="#" class="footer__description-link grey-text" data-aos="fade-in" data-aos-delay="150">
+                                            Подписаться на DRIVE
+                                        </a>
+                                    </li>
+                                    <li class="footer__apps-item">
+                                        <a href="#" class="footer__description-link grey-text" data-aos="fade-in" data-aos-delay="250">
+                                            О нас
+                                        </a>
+                                    </li>
+                                    <li class="footer__apps-item">
+                                        <a href="#" class="footer__description-link grey-text" data-aos="fade-in" data-aos-delay="350">
+                                            Аккаунт
+                                        </a>
+                                    </li>
+                                </ul>
+                                <p class="footer__description-copyright" data-aos="fade-in" data-aos-delay="250">
+                                    &copy; Challenge Drive, LLC и/или ее филиалы и лицензиары. Все права защищены.
+                                </p>
+                            </div>
+                            <div class="footer__apps">
+                                <h2 class="footer__apps-title" data-aos="fade-in" data-aos-delay="150">
+                                    Присоединяйтесь к Drive
+                                </h2>
+                                <h3 class="footer__apps-subtitle text" data-aos="fade-in" data-aos-delay="250">
+                                    Приложение Challenge Drive
+                                </h3>
+                                <ul class="footer__apps-list">
+                                    <li class="footer__apps-item">
+                                        <a href="#" class="footer__apps-link">
+                                            <img src="./img/footer/google_play_store.png" alt="Скачать с Play Store" data-aos="fade-in" data-aos-delay="150">
+                                        </a>
+                                    </li>
+                                    <li class="footer__apps-item">
+                                        <a href="#" class="footer__apps-link">
+                                            <img src="./img/footer/app_store.png" alt="Скачать c App Store" data-aos="fade-in" data-aos-delay="250">
+                                        </a>
+                                    </li>
+                                    <li class="footer__apps-item">
+                                        <a href="#" class="footer__apps-link">
+                                            <img src="./img/footer/appgallery.png" alt="Скачать c Appgallery" data-aos="fade-in" data-aos-delay="350">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </section>
+     <!-- модалка входа -->
+     <div class="modal__login">
+        <div class="modal__login-wrapper">
+            <ion-icon class="close" name="close-outline"></ion-icon>
+            <div class="wrapper">
+                <div class="main-content">
+                    <!-- header -->
+                    <header class="header header-bg" id="header">
+                        <div class="main__container">
+                            <div class="header__inner">
+                                <a href="index.html" class="header__logo">
+                                    <img src="./img/header/logo.svg" alt="Drive">                      
+                                </a>
+                                <div class="header-navigation">
+                                    <a href="#" class="header__login-icon">
+                                        <img src="./img/header/person.svg" alt="Войти/Зарегистрироваться">
+                                        <span class="header__login-text page-text">
+                                            Служба поддержки
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <!-- window -->
+                    <form action="#" method="get" id="login-form" class="form">
+                        <div class="authorization-form">
+                            <p class="authorization__text">
+                                Войти
+                            </p>
+                            <div class="not__sign-up">
+                                <span class="sign-up-text">
+                                    Нет аккаунта?
+                                </span>
+                                <a href="#" class="sign-up__link reg-open">
+                                    Зарегистрироваться
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row__authorization">
+                            <a href="#" class="authorization__with with-vk">
+                                <svg class="ionicon" viewBox="0 0 512 512">
+                                    <path d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z" fill-rule="evenodd"/>
+                                </svg>
+                                <span>
+                                    Войти через Facebook
+                                </span>
+                            </a>
+                            <a href="#" class="authorization__with with-google">
+                                <img class="authorization__icon" src="./img/login/google.svg" alt="Войти через google">
+                                <span>
+                                    Войти через Google
+                                </span>
+                            </a>
+                        </div>
+                        <span class="choice">
+                            или
+                        </span>
+                        <div class="form__inputs">
+                            <label for="email-input" class="form-label">
+                                <p class="form-label-text">
+                                    Почтовый адресс
+                                </p>
+                                <input type="email" class="main-input" name="mail" id="email-input" placeholder="Введите почту">
+                            </label>
+                            <label for="password-input" class="form-label">
+                                <p class="form-label-text">
+                                    Пароль
+                                </p>
+                                <input type="password" class="main-input" name="password" id="password-input" placeholder="Введите пароль">
+                                <img class="form__icon" src="./img/login/eyeInvisible.svg" alt="скрыть пароль">
+                                <span id="error"></span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn__submit">
+                            Войти
+                        </button>
+                    </form>
+                </div>
+                <footer class="footer footer__policy">
+                    <div class="container">
+                        <div class="footer__inner">
+                            <p class="footer__description-copyright indent-top-none">
+                                &copy; 2021 Challenge Drive, LLC и/или ее аффилированные лица и лицензиары. Все права защищены.
+                            </p>
+                            <ul class="footer__apps-list indent-top indent-top-none">
+                                <li class="footer__apps-item">
+                                    <a href="#" class="footer__description-link grey-text">
+                                        Политика конфиденциальности
+                                    </a>
+                                </li>
+                                <li class="footer__apps-item">
+                                    <a href="#" class="footer__description-link grey-text">
+                                        Условия использования
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- модалка регистрации -->
+    <div class="registration__login modal__login">
+        <div class="registration__login-wrapper modal__login-wrapper">
+            <ion-icon class="reg-close close" name="close-outline"></ion-icon>
+            <div class="wrapper">
+                <div class="main-content">
+                    <!-- header -->
+                    <header class="header header-bg" id="header">
+                        <div class="main__container">
+                            <div class="header__inner">
+                                <a href="index.html" class="header__logo">
+                                    <img src="./img/header/logo.svg" alt="Drive">                      
+                                </a>
+                                <div class="header-navigation">
+                                    <a href="#" class="header__login-icon">
+                                        <img src="./img/header/person.svg" alt="Войти/Зарегистрироваться">
+                                        <span class="header__login-text page-text">
+                                            Служба поддержки
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <!-- window -->
+                    <form action="#" method="get" id="login-form" class="form">
+                        <div class="authorization-form">
+                            <p class="authorization__text">
+                                Зарегистрироваться
+                            </p>
+                        </div>
+                        <div class="form__inputs">
+                            <label for="regName" class="form-label">
+                                <p class="form-label-text">
+                                    Имя
+                                </p>
+                                <input type="text" class="main-input" id="regName" placeholder="Имя" required>
+                            </label>
+                            <label for="regLastName" class="form-label">
+                                <p class="form-label-text">
+                                    Фамилия
+                                </p>
+                                <input type="text" class="main-input" id="regLastName" placeholder="Фамилия" required>
+                            </label>
+                            <label for="regBirthday" class="form-label input-icon">
+                                <p class="form-label-text">
+                                    Дата рождения
+                                </p>
+                                <input type="text" class="main-input" id="regBirthday" placeholder="Дата рождения" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" required>
+                            </label>
+                            <label for="email-recovery" class="form-label">
+                                <p class="form-label-text">
+                                    Почта
+                                </p>
+                                <input type="email" class="main-input" id="email-recovery" placeholder="Почта" required>
+                            </label>
+                            <hr class="row-line">
+                            <label for="password-change" class="form-label">
+                                <p class="form-label-text">
+                                    Пароль
+                                </p>
+                                <input type="password" class="main-input" id="password-change" name="passwordName" placeholder="Пароль" onkeyup="checkPassword();" required>
+                            </label>
+                            <label for="passwordReTypeId" class="form-label">
+                                <p class="form-label-text">
+                                    Повторите пароль
+                                </p>
+                                <input type="password" class="main-input" name="password" id="passwordReTypeId" name="passwordReType" placeholder="Повторите пароль" onkeyup="checkPassword();" required>
+                                <img class="form__icon" src="./img/login/eyeInvisible.svg" alt="скрыть пароль">
+                            </label>
+                        </div>
+                        <button type="submit" class="btn__submit">
+                            Send
+                        </button>
+                    </form>
+                </div>
+                <footer class="footer footer__policy">
+                    <div class="container">
+                        <div class="footer__inner">
+                            <p class="footer__description-copyright indent-top-none">
+                                &copy; 2021 Challenge Drive, LLC и/или ее аффилированные лица и лицензиары. Все права защищены.
+                            </p>
+                            <ul class="footer__apps-list indent-top indent-top-none">
+                                <li class="footer__apps-item">
+                                    <a href="#" class="footer__description-link grey-text">
+                                        Политика конфиденциальности
+                                    </a>
+                                </li>
+                                <li class="footer__apps-item">
+                                    <a href="#" class="footer__description-link grey-text">
+                                        Условия использования
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- error -->
+    <div class="notification error__top" id="errorText">
+        <div class="notification__inner error__top-inner">
+            <span>Ошибка: почта неверна</span>
+            <ion-icon class="notification__close close__error" name="close-outline"></ion-icon>
+        </div>
+    </div>
+    <!-- successfully -->
+    <div class="notification successfully__top" id="successfullyText">
+        <div class="notification__inner successfully__inner">
+            <span>Успешно: Почта верна</span>
+            <ion-icon class="notification__close close__correct" name="close-outline"></ion-icon>
+        </div>
+    </div>
+    <!-- ionicon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- scripts -->
+    <script src="./js/animate.js"></script>
+    <script src="./js/select.js"></script>
+    <script src="./js/upload.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal-login.js"></script>
+    <script src="./js/show-hide-eye.js"></script>
+    <script src="./js/sign-tabs.js"></script>
+    <script src="./js/validate.js"></script>
+    <script src="./js/validate-login-form.js"></script>
+</body>
+</html>

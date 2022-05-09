@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <!-- animate -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body style="font-family: 'HelveticaNeueCyr';">
+    <!-- прижатие футера/основная обертка  -->
+    <div class="wrapper">
+        <div class="main-content">
+            <!-- header -->
+            <header class="header header-bg" id="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <a href="index.html" class="header__logo" data-aos="fade-in">
+                            <img src="./img/header/logo.svg" alt="Drive">                      
+                        </a>
+                        <div class="header-navigation">
+                            <!-- navigation -->
+                            <nav class="nav">
+                                <ul class="nav__list">
+                                    <li class="nav__item">
+                                        <a href="./tikets.html" class="nav__link page-text active" data-aos="fade-in" data-aos-delay="50">
+                                            События
+                                        </a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link page-text" data-aos="fade-in" data-aos-delay="150">
+                                            Приложение
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <ul class="language">
+                                <li class="language__item">
+                                    <div class="row-list">
+                                        <button class="btn__language page-text eng" type="button" data-aos="fade-in" data-aos-delay="100">
+                                            Eng
+                                        </button>
+                                        <img class="lang-arrow" src="../img/steps/review-check/arrow.svg" alt="">
+                                    </div>
+                                    <ul class="language__list-sub">
+                                        <li>
+                                            <button class="btn__language page-text rus" type="button" data-aos="fade-in" data-aos-delay="100">
+                                                Rus
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <a href="#" class="header__login-icon open-login">
+                                <img src="./img/header/person.svg" alt="Войти/Зарегистрироваться" data-aos="fade-in" data-aos-delay="150">
+                                <span class="header__login-text page-text" data-aos="fade-in" data-aos-delay="200">
+                                    Войти
+                                </span>
+                            </a>
+                            <!-- mobile menu -->
+                            <div class="mobile__menu">
+                                <div class="menu-btn"></div>
+                                <div class="mobile__list">
+                                    <div class="mobile__social submenu__list">
+                                        <a href="#" class="header__login-icon open-login">
+                                            <img src="./img/header/person.svg" alt="Войти/Зарегистрироваться">
+                                            <span class="header__login-text page-text">
+                                                Войти
+                                            </span>
+                                        </a>
+                                        <ul class="language">
+                                            <li class="language__item">
+                                                <div class="row-list">
+                                                    <button class="btn__language page-text eng" type="button" data-aos="fade-in" data-aos-delay="100">
+                                                        Eng
+                                                    </button>
+                                                    <img class="lang-arrow" src="../img/steps/review-check/arrow.svg" alt="">
+                                                </div>
+                                                <ul class="language__list-sub">
+                                                    <li>
+                                                        <button class="btn__language page-text rus" type="button" data-aos="fade-in" data-aos-delay="100">
+                                                            Rus
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <ul class="mobile__menu-list">
+                                        <li class="mobile__menu-item">
+                                            <a href="./tikets.html" class="mobile__menu-link info-text">
+                                                События
+                                            </a>
+                                        </li>
+                                        <li class="mobile__menu-item">
+                                            <a href="#" class="mobile__menu-link info-text">
+                                                Сообщество
+                                            </a>
+                                        </li>
+                                        <li class="mobile__menu-item">
+                                            <a href="#" class="mobile__menu-link info-text">
+                                                Рейтинг
+                                            </a>
+                                        </li>
+                                        <li class="mobile__menu-item mobile-open__menu">
+                                            <div class="mobile__menu-item mobile-dropdown jcsb row-list">
+                                                <p class="mobile__menu-link info-text">
+                                                   Мой профиль
+                                                </p>
+                                                <ion-icon class="down" name="chevron-down-outline"></ion-icon>
+                                            </div>
+                                            <ul class="submenu__list submenu-dropdown">
+                                                <li class="submenu__item">
+                                                    <a href="profile.html" class="navbar__link info-text row-list">
+                                                        <img class="navbar__image" src="./img/profile/profile.svg" alt="profile">
+                                                        Профиль
+                                                    </a>
+                                                </li>
+                                                <li class="submenu__item">
+                                                    <a href="#" class="navbar__link info-text row-list">
+                                                        <img class="navbar__image" src="./img/profile/documents.svg" alt="document">
+                                                        Документы
+                                                    </a>
+                                                </li>
+                                                <li class="submenu__item">
+                                                    <a href="#" class="navbar__link info-text row-list">
+                                                        <img class="navbar__image" src="./img/profile/ticket.svg" alt="tikets">
+                                                        Билеты
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- contacts -->
+            <main class="main">
+                <section class="contact">
+                    <div class="container">
+                        <picture class="contact-img big__image">
+                            <source srcset="./img/contacts/unsplash.jpg">
+                            <img src="./img/contacts/unsplash.jpg" alt="run">
+                        </picture>
+                        <form class="contact__information" action="#" method="post">
+                            <div class="contact__information-title">
+                                <h2 class="contact__title title indent-small">
+                                    Связаться с нами
+                                </h2>
+                                <p class="contact__subtitle text">
+                                    Есть вопрос? Вы можете связаться с нами в любое время.
+                                </p>
+                            </div>
+                            <div class="form__inputs">
+                                <label class="form-label" for="name-contact">
+                                    <p class="form-label-text">
+                                        Имя
+                                    </p>
+                                    <input type="text" class="main-input main-input__bg" name="nameContact" id="name-contact" placeholder="Введите ваше имя">
+                                </label>
+                                <label class="form-label" for="email-contact">
+                                    <p class="form-label-text">
+                                        Почта
+                                    </p>
+                                    <input type="email" class="main-input main-input__bg" name="email_name_contact" id="email-contact" placeholder="Введите почту">
+                                </label>
+                                <label class="form-label" for="messageText">
+                                    <p class="form-label-text">
+                                        О чем ваш вопрос
+                                    </p>
+                                    <textarea class="text-area main-input main-input__bg" name="textarea" id="messageText" cols="30" rows="10" placeholder="Введите ваш вопрос"></textarea>
+                                </label>
+                            </div>
+                            <button class="btn__submit" type="submit">
+                                Отправить
+                            </button>
+                        </form>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__description">
+                        <p class="footer__description-text black__text" data-aos="fade-right" data-aos-delay="100">
+                            ChallengeDrive
+                        </p>
+                        <p class="footer__description-text middle-text" data-aos="fade-right" data-aos-delay="150">
+                            Sports marketplace for selling tickets to all major sporting events - marathons, triathlons, races, trails, cross-country skiing, swimming competitions.
+                        </p>
+                        <p class="footer__description-text middle-text" data-aos="fade-right" data-aos-delay="200">
+                            A mobile application for dating, searching for a team 
+                            and coaches, uniting all fans of a healthy lifestyle.
+                            Digital Assistant improves workouts and motivates 
+                            to practice, analysis of training results, suggestion 
+                            of training and nutrition calendar.
+                        </p>
+                        <p class="footer__description-text middle-text" data-aos="fade-right" data-aos-delay="250">
+                            We made teams!
+                        </p>
+                        <ul class="footer__apps-list indent-top">
+                            <li class="footer__apps-item">
+                                <a href="#" class="footer__description-link grey-text" data-aos="fade-in" data-aos-delay="150">
+                                    Следуйте за DRIVE
+                                </a>
+                            </li>
+                            <li class="footer__apps-item">
+                                <a href="#" class="footer__description-link grey-text" data-aos="fade-in" data-aos-delay="250">
+                                    О нас
+                                </a>
+                            </li>
+                            <li class="footer__apps-item">
+                                <a href="#" class="footer__description-link grey-text" data-aos="fade-in" data-aos-delay="350">
+                                    Аккаунт
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="footer__description-copyright" data-aos="fade-in" data-aos-delay="250">
+                            &copy; Challenge Drive, LLC и/или ее филиалы и лицензиары. Все права защищены.
+                        </p>
+                    </div>
+                    <div class="footer__apps">
+                        <h2 class="footer__apps-title" data-aos="fade-in" data-aos-delay="150">
+                            Присоединяйтесь к Drive
+                        </h2>
+                        <h3 class="footer__apps-subtitle text" data-aos="fade-in" data-aos-delay="250">
+                            Приложение Challenge Drive для вызова
+                        </h3>
+                        <ul class="footer__apps-list">
+                            <li class="footer__apps-item">
+                                <a href="#" class="footer__apps-link">
+                                    <img src="./img/footer/google_play_store.png" alt="Скачать с Play Store" data-aos="fade-in" data-aos-delay="150">
+                                </a>
+                            </li>
+                            <li class="footer__apps-item">
+                                <a href="#" class="footer__apps-link">
+                                    <img src="./img/footer/app_store.png" alt="Скачать c App Store" data-aos="fade-in" data-aos-delay="250">
+                                </a>
+                            </li>
+                            <li class="footer__apps-item">
+                                <a href="#" class="footer__apps-link">
+                                    <img src="./img/footer/appgallery.png" alt="Скачать c Appgallery" data-aos="fade-in" data-aos-delay="350">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- модалка входа -->
+    <div class="modal__login">
+        <div class="modal__login-wrapper">
+            <ion-icon class="close" name="close-outline"></ion-icon>
+            <div class="wrapper">
+                <div class="main-content">
+                    <!-- header -->
+                    <header class="header header-bg" id="header">
+                        <div class="main__container">
+                            <div class="header__inner">
+                                <a href="index.html" class="header__logo">
+                                    <img src="./img/header/logo.svg" alt="Drive">                      
+                                </a>
+                                <div class="header-navigation">
+                                    <a href="#" class="header__login-icon">
+                                        <img src="./img/header/person.svg" alt="Войти/Зарегистрироваться">
+                                        <span class="header__login-text page-text">
+                                            Служба поддержки
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <!-- window -->
+                    <form action="#" method="get" id="login-form" class="form">
+                        <div class="authorization-form">
+                            <p class="authorization__text">
+                                Регистрация
+                            </p>
+                            <div class="not__sign-up">
+                                <span class="sign-up-text">
+                                    У вас нет учетной записи?
+                                </span>
+                                <a href="#" class="sign-up__link reg-open">
+                                    Зарегистрироваться
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row__authorization">
+                            <a href="#" class="authorization__with with-vk">
+                                <svg class="ionicon" viewBox="0 0 512 512">
+                                    <path d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z" fill-rule="evenodd"/>
+                                </svg>
+                                <span>
+                                    Войти через Facebook
+                                </span>
+                            </a>
+                            <a href="#" class="authorization__with with-google">
+                                <img class="authorization__icon" src="./img/login/google.svg" alt="Войти через google">
+                                <span>
+                                    Войти чререз Google
+                                </span>
+                            </a>
+                        </div>
+                        <span class="choice">
+                            или
+                        </span>
+                        <div class="form__inputs">
+                            <label for="email-input" class="form-label">
+                                <p class="form-label-text">
+                                    Адресс почты
+                                </p>
+                                <input type="email" class="main-input" name="mail" id="email-input" placeholder="Введите адрес электронной почты">
+                            </label>
+                            <label for="password-input" class="form-label">
+                                <p class="form-label-text">
+                                    Пароль
+                                </p>
+                                <input type="password" class="main-input" name="password" id="password-input" placeholder="Введите пароль">
+                                <img class="form__icon" src="./img/login/eyeInvisible.svg" alt="скрыть пароль">
+                                <span id="error"></span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn__submit">
+                            Войти
+                        </button>
+                    </form>
+                </div>
+                <footer class="footer footer__policy">
+                    <div class="container">
+                        <div class="footer__inner">
+                            <p class="footer__description-copyright indent-top-none">
+                                &copy; 2021 Challenge Drive, LLC и/или ее филиалы и лицензиары. Все права защищены.
+                            </p>
+                            <ul class="footer__apps-list indent-top indent-top-none">
+                                <li class="footer__apps-item">
+                                    <a href="#" class="footer__description-link grey-text">
+                                        Политика конфиденциальности
+                                    </a>
+                                </li>
+                                <li class="footer__apps-item">
+                                    <a href="#" class="footer__description-link grey-text">
+                                        Условия использования
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+<!-- модалка регистрации -->
+<div class="registration__login modal__login">
+    <div class="registration__login-wrapper modal__login-wrapper">
+        <ion-icon class="reg-close close" name="close-outline"></ion-icon>
+        <div class="wrapper">
+            <div class="main-content">
+                <!-- header -->
+                <header class="header header-bg" id="header">
+                    <div class="main__container">
+                        <div class="header__inner">
+                            <a href="index.html" class="header__logo">
+                                <img src="./img/header/logo.svg" alt="Drive">                      
+                            </a>
+                            <div class="header-navigation">
+                                <a href="#" class="header__login-icon">
+                                    <img src="./img/header/person.svg" alt="Войти/Зарегистрироваться">
+                                    <span class="header__login-text page-text">
+                                        Поддержка
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <!-- window -->
+                <form action="#" method="get" id="login-form" class="form">
+                    <div class="authorization-form">
+                        <p class="authorization__text">
+                            Регистрация
+                        </p>
+                    </div>
+                    <div class="form__inputs">
+                        <label for="regName" class="form-label">
+                            <p class="form-label-text">
+                                Ваше имя
+                            </p>
+                            <input type="text" class="main-input" id="regName" placeholder="Ваше имя" required>
+                        </label>
+                        <label for="regLastName" class="form-label">
+                            <p class="form-label-text">
+                                Ваша фамилия
+                            </p>
+                            <input type="text" class="main-input" id="regLastName" placeholder="Ваша фамилия" required>
+                        </label>
+                        <label for="regBirthday" class="form-label input-icon">
+                            <p class="form-label-text">
+                                Дата рождения
+                            </p>
+                            <input type="text" class="main-input" id="regBirthday" placeholder="Дата рождения" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" required>
+                        </label>
+                        <label for="email-recovery" class="form-label">
+                            <p class="form-label-text">
+                                Почта
+                            </p>
+                            <input type="email" class="main-input" id="email-recovery" placeholder="Почта" required>
+                        </label>
+                        <hr class="row-line">
+                        <label for="password-change" class="form-label">
+                            <p class="form-label-text">
+                                Пароль
+                            </p>
+                            <input type="password" class="main-input" id="password-change" name="passwordName" placeholder="Пароль" onkeyup="checkPassword();" required>
+                        </label>
+                        <label for="passwordReTypeId" class="form-label">
+                            <p class="form-label-text">
+                                Повторите пароль
+                            </p>
+                            <input type="password" class="main-input" name="password" id="passwordReTypeId" name="passwordReType" placeholder="Повторите пароль" onkeyup="checkPassword();" required>
+                            <img class="form__icon" src="./img/login/eyeInvisible.svg" alt="скрыть пароль">
+                        </label>
+                    </div>
+                    <button type="submit" class="btn__submit">
+                        Send
+                    </button>
+                </form>
+            </div>
+            <footer class="footer footer__policy">
+                <div class="container">
+                    <div class="footer__inner">
+                        <p class="footer__description-copyright indent-top-none">
+                            &copy; 2021 Challenge Drive, LLC and/or its affiliates and licensors. All rights reserved.
+                        </p>
+                        <ul class="footer__apps-list indent-top indent-top-none">
+                            <li class="footer__apps-item">
+                                <a href="#" class="footer__description-link grey-text">
+                                    Privacy policy
+                                </a>
+                            </li>
+                            <li class="footer__apps-item">
+                                <a href="#" class="footer__description-link grey-text">
+                                    Terms of use
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</div>
+
+    <!-- error -->
+    <div class="notification error__top" id="errorText">
+        <div class="notification__inner error__top-inner">
+            <span>Ошибка: Адрес электронной почты неверен</span>
+            <ion-icon class="notification__close close__error" name="close-outline"></ion-icon>
+        </div>
+    </div>
+    <!-- successfully -->
+    <div class="notification successfully__top" id="successfullyText">
+        <div class="notification__inner successfully__inner">
+            <span>Успешно: электронное письмо отправлено</span>
+            <ion-icon class="notification__close close__correct" name="close-outline"></ion-icon>
+        </div>
+    </div>
+    <!-- ionicon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- scripts -->
+    <script src="./js/animate.js"></script>
+    <script src="./js/validate.js"></script>
+    <script src="./js/modal-login.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/show-hide-eye.js"></script>
+    <script src="./js/validate-login-form.js"></script>
+</body>
+</html>

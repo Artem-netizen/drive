@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tikets</title>
+    <!-- animate -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- прижатие футера/основная обертка  -->
+    <div class="wrapper">
+        <div class="main-content">
+            <!-- header -->
+            <header class="header header-bg" id="header">
+                <div class="main__container">
+                    <div class="header__inner">
+                        <a href="index.html" class="header__logo" data-aos="fade-in">
+                            <img src="./img/header/logo.svg" alt="Drive">                      
+                        </a>
+                        <div class="header-navigation">
+                            <a href="#" class="header__login-icon">
+                                <img src="./img/header/person.svg" alt="Войти/Зарегистрироваться" data-aos="fade-in" data-aos-delay="150">
+                                <span class="header__login-text page-text" data-aos="fade-in" data-aos-delay="200">
+                                    Customer support
+                                </span>
+                            </a>
+                        </div>
+                        <!-- mobile menu -->
+                        <div class="mobile__menu">
+                            <div class="menu-btn"></div>
+                            <div class="mobile__list">
+                                <div class="mobile__social submenu__list">
+                                    <a href="#" class="header__login-icon open-login">
+                                        <img src="./img/header/person.svg" alt="Войти/Зарегистрироваться">
+                                        <span class="header__login-text page-text">
+                                            Log in
+                                        </span>
+                                    </a>
+                                    <ul class="language">
+                                        <li class="language__item">
+                                            <div class="row-list">
+                                                <button class="btn__language page-text eng" type="button" data-aos="fade-in" data-aos-delay="100">
+                                                    Eng
+                                                </button>
+                                                <img class="lang-arrow" src="../img/steps/review-check/arrow.svg" alt="">
+                                            </div>
+                                            <ul class="language__list-sub">
+                                                <li>
+                                                    <button class="btn__language page-text rus" type="button" data-aos="fade-in" data-aos-delay="100">
+                                                        Rus
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul class="mobile__menu-list">
+                                    <li class="mobile__menu-item">
+                                        <a href="./tikets.html" class="mobile__menu-link info-text">
+                                            Events
+                                        </a>
+                                    </li>
+                                    <li class="mobile__menu-item">
+                                        <a href="#" class="mobile__menu-link info-text">
+                                            Community
+                                        </a>
+                                    </li>
+                                    <li class="mobile__menu-item">
+                                        <a href="#" class="mobile__menu-link info-text">
+                                            Rating
+                                        </a>
+                                    </li>
+                                    <li class="mobile__menu-item mobile-open__menu">
+                                        <div class="mobile__menu-item mobile-dropdown jcsb row-list">
+                                            <p class="mobile__menu-link info-text">
+                                                My profile
+                                            </p>
+                                            <ion-icon class="down" name="chevron-down-outline"></ion-icon>
+                                        </div>
+                                        <ul class="submenu__list submenu-dropdown">
+                                            <li class="submenu__item">
+                                                <a href="profile.html" class="navbar__link info-text row-list">
+                                                    <img class="navbar__image" src="./img/profile/profile.svg" alt="profile">
+                                                    Profile
+                                                </a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a href="#" class="navbar__link info-text row-list">
+                                                    <img class="navbar__image" src="./img/profile/documents.svg" alt="document">
+                                                    Documents
+                                                </a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a href="#" class="navbar__link info-text row-list">
+                                                    <img class="navbar__image" src="./img/profile/ticket.svg" alt="tikets">
+                                                    Tickets
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <!-- progress steps -->
+                <div class="steps__content">
+                    <div class="progress__bar" id="progress" data-aos="fade-in" data-aos-delay="50">
+                        <div class="step row-list" id="step-1">
+                            <div class="bullet" id="bullet-1" data-aos="fade-in" data-aos-delay="150">
+                                <span class="grey-text">1</span>
+                                <div class="check">
+                                    <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 5L6 9L13 1" stroke="black"/>
+                                    </svg>                                        
+                                </div>
+                            </div>
+                            <p class="next prev" data-aos="fade-in" data-aos-delay="200">Tickets</p>
+                        </div>
+                        <div class="step row-list" id="step-2">
+                            <div class="bullet" id="bullet-2" data-aos="fade-in" data-aos-delay="150">
+                                <span class="grey-text">2</span>
+                                <div class="check">
+                                    <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 5L6 9L13 1" stroke="black"/>
+                                    </svg>                                        
+                                </div>
+                            </div>
+                            <p class="next prev" data-aos="fade-in" data-aos-delay="200">Complete form</p>
+                        </div>
+                    </div>
+                    <div class="tikets__content step-by-step" id="step1">
+                        <div class="main__container">
+                            <picture class="contact-img big__image" data-aos="fade-up" data-aos-delay="100">
+                                <source srcset="./img/contacts/unsplash.jpg">
+                                <img src="./img/contacts/unsplash.jpg" alt="run">
+                            </picture>
+                            <div class="progress__bar" id="progressInner" data-aos="fade-in" data-aos-delay="50">
+                                <div class="step row-list" id="step-1">
+                                    <div class="bullet" id="bullet-1" data-aos="fade-in" data-aos-delay="150">
+                                        <span class="grey-text">1</span>
+                                        <div class="check">
+                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 5L6 9L13 1" stroke="black"/>
+                                            </svg>                                        
+                                        </div>
+                                    </div>
+                                    <p class="next prev" data-aos="fade-in" data-aos-delay="200">Tickets</p>
+                                </div>
+                                <div class="step row-list" id="step-2">
+                                    <div class="bullet" id="bullet-2" data-aos="fade-in" data-aos-delay="150">
+                                        <span class="grey-text">2</span>
+                                        <div class="check">
+                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 5L6 9L13 1" stroke="black"/>
+                                            </svg>                                        
+                                        </div>
+                                    </div>
+                                    <p class="next prev" data-aos="fade-in" data-aos-delay="200">Complete form</p>
+                                </div>
+                            </div>
+                            <div class="all-steps">
+                                <form action="#" method="post" name="tiketsForm" class="form-steps">
+                                    <div class="tikets-steps">
+                                        <h2 class="tikets__title title" data-aos="fade-in" data-aos-delay="150">
+                                            Tikets
+                                        </h2>
+                                        <div class="tikets__column">
+                                            <div class="row-info" data-aos="fade-up" data-aos-delay="50">
+                                                <div class="tikets__info">
+                                                    <p class="tikets__subtitle info-text">
+                                                        Challenge Middle Distance
+                                                    </p>
+                                                    <p class="tikets__text info-text info-grey">
+                                                        Swim and bike
+                                                    </p>
+                                                </div>
+                                                <div class="price-tikets">
+                                                    <h4 class="inform-title info-text">
+                                                        Triathlon
+                                                    </h4>
+                                                    <h4 class="price-text info-text">
+                                                        EUR 239
+                                                    </h4>
+                                                    <div class="number">
+                                                        <span class="num-minus" data-action="descrement" onclick="stepper(this)">
+                                                            -
+                                                        </span>
+                                                        <input type="text" class="num-summ text" id="main-input" min="0" max="1000" step="1" value="1" readonly>
+                                                        <span class="num-span" data-action="increment" onclick="stepper(this)">
+                                                            +
+                                                        </span>
+                                                    </div>
+                                                    <a href="#" id="btnNext" name="tiketsBtn" class="buy__link text register__link">
+                                                        Buy
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="row-info" data-aos="fade-up" data-aos-delay="100">
+                                                <div class="tikets__info">
+                                                    <p class="tikets__subtitle info-text">
+                                                        Challenge Middle Distance Corporate Cup
+                                                    </p>
+                                                </div>
+                                                <div class="price-tikets">
+                                                    <h4 class="inform-title info-text">
+                                                        Triathlon
+                                                    </h4>
+                                                    <h4 class="price-text info-text">
+                                                        EUR 239
+                                                    </h4>
+                                                    <div class="number">
+                                                        <span class="num-minus" data-action="descrement" onclick="stepper(this)">
+                                                            -
+                                                        </span>
+                                                        <input type="text" class="num-summ text" id="main-input" min="0" max="1000" step="1" value="1" readonly>
+                                                        <span class="num-span" data-action="increment" onclick="stepper(this)">
+                                                            +
+                                                        </span>
+                                                    </div>
+                                                    <a href="#" id="btnNext" name="tiketsBtn" class="buy__link text register__link">
+                                                        Buy
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="row-info" data-aos="fade-up" data-aos-delay="150">
+                                                <div class="tikets__info">
+                                                    <p class="tikets__subtitle info-text">
+                                                        Challenge Supersprint
+                                                    </p>
+                                                </div>
+                                                <div class="price-tikets">
+                                                    <h4 class="inform-title info-text">
+                                                        Triathlon
+                                                    </h4>
+                                                    <h4 class="price-text info-text">
+                                                        EUR 239
+                                                    </h4>
+                                                    <div class="number">
+                                                        <span class="num-minus" data-action="descrement" onclick="stepper(this)">
+                                                            -
+                                                        </span>
+                                                        <input type="text" class="num-summ text" id="main-input" min="0" max="1000" step="1" value="1" readonly>
+                                                        <span class="num-span" data-action="increment" onclick="stepper(this)">
+                                                            +
+                                                        </span>
+                                                    </div>
+                                                    <a href="#" id="btnNext" name="tiketsBtn" class="buy__link text register__link">
+                                                        Buy
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="row-info" data-aos="fade-up" data-aos-delay="200">
+                                                <div class="tikets__info">
+                                                    <p class="tikets__subtitle info-text">
+                                                        Challenge Supersprint Corporate Cup
+                                                    </p>
+                                                </div>
+                                                <div class="price-tikets">
+                                                    <h4 class="inform-title info-text">
+                                                        Triathlon
+                                                    </h4>
+                                                    <h4 class="price-text info-text">
+                                                        EUR 239
+                                                    </h4>
+                                                    <div class="number">
+                                                        <span class="num-minus" data-action="descrement" onclick="stepper(this)">
+                                                            -
+                                                        </span>
+                                                        <input type="text" class="num-summ text" id="main-input" min="0" max="1000" step="1" value="1" readonly>
+                                                        <span class="num-span" data-action="increment" onclick="stepper(this)">
+                                                            +
+                                                        </span>
+                                                    </div>
+                                                    <a href="#" id="btnNext" name="tiketsBtn" class="buy__link text register__link">
+                                                        Buy
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="row-info" data-aos="fade-up" data-aos-delay="250">
+                                                <div class="tikets__info">
+                                                    <p class="tikets__subtitle info-text">
+                                                        Challenge swim 1,9 km
+                                                    </p>
+                                                </div>
+                                                <div class="price-tikets">
+                                                    <h4 class="inform-title info-text">
+                                                        Triathlon
+                                                    </h4>
+                                                    <h4 class="price-text info-text">
+                                                        EUR 239
+                                                    </h4>
+                                                    <div class="number">
+                                                        <span class="num-minus" data-action="descrement" onclick="stepper(this)">
+                                                            -
+                                                        </span>
+                                                        <input type="text" class="num-summ text" id="main-input" min="0" max="1000" step="1" value="1" readonly>
+                                                        <span class="num-span" data-action="increment" onclick="stepper(this)">
+                                                            +
+                                                        </span>
+                                                    </div>
+                                                    <a href="#" id="btnNext" name="tiketsBtn" class="buy__link text register__link">
+                                                        Buy
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="row-info" data-aos="fade-up" data-aos-delay="300">
+                                                <div class="tikets__info">
+                                                    <p class="tikets__subtitle info-text">
+                                                        Challenge Middle Distance
+                                                    </p>
+                                                </div>
+                                                <div class="price-tikets">
+                                                    <h4 class="inform-title info-text">
+                                                        Triathlon
+                                                    </h4>
+                                                    <h4 class="price-text info-text">
+                                                        EUR 100
+                                                    </h4>
+                                                    <div class="number">
+                                                        <span class="num-minus" data-action="descrement" onclick="stepper(this)">
+                                                            -
+                                                        </span>
+                                                        <input type="text" class="num-summ text" id="main-input" min="0" max="1000" step="1" value="1" readonly>
+                                                        <span class="num-span" data-action="increment" onclick="stepper(this)">
+                                                            +
+                                                        </span>
+                                                    </div>
+                                                    <a href="#" id="btnNext" class="buy__link text register__link">
+                                                        Buy
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="row-info" data-aos="fade-up" data-aos-delay="350">
+                                                <div class="tikets__info">
+                                                    <p class="tikets__subtitle info-text">
+                                                        Challenge Run
+                                                    </p>
+                                                </div>
+                                                <div class="price-tikets">
+                                                    <h4 class="inform-title info-text">
+                                                        Run 5km
+                                                    </h4>
+                                                    <h4 class="price-text info-text">
+                                                        EUR 50
+                                                    </h4>
+                                                    <div class="number">
+                                                        <span class="num-minus" data-action="descrement" onclick="stepper(this)">
+                                                            -
+                                                        </span>
+                                                        <input type="text" class="num-summ text" id="main-input" min="0" max="1000" step="1" value="1" readonly>
+                                                        <span class="num-span" data-action="increment" onclick="stepper(this)">
+                                                            +
+                                                        </span>
+                                                    </div>
+                                                    <a href="#" id="btnNext" name="tiketsBtn" class="buy__link text register__link">
+                                                        Buy
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Goods and Servises -->
+                        <div class="main__container">
+                            <!-- accordion -->
+                            <div class="accordion-wrapper">
+                                <ul class="accordion__list">
+                                    <li class="accordion" data-aos="fade-right" data-aos-delay="100">
+                                        <button class="accordion__control" aria-expanded="false">
+                                            <span class="accordion__title title">MIDDLE DISTANCE 1,9 km - 90 km - 21 km</span>
+                                            <span class="accordion__icon"></span>
+                                        </button>
+                                        <div class="accordion__content" aria-hidden="true">
+                                            <div class="accordion__text">
+                                                <p class="info-text">
+                                                    On June 26, 2022, Challenge Moscow 2022 will take place, one of the most interesting races of the international Challenge series.
+                                                </p>
+                                                <p class="info-text">
+                                                    Оn the wide roads of the Sadovoe Koltso, past the Kremlin towers, triathletes will be able to show the highest speeds and set new world records for taking the Middle Distance.
+                                                </p>
+                                                <p class="info-text">
+                                                    CHALLENGE MOSCOW is the first Middle Distance race in Russia. This, together with the exciting side events taking place the day after the main event, will target all triathletes, artists, celebrities, entrepreneurs and sports fans.
+                                                </p>
+                                                <p class="info-text">
+                                                    CHALLENGE MOSCOW will be the centre of activity for both the Middle Distance as well as the unique side events, which include:
+                                                </p>
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <p class="black__text">
+                                                        Middle Distance Triathlon
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="black__text">
+                                                        Sprint Distance Triathlon with celebrities and Russian top businessman’s
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="black__text">
+                                                        5 km Man’s & Women’s run
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="black__text">
+                                                        1km Junior
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="black__text">
+                                                        In the most beautiful park in Moscow, Park Novodevichy Ponds, tents for athletes and recreation areas will be set up, a wonderful evening program with fireworks
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                            <h3 class="text additionally__title">
+                                                What do you get from participating in Challenge Moscow 2022?
+                                            </h3>
+                                            <ol>
+                                                <li>
+                                                    <p class="black__text">
+                                                        Sportmaster bonuses for registration to the event (all distances). The cost of the slots will be returned to your Sportmaster card as bonuses – 5000 bonus. You can spend these bonuses to shopping in any Sportmaster shop.
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="black__text">
+                                                        Challenge Moscow bonuses with Challenge points by downloading the ChallengeDrive mobile application from <a href="#" target="_blank">http://challengedrive.ru.</a> The full amount for a slot in the Challenge points is in your app. You can spend your points at the event and Challenge partners.
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="black__text">
+                                                        When registering a group of three people you get a discount of 10% of your slot cost. To get your discount please write an email to sport@challengemoscow.ru.
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="black__text">
+                                                        VIP area for athletes and guests (recovery massage zone, non-alcoholic beer, cold champagne, music concert, best DJs, +10 friends in the VIP area for each participant).
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="black__text">
+                                                        Privileges for corporate teams (our media will mention your company, your flags will be placed in our EXPO zone, your speakers will be presented on our forum).
+                                                    </p>
+                                                </li>
+                                            </ol>
+                                            <div class="multiple__block">
+                                                <h4 class="parameters__text text">
+                                                    Swim course
+                                                </h4>
+                                                <span class="parameters__span black__text">
+                                                    1,9 km
+                                                </span>
+                                                <span class="parameters__subset grey-text">
+                                                    — Grebnoy canal, Krylatskaya st.2
+                                                </span>
+                                                <p class="multiple__text black__text">
+                                                    Participants start with the swimming stage, which takes place on the territory of the Grebnoy Canal, the distance is 1.9 km. the Grebnoy Canal is an Olympic facility and was built to the highest standards.
+                                                </p>
+                                            </div>
+                                            <div class="multiple__block">
+                                                <h4 class="parameters__text text">
+                                                    Bike course
+                                                </h4>
+                                                <span class="parameters__span black__text">
+                                                    90 km 
+                                                </span>
+                                                <p class="multiple__text black__text">
+                                                    Zvenigorodskoe highway 12 km, Savinskaya embankment, Sadovoe koltso – 3 laps of 26 km each. Entrance to transit area 2 on Novodevichiya embankment (before the entrance to Luzhniki).
+                                                </p>
+                                            </div>
+                                            <div class="multiple__block">
+                                                <h4 class="parameters__text text">
+                                                    Run course
+                                                </h4>
+                                                <span class="parameters__span black__text">
+                                                    21.1 km
+                                                </span>
+                                                <p class="multiple__text black__text">
+                                                    Savinskaya embankment and park Novodevichy ponds
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="accordion" data-aos="fade-left" data-aos-delay="150">
+                                        <button class="accordion__control" aria-expanded="false">
+                                            <span class="accordion__title title">SUPERSRINT  0,350 km – 17 km – 5 km</span>
+                                            <span class="accordion__icon"></span>
+                                        </button>
+                                        <div class="accordion__content" aria-hidden="true">
+                                            <div class="course">
+                                                <div class="multiple__block">
+                                                    <div class="course__inner">
+                                                        <h4 class="parameters__text text">
+                                                            Swim course
+                                                        </h4>
+                                                        <div class="tabs-list">
+                                                            <span class="parameters__span black__text">
+                                                                1,9 km
+                                                            </span>
+                                                            <span class="parameters__subset grey-text">
+                                                                — Grebnoy canal, Krylatskaya st.2
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <p class="multiple__text black__text">
+                                                        Participants start with the swimming stage, which takes place on the territory of The Grebnoy Canal, the distance is 1.9 km. The Grebnoy Canal is an Olympic facility and was built to the highest standards.
+                                                    </p>
+                                                </div>
+                                                <div class="multiple__block">
+                                                    <div class="course__inner">
+                                                        <h4 class="parameters__text text">
+                                                            Bike course
+                                                        </h4>
+                                                        <span class="parameters__span black__text">
+                                                            17 km
+                                                        </span>
+                                                    </div>
+                                                    <p class="multiple__text black__text">
+                                                        Zvenigorodskoe highway 13 km, Sadovoe koltso, Savinskaya embankment. Entrance to transition area 2 on Novodevichiya embankment (before the entrance to Luzhniki).
+                                                    </p>
+                                                </div>
+                                                <div class="multiple__block">
+                                                    <div class="course__inner">
+                                                        <h4 class="parameters__text text">
+                                                            Run course
+                                                        </h4>
+                                                        <div class="tabs-list">
+                                                            <span class="parameters__span black__text">
+                                                                5 km
+                                                            </span>
+                                                            <span class="parameters__subset grey-text">
+                                                                — Savinskaya Embankment
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <p class="multiple__text black__text">
+                                                        Finish of the cycling stage in Park novodevichy Ponds.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="map__image">
+                                                <img src="./img/steps/accordion/superprint.jpg" alt="Map superprint">
+                                            </div>
+                                            <p class="info-text text-indent">
+                                                For the participants are organized the best recovery zones and the evening music festival. Go ahead! Welcome to Moscow! From russia with love!
+                                            </p>
+                                            <p class="info-text info-grey text-indent">
+                                                Please note that there will be 2 transit arias:
+                                            </p>
+                                            <ul class="list">
+                                                <li class="tabs-list">
+                                                    <span class="parameters__span info-text black__text">
+                                                        Transit aria 1
+                                                    </span>
+                                                    <span class="parameters__subset info-text info-grey">
+                                                        – Grebnoy Canal
+                                                    </span>
+                                                </li>
+                                                <li class="tabs-list">
+                                                    <span class="parameters__span info-text black__text">
+                                                        Transit aria 2
+                                                    </span>
+                                                    <span class="parameters__subset info-text info-grey">
+                                                        – Park Novodevichy Ponds
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <div class="type-location">
+                                                <div class="sport-type">
+                                                    <div class="sport__row row-list">
+                                                        <img src="./img/steps/accordion/clock.svg" alt="clock">
+                                                        <span class="grey-text">
+                                                            Sport type
+                                                        </span>
+                                                    </div>
+                                                    <ul>
+                                                        <li>
+                                                            <p class="text">
+                                                                Duathlon
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <span></span>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text">
+                                                                Swimming
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <span></span>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text">
+                                                                Other
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <span></span>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text">
+                                                                Triathlon
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <span></span>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text">
+                                                                TriathlonRelay)
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <span></span>
+                                                        </li>
+                                                        <li>
+                                                            <p class="text">
+                                                                Run
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="sport-type">
+                                                    <div class="sport__row row-list">
+                                                        <img src="./img/steps/accordion/location.svg" alt="location">
+                                                        <span class="grey-text">
+                                                            Location
+                                                        </span>
+                                                    </div>
+                                                    <p class="text">
+                                                        Moscow
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="accordion" data-aos="fade-right" data-aos-delay="200">
+                                        <button class="accordion__control" aria-expanded="false">
+                                            <span class="accordion__title title">Schedule</span>
+                                            <span class="accordion__icon"></span>
+                                        </button>
+                                        <div class="accordion__content" aria-hidden="true">
+                                            <div class="table-wrapper table-wrapper__time">
+                                                <table class="table-place table-info">
+                                                    <thead class="thead-place">
+                                                        <tr>
+                                                            <th class="thead-place__th info-text">
+                                                                Time
+                                                            </th>
+                                                            <th class="thead-place__th info-text">
+                                                                Stage
+                                                            </th>
+                                                            <th class="thead-place__th info-text">
+                                                                Place
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="tbody-place"></tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="accordion" data-aos="fade-left" data-aos-delay="250">
+                                        <button class="accordion__control" aria-expanded="false">
+                                            <span class="accordion__title title">Start pack</span>
+                                            <span class="accordion__icon"></span>
+                                        </button>
+                                        <div class="accordion__content" aria-hidden="true">
+                                            <div class="notes">
+                                                <ul class="notes-list">
+                                                    <li>
+                                                        <div class="notes-inner">
+                                                            <p class="enumiration">
+                                                                1.
+                                                            </p>
+                                                            <label class="notes-text bold">Event t-shirt</label>
+                                                            <input class="notes-input bold" type="text" id="noteInput_1" value="Event t-shirt" placeholder="Write text to create another one..."> 
+                                                            <button class="notes-btn notes-btn__delete" type="button">
+                                                                <img src="./img/events/create-event/delete.svg" alt="Удалить">
+                                                            </button>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="notes-inner">
+                                                            <p class="enumiration">
+                                                                2.
+                                                            </p>
+                                                            <label class="notes-text bold" for="noteInput_2">Swimming cap</label>
+                                                                <input class="notes-input bold" type="text" id="noteInput_2" value="Swimming cap" placeholder="Write text to create another one...">
+                                                            <button class="notes-btn notes-btn__delete" type="button">
+                                                                <img src="./img/events/create-event/delete.svg" alt="Удалить">
+                                                            </button>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="notes-inner">
+                                                            <p class="enumiration">
+                                                                3.
+                                                            </p>
+                                                            <label class="notes-text bold" for="noteInput_3">Event t-shirt</label>
+                                                                <input class="notes-input bold" type="text" id="noteInput_3" value="Event t-shirt" placeholder="Write text to create another one...">
+                                                            <button class="notes-btn notes-btn__delete" type="button">
+                                                                <img src="./img/events/create-event/delete.svg" alt="Удалить">
+                                                            </button>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="notes-inner">
+                                                            <p class="enumiration">
+                                                                4.
+                                                            </p>
+                                                            <label class="notes-text bold" for="noteInput_4">Backpack</label>
+                                                            <input class="notes-input bold" type="text" id="noteInput_4" value="Backpack" placeholder="Write text to create another one...">
+                                                            <button class="notes-btn notes-btn__delete" type="button">
+                                                                <img src="./img/events/create-event/delete.svg" alt="Удалить">
+                                                            </button>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="notes-inner">
+                                                            <p class="enumiration">
+                                                                5.
+                                                            </p>
+                                                            <label class="notes-text bold" for="noteInput_5">Finisher’s medal</label>
+                                                            <input class="notes-input bold" type="text" id="noteInput_5" value="Finisher’s medal" placeholder="Write text to create another one...">
+                                                            <button class="notes-btn notes-btn__delete" type="button">
+                                                                <img src="./img/events/create-event/delete.svg" alt="Удалить">
+                                                            </button>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="notes-inner">
+                                                            <p class="enumiration">
+                                                                6.
+                                                            </p>
+                                                            <label class="notes-text bold" for="noteInput_6">A free beer</label>
+                                                            <input class="notes-input bold" type="text" id="noteInput_6" value="A free beer" placeholder="Write text to create another one...">
+                                                            <button class="notes-btn notes-btn__delete" type="button">
+                                                                <img src="./img/events/create-event/delete.svg" alt="Удалить">
+                                                            </button>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="notes-inner">
+                                                            <p class="enumiration">
+                                                                7.
+                                                            </p>
+                                                            <label class="notes-text bold" for="noteInput_7">Athletes recovery area and massage area</label>
+                                                            <input class="notes-input bold" type="text" id="noteInput_7" value="Athletes recovery area and massage area" placeholder="Write text to create another one...">
+                                                            <button class="notes-btn notes-btn__delete" type="button">
+                                                                <img src="./img/events/create-event/delete.svg" alt="Удалить">
+                                                            </button>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="notes-inner">
+                                                            <p class="enumiration">
+                                                                8.
+                                                            </p>
+                                                            <label class="notes-text bold" for="noteInput_8">Saturday party Ceremony From «Heart to Heart»</label>
+                                                            <input class="notes-input bold" type="text" id="noteInput_8" value="Saturday party Ceremony From «Heart to Heart»" placeholder="Write text to create another one...">
+                                                            <button class="notes-btn notes-btn__delete" type="button">
+                                                                <img src="./img/events/create-event/delete.svg" alt="Удалить">
+                                                            </button>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="notes-inner">
+                                                            <p class="enumiration">
+                                                                9.
+                                                            </p>
+                                                            <label class="notes-text bold" for="noteInput_9">Sunday party Challenge Awards Ceremony, DJ sets &amp; Jazz festival»</label>
+                                                            <input class="notes-input bold" type="text" id="noteInput_9" value="Sunday party Challenge Awards Ceremony, DJ sets &amp; Jazz festival»" placeholder="Write text to create another one...">
+                                                            <button class="notes-btn notes-btn__delete" type="button">
+                                                                <img src="./img/events/create-event/delete.svg" alt="Удалить">
+                                                            </button>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="notes-inner">
+                                                            <p class="enumiration">
+                                                                10.
+                                                            </p>
+                                                            <label class="notes-text bold width" for="noteInput_10"></label>
+                                                            <input class="notes-input bold width" type="text" id="noteInput_10" placeholder="Write text to create another one...">
+                                                            <button class="notes-btn notes-btn__save" type="button">
+                                                                <img src="./img/events/create-event/check.svg" alt="">
+                                                            </button>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="accordion" data-aos="fade-left" data-aos-delay="300">
+                                        <button class="accordion__control" aria-expanded="false">
+                                            <span class="accordion__title title">Documents</span>
+                                            <span class="accordion__icon"></span>
+                                        </button>
+                                        <div class="accordion__content" aria-hidden="true">
+                                            <p>
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit aspernatur aliquid possimus quis omnis distinctio saepe voluptatum molestiae praesentium reprehenderit asperiores et exercitationem ipsa, sequi magnam nobis veritatis laborum nihil.
+                                                Odit tempora quibusdam fugiat totam fuga.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- contact us -->
+                            <div class="row-info contacts__info" data-aos="fade-up" data-aos-delay="100">
+                                <p class="grey-text contacts__text">
+                                    Customer support
+                                </p>
+                                <a href="#" class="contact__link register__link text">
+                                    Contact us
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review__check-form step-by-step container" id="step2">
+                        <form action="#" method="post" class="review-form form">
+                            <div class="review__check">
+                                <h2 class="review__title title">
+                                    Review cart/ check out
+                                </h2>
+                            </div>
+                            <div class="payment">
+                                <p class="grey-text indent-small">
+                                    We accept following card types:
+                                </p>
+                                <div class="payment__information row-list">
+                                    <p class="payment__text text">
+                                        Payment information
+                                    </p>
+                                    <img class="payment__image visa" src="./img/steps/review-check/visa.svg" alt="Visa">
+                                    <img class="payment__image mastercard" src="./img/steps/review-check/mastercard.svg" alt="Mastercard">
+                                    <img class="payment__image paypal" src="./img/steps/review-check/PayPal.svg" alt="PayPal">
+                                </div>
+                                <div class="pay__card">
+                                    <label class="label indent-small" for="nameCard">
+                                        <input class="input" type="number" name="name" id="nameCard" placeholder="Name on card">
+                                    </label>
+                                    <label class="label" for="numberCard">
+                                        <input class="input" type="number" name="number" id="numberCard" placeholder="Card number">
+                                    </label>
+                                </div>
+                                <div class="dropdown row-list">
+                                    <p class="expiration__text info-text">
+                                        Expiration day
+                                    </p>
+                                    <div class="payment-width row-list">
+                                        <!-- month -->
+                                        <div class="select-box month">
+                                            <ul class="options-container">
+                                                <li class="option-item">
+                                                    <input type="radio" class="radio" id="january" name="category">
+                                                    <label class="info-text" for="january">January</label>
+                                                </li>
+                                                <li class="option-item">
+                                                    <input type="radio" class="radio" id="february" name="category" />
+                                                    <label class="info-text" for="february">February</label>
+                                                </li>
+                                                <li class="option-item">
+                                                    <input type="radio" class="radio" id="march" name="category" />
+                                                    <label class="info-text" for="march">March</label>
+                                                </li>
+                                                <li class="option-item">
+                                                    <input type="radio" class="radio" id="april" name="category" />
+                                                    <label class="info-text" for="april">April</label>
+                                                </li>
+                                                <li class="option-item">
+                                                    <input type="radio" class="radio" id="may" name="category" />
+                                                    <label class="info-text" for="may">May</label>
+                                                </li>
+                                                <li class="option-item">
+                                                    <input type="radio" class="radio" id="june" name="category" />
+                                                    <label class="info-text" for="june">June</label>
+                                                </li>
+                                                <li class="option-item">
+                                                    <input type="radio" class="radio" id="july" name="category" />
+                                                    <label class="info-text" for="july">July</label>
+                                                </li>
+                                                <li class="option-item">
+                                                    <input type="radio" class="radio" id="august" name="category" />
+                                                    <label class="info-text" for="august">August</label>
+                                                </li>
+                                                <li class="option-item">
+                                                    <input type="radio" class="radio" id="september" name="category" />
+                                                    <label class="info-text" for="september">September</label>
+                                                </li>
+                                                <li class="option-item">
+                                                    <input type="radio" class="radio" id="october" name="category" />
+                                                    <label class="info-text" for="october">October</label>
+                                                </li>
+                                                <li class="option-item">
+                                                    <input type="radio" class="radio" id="november" name="category" />
+                                                    <label class="info-text" for="november">November</label>
+                                                </li>
+                                                <li class="option-item">
+                                                    <input type="radio" class="radio" id="december" name="category" />
+                                                    <label class="info-text" for="december">December</label>
+                                                </li>
+                                            </ul>
+                                            <div class="selected info-text info-grey">
+                                                Month
+                                            </div>
+                                        </div>
+                                        <!-- year -->
+                                        <div class="select-box year">
+                                            <ul class="options-container">
+                                                <li class="option-item">
+                                                    <input type="radio" class="radio" id="year2032" name="category">
+                                                    <label class="info-text" for="year2033">2033</label>
+                                                </li>
+                                                <li class="option-item">
+                                                    <input type="radio" class="radio" id="year2031" name="category" />
+                                                    <label class="info-text" for="year2032">2032</label>
+                                                </li>
+                                                <li class="option-item">
+                                                    <input type="radio" class="radio" id="year2032" name="category" />
+                                                    <label class="info-text" for="year2031">2031</label>
+                                                </li>
+                                                <li class="option-item">
+                                                    <input type="radio" class="radio" id="year2030" name="category" />
+                                                    <label class="info-text" for="year2030">2030</label>
+                                                </li>
+                                                <li class="option-item">
+                                                    <input type="radio" class="radio" id="year2029" name="category" />
+                                                    <label class="info-text" for="year2029">2029</label>
+                                                </li>
+                                                <li class="option-item">
+                                                    <input type="radio" class="radio" id="year2028" name="category" />
+                                                    <label class="info-text" for="year2028">2028</label>
+                                                </li>
+                                                <li class="option-item">
+                                                    <input type="radio" class="radio" id="year2027" name="category" />
+                                                    <label class="info-text" for="year2027">2027</label>
+                                                </li>
+                                                <li class="option-item">
+                                                    <input type="radio" class="radio" id="year2026" name="category" />
+                                                    <label class="info-text" for="year2026">2026</label>
+                                                </li>
+                                                <li class="option-item">
+                                                    <input type="radio" class="radio" id="year2025" name="category" />
+                                                    <label class="info-text" for="year2025">2025</label>
+                                                </li>
+                                                <li class="option-item">
+                                                    <input type="radio" class="radio" id="year2024" name="category" />
+                                                    <label class="info-text" for="year2024">2024</label>
+                                                </li>
+                                                <li class="option-item">
+                                                    <input type="radio" class="radio" id="year2023" name="category" />
+                                                    <label class="info-text" for="year2023">2023</label>
+                                                </li>
+                                                <li class="option-item">
+                                                    <input type="radio" class="radio" id="year2022" name="category" />
+                                                    <label class="info-text" for="year2022">2022</label>
+                                                </li>
+                                            </ul>
+                                            <div class="selected info-text info-grey">
+                                                Year
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cvc-code dropdown row-list">
+                                    <p class="expiration__text info-text">
+                                        CCV/CVC
+                                    </p>
+                                    <label class="label payment-width" for="cvcCode">
+                                        <input class="input" type="number" name="numberCVC" id="cvcCode">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="billing">
+                                <p class="border info-text">
+                                    Billing information
+                                </p>
+                                <div class="inputs__inform">
+                                    <label class="label indent-small" for="name">
+                                        <input class="input" type="text" name="name" id="name" placeholder="Name">
+                                    </label>
+                                    <label class="label indent-small" for="lastName">
+                                        <input class="input" type="text" name="last" id="lastName" placeholder="Last name">
+                                    </label>
+                                    <div class="select-box select-all indent-small">
+                                        <ul class="options-container">
+                                            <li class="option-item">
+                                                <input type="radio" class="radio" id="Albania" name="category">
+                                                <label class="info-text" for="Albania">Albania</label>
+                                            </li>
+                                            <li class="option-item">
+                                                <input type="radio" class="radio" id="Algeria" name="category" />
+                                                <label class="info-text" for="Algeria">Algeria</label>
+                                            </li>
+                                            <li class="option-item">
+                                                <input type="radio" class="radio" id="Afghanistan" name="category" />
+                                                <label class="info-text" for="Afghanistan">Afghanistan</label>
+                                            </li>
+                                            <li class="option-item">
+                                                <input type="radio" class="radio" id="Albion" name="category" />
+                                                <label class="info-text" for="Albion">Albion</label>
+                                            </li>
+                                            <li class="option-item">
+                                                <input type="radio" class="radio" id="Andorra" name="category" />
+                                                <label class="info-text" for="Andorra">Andorra</label>
+                                            </li>
+                                            <li class="option-item">
+                                                <input type="radio" class="radio" id="Bangladesh" name="category" />
+                                                <label class="info-text" for="Bangladesh">Bangladesh</label>
+                                            </li>
+                                            <li class="option-item">
+                                                <input type="radio" class="radio" id="Barbados" name="category" />
+                                                <label class="info-text" for="Barbados">Barbados</label>
+                                            </li>
+                                            <li class="option-item">
+                                                <input type="radio" class="radio" id="Belarus" name="category" />
+                                                <label class="info-text" for="Belarus">Belarus</label>
+                                            </li>
+                                            <li class="option-item">
+                                                <input type="radio" class="radio" id="Belgium" name="category" />
+                                                <label class="info-text" for="Belgium">Belgium</label>
+                                            </li>
+                                            <li class="option-item">
+                                                <input type="radio" class="radio" id="Bolivia" name="category" />
+                                                <label class="info-text" for="Bolivia">Bolivia</label>
+                                            </li>
+                                            <li class="option-item">
+                                                <input type="radio" class="radio" id="CostaRica" name="category" />
+                                                <label class="info-text" for="CostaRica">Costa Rica</label>
+                                            </li>
+                                            <li class="option-item">
+                                                <input type="radio" class="radio" id="Cuba" name="category" />
+                                                <label class="info-text" for="Cuba">Cuba</label>
+                                            </li>
+                                        </ul>
+                                        <div class="selected selected-color info-text info-grey">
+                                            Country
+                                        </div>
+                                    </div>
+                                    <label class="label indent-small" for="city">
+                                        <input class="input" type="email" name="city_name" id="city" placeholder="City">
+                                    </label>
+                                    <div class="select-box select-all indent-small">
+                                        <ul class="options-container">
+                                            <li class="option-item">
+                                                <input type="radio" class="radio" id="Alabama" name="category">
+                                                <label class="info-text" for="Alabama">Alabama</label>
+                                            </li>
+                                            <li class="option-item">
+                                                <input type="radio" class="radio" id="Alaska" name="category" />
+                                                <label class="info-text" for="Alaska">Alaska</label>
+                                            </li>
+                                            <li class="option-item">
+                                                <input type="radio" class="radio" id="Arizona" name="category" />
+                                                <label class="info-text" for="Arizona">Arizona</label>
+                                            </li>
+                                            <li class="option-item">
+                                                <input type="radio" class="radio" id="Wash­ing­ton" name="category" />
+                                                <label class="info-text" for="Wash­ing­ton">Wash­ing­ton</label>
+                                            </li>
+                                            <li class="option-item">
+                                                <input type="radio" class="radio" id="Ver­mont" name="category" />
+                                                <label class="info-text" for="Ver­mont">Ver­mont</label>
+                                            </li>
+                                            <li class="option-item">
+                                                <input type="radio" class="radio" id="Wis­con­sin" name="category" />
+                                                <label class="info-text" for="Wis­con­sin">Wis­con­sin</label>
+                                            </li>
+                                            <li class="option-item">
+                                                <input type="radio" class="radio" id="Geor­gia" name="category" />
+                                                <label class="info-text" for="Geor­gia">Geor­gia</label>
+                                            </li>
+                                            <li class="option-item">
+                                                <input type="radio" class="radio" id="Illi­nois" name="category" />
+                                                <label class="info-text" for="Illi­nois">Illi­nois</label>
+                                            </li>
+                                            <li class="option-item">
+                                                <input type="radio" class="radio" id="Kansas" name="category" />
+                                                <label class="info-text" for="Kansas">Kansas</label>
+                                            </li>
+                                            <li class="option-item">
+                                                <input type="radio" class="radio" id="Ken­tucky" name="category" />
+                                                <label class="info-text" for="Ken­tucky">Ken­tucky</label>
+                                            </li>
+                                            <li class="option-item">
+                                                <input type="radio" class="radio" id="Louisiana" name="category" />
+                                                <label class="info-text" for="Louisiana">Louisiana</label>
+                                            </li>
+                                        </ul>
+                                        <div class="selected selected-color info-text info-grey">
+                                            State
+                                        </div>
+                                    </div>
+                                    <label class="label indent-small" for="archive">
+                                        <input class="input" type="text" name="archive_name" id="archive" placeholder="ZIP">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="account">
+                                <div class="row-list" style="border-bottom: 1px solid #c4c4c4;">
+                                    <p class="info-text">
+                                        Account creation
+                                    </p>
+                                    <div class="option" style="font-size: 0; margin-left: 10px;">
+                                        <input class="option__input" checked type="checkbox" id="emailCheck">
+                                        <label for="emailCheck" class="option__text"></label>    
+                                    </div>
+                                </div>
+                                <div class="account-email">
+                                    <p class="black__text indent-small">
+                                        Email address:
+                                    </p>
+                                    <label class="label indent-small" for="mail">
+                                        <input class="input" type="email" id="mail" placeholder="Email">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="create__password text">
+                                <h3 class="indent-bottom text">
+                                    Create password
+                                </h3>
+                                <div class="inputs__inform">
+                                    <label class="label indent-small" for="passwordMain">
+                                        <input class="input" type="password" name="password" id="passwordMain" placeholder="Password">
+                                    </label>
+                                    <label class="label" for="RePassword">
+                                        <input class="input" type="password" name="re-password" id="RePassword" placeholder="Re-type password">
+                                    </label>
+                                </div>
+                                <div class="center-submit">
+                                    <button type="button" class="center-btn register__link text" id="btnNext2">
+                                        Complete
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <form action="#" method="post" class="review-form form" id="deleteTiket">
+                            <div class="review__check indent-check">
+                                <h2 class="review__title title">
+                                    Review cart/ check out
+                                </h2>
+                                <p class="border info-text">
+                                    Order details
+                                </p>
+                            </div>
+                            <div class="review__tiket-description">
+                                <p class="bold">
+                                    Challenge Middle Distance. Swim and bike. Triathlon
+                                </p>
+                                <span class="total-flex">
+                                    <span class="total-text bold">
+                                        Total:
+                                    </span>
+                                    <span class="total-currency bold">
+                                        EUR
+                                    </span>
+                                    <span class="total-price bold">
+                                        239
+                                    </span>
+                                </span>
+                                <div class="total-counter row-list">
+                                    <div class="number counter">
+                                        <span class="num-minus counter-minus" id="stepButton" data-action="descrement">
+                                            -
+                                        </span>
+                                        <input type="text" class="num-summ text" id="counterId" min="0" max="1000" step="1" value="1" readonly>
+                                        <span class="num-span counter-plus" id="stepButton" data-action="increment" >
+                                            +
+                                        </span>
+                                    </div>
+                                    <button class="delete-tikets" type="button">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21 5.97998C17.67 5.64998 14.32 5.47998 10.98 5.47998C9 5.47998 7.02 5.57998 5.04 5.77998L3 5.97998" stroke="#BFBFBF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8.5 4.97L8.72 3.66C8.88 2.71 9 2 10.69 2H13.31C15 2 15.13 2.75 15.28 3.67L15.5 4.97" stroke="#BFBFBF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M18.85 9.14001L18.2 19.21C18.09 20.78 18 22 15.21 22H8.79002C6.00002 22 5.91002 20.78 5.80002 19.21L5.15002 9.14001" stroke="#BFBFBF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.33 16.5H13.66" stroke="#BFBFBF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.5 12.5H14.5" stroke="#BFBFBF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                            
+                                    </button>
+                                </div>
+                                <div class="cupon">
+                                    <div class="cupon-code row-list">
+                                        <label class="label" for="cupon">
+                                            <span class="indent-small bold">
+                                                Cupon code
+                                            </span>
+                                            <input class="bg-input input" type="number" name="name_cupon" id="cupon">
+                                        </label>
+                                        <button class="cupon-btn center-btn register__link text" type="button">
+                                            Further
+                                        </button>
+                                    </div>
+                                    <div class="cupon__information">
+                                        <span class="bold">
+                                            Save 50% on this registration.
+                                        </span>
+                                        <a class="bold" href="#">
+                                            Learn more 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="continue main__container" id="continue">
+                        <img src="./img/steps/check.svg" alt="check">
+                        <h3>Data sent!</h3>
+                        <p>Your data has been sent, you can go to other sections of the site
+                        </p>
+                        <a href="tikets.html" class="confirm register__link text">Back to tickets</a>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer class="footer" id="footerStep">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__description">
+                        <p class="footer__description-text black__text" data-aos="fade-right" data-aos-delay="100">
+                            ChallengeDrive
+                        </p>
+                        <p class="footer__description-text middle-text" data-aos="fade-right" data-aos-delay="150">
+                            Sports marketplace for selling tickets to all major sporting events - marathons, triathlons, races, trails, cross-country skiing, swimming competitions.
+                        </p>
+                        <p class="footer__description-text middle-text" data-aos="fade-right" data-aos-delay="200">
+                            A mobile application for dating, teaming, searching for a team 
+                            and coaches, uniting all fans of a healthy lifestyle.
+                            Digital Assistant improves workouts and motivates 
+                            to practice, analysis of training results, suggestion 
+                            of training and nutrition calendar.
+                        </p>
+                        <p class="footer__description-text middle-text" data-aos="fade-right" data-aos-delay="250">
+                            We made teams!
+                        </p>
+                    </div>
+                    <div class="footer__apps">
+                        <h2 class="footer__apps-title" data-aos="fade-in" data-aos-delay="100">
+                            Join the Drive
+                        </h2>
+                        <h3 class="footer__apps-subtitle text" data-aos="fade-in" data-aos-delay="150">
+                            Challenge Drive  App
+                        </h3>
+                        <ul class="footer__apps-list">
+                            <li class="footer__apps-item">
+                                <a href="#" class="footer__apps-link">
+                                    <img src="./img/footer/google_play_store.png" alt="Скачать с Play Store" data-aos="fade-up" data-aos-delay="250">
+                                </a>
+                            </li>
+                            <li class="footer__apps-item">
+                                <a href="#" class="footer__apps-link">
+                                    <img src="./img/footer/app_store.png" alt="Скачать c App Store" data-aos="fade-up" data-aos-delay="300">
+                                </a>
+                            </li>
+                            <li class="footer__apps-item">
+                                <a href="#" class="footer__apps-link">
+                                    <img src="./img/footer/appgallery.png" alt="Скачать c Appgallery" data-aos="fade-up" data-aos-delay="350">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <footer class="footer footer__policy">
+            <div class="container">
+                <div class="footer__inner">
+                    <p class="footer__description-copyright indent-top-none" data-aos="fade-right" data-aos-delay="100">
+                        &copy; 2021 Challenge Drive, LLC and/or its affiliates and licensors. All rights reserved.
+                    </p>
+                    <ul class="footer__apps-list indent-top indent-top-none">
+                        <li class="footer__apps-item">
+                            <a href="#" class="footer__description-link grey-text" data-aos="fade-down" data-aos-delay="200">
+                                Privacy policy
+                            </a>
+                        </li>
+                        <li class="footer__apps-item">
+                            <a href="#" class="footer__description-link grey-text" data-aos="fade-down" data-aos-delay="300">
+                                Terms of use
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+     <!-- модалка входа -->
+     <div class="modal__login">
+        <div class="modal__login-wrapper">
+            <ion-icon class="close" name="close-outline"></ion-icon>
+            <div class="wrapper">
+                <div class="main-content">
+                    <!-- header -->
+                    <header class="header header-bg" id="header">
+                        <div class="main__container">
+                            <div class="header__inner">
+                                <a href="index.html" class="header__logo" data-aos="fade-in" data-aos-delay="50">
+                                    <img src="./img/header/logo.svg" alt="Drive">                      
+                                </a>
+                                <div class="header-navigation">
+                                    <a href="#" class="header__login-icon">
+                                        <img src="./img/header/person.svg" alt="Войти/Зарегистрироваться" data-aos="fade-in" data-aos-delay="100">
+                                        <span class="header__login-text page-text" data-aos="fade-in" data-aos-delay="150">
+                                            Customer support
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <!-- window -->
+                    <form action="#" method="get" id="login-form" class="form">
+                        <div class="authorization-form">
+                            <p class="authorization__text">
+                                Sign in
+                            </p>
+                            <div class="not__sign-up">
+                                <span class="sign-up-text">
+                                    Don’t have an account?
+                                </span>
+                                <a href="#" class="sign-up__link">
+                                    Sign up
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row__authorization">
+                            <a href="#" class="authorization__with with-vk">
+                                <svg class="ionicon" viewBox="0 0 512 512">
+                                    <path d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z" fill-rule="evenodd"/>
+                                </svg>
+                                <span>
+                                    Sign in with Facebook
+                                </span>
+                            </a>
+                            <a href="#" class="authorization__with with-google">
+                                <img class="authorization__icon" src="./img/login/google.svg" alt="Войти через google">
+                                <span>
+                                    Sign in with Google
+                                </span>
+                            </a>
+                        </div>
+                        <span class="choice">
+                            or
+                        </span>
+                        <div class="form__inputs">
+                            <label for="email-input" class="form-label">
+                                <p class="form-label-text">
+                                    Email adress
+                                </p>
+                                <input type="email" class="main-input" name="mail" id="email-input" placeholder="Type email">
+                            </label>
+                            <label for="password-input" class="form-label">
+                                <p class="form-label-text">
+                                    Password
+                                </p>
+                                <input type="password" class="main-input" name="password" id="password-input" placeholder="Type password">
+                                <img class="form__icon" src="./img/login/eyeInvisible.svg" alt="скрыть пароль">
+                                <span id="error"></span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn__submit">
+                            Sign in
+                        </button>
+                    </form>
+                </div>
+                <footer class="footer footer__policy">
+                    <div class="container">
+                        <div class="footer__inner">
+                            <p class="footer__description-copyright indent-top-none">
+                                &copy; 2021 Challenge Drive, LLC and/or its affiliates and licensors. All rights reserved.
+                            </p>
+                            <ul class="footer__apps-list indent-top indent-top-none">
+                                <li class="footer__apps-item">
+                                    <a href="#" class="footer__description-link grey-text">
+                                        Privacy policy
+                                    </a>
+                                </li>
+                                <li class="footer__apps-item">
+                                    <a href="#" class="footer__description-link grey-text">
+                                        Terms of use
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- error -->
+    <div class="notification error__top" id="errorText">
+        <div class="notification__inner error__top-inner">
+            <span>Error: The email is incorrect</span>
+            <ion-icon class="notification__close close__error" name="close-outline"></ion-icon>
+        </div>
+    </div>
+    <!-- successfully -->
+    <div class="notification successfully__top" id="successfullyText">
+        <div class="notification__inner successfully__inner">
+            <span>Successfully: The email is correct</span>
+            <ion-icon class="notification__close close__correct" name="close-outline"></ion-icon>
+        </div>
+    </div>
+    <!-- ionicon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- scripts -->
+    <script src="./js/animate.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/stepper.js"></script>
+    <script src="./js/note-app.js"></script>
+    <script src="./js/accordion.js"></script>
+    <script src="./js/steps.js"></script>
+    <script src="./js/select.js"></script>
+    <script src="./js/modal-login.js"></script>
+    <script src="./js/show-hide-eye.js"></script>
+    <script src="./js/validate.js"></script>
+    <script src="./js/delete-tiket.js"></script>
+    <script src="./js/validate-login-form.js"></script>
+</body>
+</html>

@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drive | main page</title>
+    <!-- animate -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- прижатие футера/основная обертка  -->
+    <div class="wrapper">
+        <div class="main-content">
+            <!-- header -->
+            <header class="header header-bg" id="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <a href="index.html" class="header__logo" data-aos="fade-in">
+                            <img src="./img/header/logo.svg" alt="Drive">                      
+                        </a>
+                        <div class="header-navigation">
+                            <a class="download row-list page-text" href="./Drive_eng.pdf" download target="_blank" rel="noopener" aria-label="Скачать презентацию" data-aos="fade-down" data-aos-delay="150">
+                                <div class="download-img">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.25 6.75H11.25V2.25H6.75V6.75H3.75L9 12.75L14.25 6.75ZM3 14.25H15V15.75H3V14.25Z" fill="#0FD7CB"/>
+                                    </svg>                                        
+                                </div>
+                                Presentation
+                            </a>
+                            <!-- navigation -->
+                            <nav class="nav">
+                                <ul class="nav__list">
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link page-text active open-visually" data-aos="fade-in" data-aos-delay="50">
+                                            Events
+                                        </a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link page-text open-visually" data-aos="fade-in" data-aos-delay="150">
+                                            Community
+                                        </a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link page-text open-visually" data-aos="fade-in" data-aos-delay="250">
+                                            Rating
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <ul class="language">
+                                <li class="language__item">
+                                    <div class="row-list">
+                                        <button class="btn__language page-text eng" type="button" data-aos="fade-in" data-aos-delay="100">
+                                            Eng
+                                        </button>
+                                        <img class="lang-arrow" src="../img/steps/review-check/arrow.svg" alt="">
+                                    </div>
+                                    <ul class="language__list-sub">
+                                        <li>
+                                            <button class="btn__language page-text rus" type="button" data-aos="fade-in" data-aos-delay="100">
+                                                Rus
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <a href="#" class="header__login-icon open-visually">
+                                <img src="./img/header/person.svg" alt="Войти/Зарегистрироваться" data-aos="fade-in" data-aos-delay="150">
+                                <span class="header__login-text page-text" data-aos="fade-in" data-aos-delay="200">
+                                    Log in
+                                </span>
+                            </a>
+                            <!-- mobile menu -->
+                            <div class="mobile__menu">
+                                <div class="menu-btn"></div>
+                                <div class="mobile__list">
+                                    <div class="mobile__social submenu__list">
+                                        <a href="#" class="header__login-icon open-login">
+                                            <img src="./img/header/person.svg" alt="Войти/Зарегистрироваться">
+                                            <span class="header__login-text page-text">
+                                                Log in
+                                            </span>
+                                        </a>
+                                        <ul class="language">
+                                            <li class="language__item">
+                                                <div class="row-list">
+                                                    <button class="btn__language page-text eng" type="button" data-aos="fade-in" data-aos-delay="100">
+                                                        Eng
+                                                    </button>
+                                                    <img class="lang-arrow" src="../img/steps/review-check/arrow.svg" alt="">
+                                                </div>
+                                                <ul class="language__list-sub">
+                                                    <li>
+                                                        <button class="btn__language page-text rus" type="button" data-aos="fade-in" data-aos-delay="100">
+                                                            Rus
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a class="download row-list page-text" href="#" download="./Drive_eng.pdf" aria-label="Скачать презентацию">
+                                        <div class="download-img">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.25 6.75H11.25V2.25H6.75V6.75H3.75L9 12.75L14.25 6.75ZM3 14.25H15V15.75H3V14.25Z" fill="#0FD7CB"/>
+                                            </svg>                                        
+                                        </div>
+                                        Presentation
+                                    </a>
+                                    <ul class="mobile__menu-list">
+                                        <li class="mobile__menu-item">
+                                            <a href="./tikets.html" class="mobile__menu-link info-text">
+                                                Events
+                                            </a>
+                                        </li>
+                                        <li class="mobile__menu-item">
+                                            <a href="#" class="mobile__menu-link info-text">
+                                                Community
+                                            </a>
+                                        </li>
+                                        <li class="mobile__menu-item">
+                                            <a href="#" class="mobile__menu-link info-text">
+                                                Rating
+                                            </a>
+                                        </li>
+                                        <li class="mobile__menu-item mobile-open__menu">
+                                            <div class="mobile__menu-item mobile-dropdown jcsb row-list">
+                                                <p class="mobile__menu-link info-text">
+                                                    My profile
+                                                </p>
+                                                <ion-icon class="down" name="chevron-down-outline"></ion-icon>
+                                            </div>
+                                            <ul class="submenu__list submenu-dropdown">
+                                                <li class="submenu__item">
+                                                    <a href="profile.html" class="navbar__link info-text row-list">
+                                                        <img class="navbar__image" src="./img/profile/profile.svg" alt="profile">
+                                                        Profile
+                                                    </a>
+                                                </li>
+                                                <li class="submenu__item">
+                                                    <a href="#" class="navbar__link info-text row-list">
+                                                        <img class="navbar__image" src="./img/profile/documents.svg" alt="document">
+                                                        Documents
+                                                    </a>
+                                                </li>
+                                                <li class="submenu__item">
+                                                    <a href="#" class="navbar__link info-text row-list">
+                                                        <img class="navbar__image" src="./img/profile/ticket.svg" alt="tikets">
+                                                        Tickets
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <!-- video -->
+                <section class="video">
+                    <div class="container">
+                        <div class="video__wrapper">
+                            <div class="video__play">
+                                <video class="video__item" poster="../img/header/bicycle.jpg" autoplay loop muted preload="metadata"  data-aos="fade-up" data-aos-delay="300">
+                                    <source src="./img/header/swim.webm" type="video/webm">
+                                    <source src="./img/header/swim.mp4" type="video/mp4">
+                                </video>
+                                <div class="loading" data-aos="fade-down" data-aos-delay="150">
+                                    <div class="loading__circle">
+                                        <div class="circle-core"></div>
+                                    </div>
+                                </div>
+                                <div class="video__title">
+                                    <h1 class="video__text"  data-aos="fade-in" data-aos-delay="350">
+                                        Life is a <mark class="video__mark">challenge</mark> Sport is a new religion
+                                    </h1>
+                                </div>
+                                <div class="quantity__persons">
+                                    <div class="quantity__persons-description"  data-aos="fade-in" data-aos-delay="450">
+                                        <span class="quantity__athletes">
+                                            75000
+                                        </span>
+                                        <span class="quantity__text">
+                                            athletes
+                                        </span>
+                                    </div>
+                                    <div class="quantity__persons-description"  data-aos="fade-in" data-aos-delay="450">
+                                        <span class="quantity__athletes">
+                                            33
+                                        </span>
+                                        <span class="quantity__text">
+                                            races
+                                        </span>
+                                    </div>
+                                    <div class="quantity__persons-description"  data-aos="fade-in" data-aos-delay="450">
+                                        <span class="quantity__athletes">
+                                            27
+                                        </span>
+                                        <span class="quantity__text">
+                                            countries
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- events -->
+                <section class="events">
+                    <div class="container">
+                        <h3 class="events__subtitle text" data-aos="fade-in" data-aos-delay="50">
+                            Events
+                        </h3>
+                        <div class="events__tabs">
+                            <div class="tabs__inner">
+                                <h2 class="events__title-tabs title" data-aos="fade-in" data-aos-delay="150">
+                                    Your jorney start today
+                                </h2>
+                                <ul class="row-list">
+                                    <li class="events__tabs-item">
+                                        <button class="events__tabs-btn page-text active" data-aos="fade-in" data-aos-delay="250">
+                                            Upcoming
+                                        </button>
+                                    </li>
+                                    <li class="events__tabs-item">
+                                        <button class="events__tabs-btn page-text" data-aos="fade-in" data-aos-delay="350">
+                                            Series
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- карты  -->
+                            <div class="column">
+                                <div class="row__card" data-aos="fade-in" data-aos-delay="50">
+                                    <div class="row__card-item">
+                                        <div class="row__card-image">
+                                            <img src="./img/events/bike.jpg" alt="Challenge Middle Distance with long name">
+                                        </div>
+                                        <div class="row__information">
+                                            <div class="row__card-center">
+                                                <div class="data-weather">
+                                                    <time class="data text" datetime="06-26-2022">
+                                                        December 10, 2022
+                                                    </time>
+                                                    <div class="weather-temperature">
+                                                        <span class="weather-temperature__indent">
+                                                            <span class="grey-text weather__text">
+                                                                <img class="image-weather" src="./img/events/Sun.svg" alt="sunshine">
+                                                            </span>
+                                                            <span class="grey-text black__text temperature__text">
+                                                                +26 °С
+                                                            </span>
+                                                        </span>
+                                                        <span class="weather-temperature__indent">
+                                                            <span class="grey-text weather__text">
+                                                                <img class="image-weather" src="./img/events/Water.svg" alt="swimmer">
+                                                            </span>
+                                                            <span class="grey-text black__text temperature__text">
+                                                                +20 °С
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row__designation">
+                                                    <h2 class="title">
+                                                        Challenge Dubai
+                                                    </h2>
+                                                    <p class="grey-text">
+                                                        Park Novodevichy Ponds, tents for athletes and recreation areas
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row-parameters-register">
+                                                <div class="parameters">
+                                                    <div class="multiple__block">
+                                                        <h4 class="parameters__text text">
+                                                            Swim
+                                                        </h4>
+                                                        <span class="parameters__span black__text">
+                                                            1,9 km
+                                                        </span>
+                                                        <span class="parameters__subset grey-text">
+                                                            — River
+                                                        </span>
+                                                    </div>
+                                                    <div class="multiple__block">
+                                                        <h4 class="parameters__text text">
+                                                            Bike
+                                                        </h4>
+                                                        <span class="parameters__span black__text">
+                                                            90km
+                                                        </span>
+                                                        <span class="parameters__subset grey-text">
+                                                            — Flat
+                                                        </span>
+                                                    </div>
+                                                    <div class="multiple__block">
+                                                        <h4 class="parameters__text text">
+                                                            Run
+                                                        </h4>
+                                                        <span class="parameters__span black__text">
+                                                            21 km
+                                                        </span>
+                                                        <span class="parameters__subset grey-text">
+                                                            — Flat
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="register-price">
+                                                    <div class="register__airport">
+                                                        <img class="register__airport-icon" src="./img/events/plane.svg" alt="plane">
+                                                        <div class="register__airport-inner">
+                                                            <span class="register__airport-subtitle rgba-color black__text">
+                                                                Airport
+                                                            </span>
+                                                            <span class="register__airport-title rgba-color text">
+                                                                PER
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <h2 class="title price__title">
+                                                            320€<sup class="black__text rgba-color">↑360€</sup>&nbsp;
+                                                        </h2>
+                                                        <p class="black__text rgba-color price__text">
+                                                            115 places left
+                                                        </p>
+                                                    </div>
+                                                    <a class="register__link text open-visually" href="tikets.html">
+                                                        Register
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row__card" data-aos="fade-in" data-aos-delay="50">
+                                    <div class="row__card-item">
+                                        <div class="row__card-image" data-aos="fade-in" data-aos-delay="150">
+                                            <img src="./img/events/ride_a_bike.jpg" alt="Challenge Middle Distance">
+                                        </div>
+                                        <div class="row__information">
+                                            <div class="row__card-center">
+                                                <div class="data-weather" data-aos="fade-in" data-aos-delay="200">
+                                                    <time class="data text" datetime="06-26-2022">
+                                                        June 26, 2022
+                                                    </time>
+                                                    <div class="weather-temperature">
+                                                        <span class="weather-temperature__indent">
+                                                            <span class="grey-text weather__text">
+                                                                <img class="image-weather" src="./img/events/Sun.svg" alt="sunshine">
+                                                            </span>
+                                                            <span class="grey-text black__text temperature__text">
+                                                                +26 °С
+                                                            </span>
+                                                        </span>
+                                                        <span class="weather-temperature__indent">
+                                                            <span class="grey-text weather__text">
+                                                                <img class="image-weather" src="./img/events/Water.svg" alt="swimmer">
+                                                            </span>
+                                                            <span class="grey-text black__text temperature__text">
+                                                                +20 °С
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row__designation" data-aos="fade-in" data-aos-delay="250">
+                                                    <h2 class="title">
+                                                        Challenge Middle Distance Corporate Cup
+                                                    </h2>
+                                                    <p class="grey-text">
+                                                        Park Novodevichy Ponds, tents for athletes and recreation areas
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row-parameters-register" data-aos="fade-in" data-aos-delay="300">
+                                                <div class="parameters">
+                                                    <div class="multiple__block">
+                                                        <h4 class="parameters__text text">
+                                                            Swim
+                                                        </h4>
+                                                        <span class="parameters__span black__text">
+                                                            1,9 km
+                                                        </span>
+                                                        <span class="parameters__subset grey-text">
+                                                            — River
+                                                        </span>
+                                                    </div>
+                                                    <div class="multiple__block">
+                                                        <h4 class="parameters__text text">
+                                                            Bike
+                                                        </h4>
+                                                        <span class="parameters__span black__text">
+                                                            90km
+                                                        </span>
+                                                        <span class="parameters__subset grey-text">
+                                                            — Flat
+                                                        </span>
+                                                    </div>
+                                                    <div class="multiple__block">
+                                                        <h4 class="parameters__text text">
+                                                            Run
+                                                        </h4>
+                                                        <span class="parameters__span black__text">
+                                                            21 km
+                                                        </span>
+                                                        <span class="parameters__subset grey-text">
+                                                            — Flat
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="register-price">
+                                                    <div class="register__airport">
+                                                        <img class="register__airport-icon" src="./img/events/plane.svg" alt="plane">
+                                                        <div class="register__airport-inner">
+                                                            <span class="register__airport-subtitle rgba-color black__text">
+                                                                Airport
+                                                            </span>
+                                                            <span class="register__airport-title rgba-color text">
+                                                                PER
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <h2 class="title price__title">
+                                                            320€<sup class="black__text rgba-color">↑360€</sup>&nbsp;
+                                                        </h2>
+                                                        <p class="black__text rgba-color price__text">
+                                                            115 places left
+                                                        </p>
+                                                    </div>
+                                                    <a class="register__link text open-visually" href="tikets.html">
+                                                        Register
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row__card" data-aos="fade-in" data-aos-delay="50">
+                                    <div class="row__card-item">
+                                        <div class="row__card-image">
+                                            <img src="./img/events/thriatlon.jpg" alt="Challenge Middle Distance">
+                                        </div>
+                                        <div class="row__information">
+                                            <div class="row__card-center">
+                                                <div class="data-weather">
+                                                    <time class="data text" datetime="06-26-2022">
+                                                        June 26, 2022
+                                                    </time>
+                                                    <div class="weather-temperature">
+                                                        <span class="weather-temperature__indent">
+                                                            <span class="grey-text weather__text">
+                                                                <img class="image-weather" src="./img/events/Sun.svg" alt="sunshine">
+                                                            </span>
+                                                            <span class="grey-text black__text temperature__text">
+                                                                +26 °С
+                                                            </span>
+                                                        </span>
+                                                        <span class="weather-temperature__indent">
+                                                            <span class="grey-text weather__text">
+                                                                <img class="image-weather" src="./img/events/Water.svg" alt="swimmer">
+                                                            </span>
+                                                            <span class="grey-text black__text temperature__text">
+                                                                +20 °С
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row__designation">
+                                                    <h2 class="title">
+                                                        Challenge Middle Distance Corporate Cup
+                                                    </h2>
+                                                    <p class="grey-text">
+                                                        Park Novodevichy Ponds, tents for athletes and recreation areas
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row-parameters-register">
+                                                <div class="parameters">
+                                                    <div class="multiple__block">
+                                                        <h4 class="parameters__text text">
+                                                            Swim
+                                                        </h4>
+                                                        <span class="parameters__span black__text">
+                                                            1,9 km
+                                                        </span>
+                                                        <span class="parameters__subset grey-text">
+                                                            — River
+                                                        </span>
+                                                    </div>
+                                                    <div class="multiple__block">
+                                                        <h4 class="parameters__text text">
+                                                            Bike
+                                                        </h4>
+                                                        <span class="parameters__span black__text">
+                                                            90km
+                                                        </span>
+                                                        <span class="parameters__subset grey-text">
+                                                            — Flat
+                                                        </span>
+                                                    </div>
+                                                    <div class="multiple__block">
+                                                        <h4 class="parameters__text text">
+                                                            Run
+                                                        </h4>
+                                                        <span class="parameters__span black__text">
+                                                            21 km
+                                                        </span>
+                                                        <span class="parameters__subset grey-text">
+                                                            — Flat
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="register-price">
+                                                    <div class="register__airport">
+                                                        <img class="register__airport-icon" src="./img/events/plane.svg" alt="plane">
+                                                        <div class="register__airport-inner">
+                                                            <span class="register__airport-subtitle rgba-color black__text">
+                                                                Airport
+                                                            </span>
+                                                            <span class="register__airport-title rgba-color text">
+                                                                PER
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <h2 class="title price__title">
+                                                            320€<sup class="black__text rgba-color">↑360€</sup>&nbsp;
+                                                        </h2>
+                                                        <p class="black__text rgba-color price__text">
+                                                            115 places left
+                                                        </p>
+                                                    </div>
+                                                    <a class="register__link text open-visually" href="tikets.html">
+                                                        Register
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- lattest news -->
+                <section class="news">
+                    <div class="container">
+                        <h2 class="news__title title">
+                            Lattest news
+                        </h2>
+                        <div class="news__row">
+                            <div class="news__card image-bg-first" data-aos="fade-right" data-aos-delay="100">
+                                <div class="inner__info">
+                                    <a class="news__block-information" href="https://instagram.com/challengefamily?igshid=YmMyMTA2M2Y=" target="_blank" data-aos="fade-in" data-aos-delay="250">
+                                        <div class="news__block-designation">
+                                            <p class="grey-text news__subtitle">
+                                                Our Instagram
+                                            </p>
+                                            <span class="text inner__title">
+                                                Sarissa de Vries, World
+                                            </span>
+                                            <span class="text inner__title">
+                                                Champion ITU 2021 LD
+                                            </span>
+                                        </div>
+                                        <div class="follow__link">
+                                            <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 11H25M25 11L12.5 1M25 11L12.5 21" stroke="#0FD7CB" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>                                        
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="news__card image-bg-second" data-aos="fade-left" data-aos-delay="150">
+                                <div class="inner__info">
+                                    <a class="news__block-information" href="https://instagram.com/challengefamily?igshid=YmMyMTA2M2Y=" target="_blank" data-aos="fade-in" data-aos-delay="350">
+                                        <div class="news__block-designation">
+                                            <p class="grey-text news__subtitle">
+                                                Our Instagram
+                                            </p>
+                                            <span class="text inner__title">
+                                                Sarissa de Vries, World
+                                            </span>
+                                            <span class="text inner__title">
+                                                Champion ITU 2021 LD
+                                            </span>
+                                        </div>
+                                        <div class="follow__link">
+                                            <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 11H25M25 11L12.5 1M25 11L12.5 21" stroke="#0FD7CB" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>                                        
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- previous winners -->
+                <section class="previous">
+                    <div class="container">
+                        <h2 class="title">
+                            Previous event winners
+                        </h2>
+                        <div class="previous-wrapper">
+                            <div class="card__result">
+                                <div class="result__description run__tula">
+                                    <div class="result__description-inner">
+                                        <h4 class="result-description__title text indent-small">
+                                            Challenge Dubai 26 June 
+                                        </h4>
+                                        <div class="result__description-flex row-list">
+                                            <div class="calendar">
+                                                <img src="./img/previousWinners/calendar.svg" alt="calendar">
+                                            </div>
+                                            <span class="result-description__span">
+                                                February 23, 2022. Al Maktoum Stadium
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="result-submit center-submit">
+                                        <a href="#" class="result-btn register__link text open-popup">
+                                            Result
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__result">
+                                <div class="result__description run-petersburg">
+                                    <div class="result__description-inner">
+                                        <h4 class="result-description__title text indent-small">
+                                            Challenge Dubai 26 June 
+                                        </h4>
+                                        <div class="result__description-flex row-list">
+                                            <div class="calendar">
+                                                <img src="./img/previousWinners/calendar.svg" alt="calendar">
+                                            </div>
+                                            <span class="result-description__span">
+                                                February 23, 2022, Dubai Ice Rink
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="result-submit center-submit">
+                                        <a href="#" class="result-btn register__link text open-popup">
+                                            Result
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__result">
+                                <div class="result__description run-rich">
+                                    <div class="result__description-inner">
+                                        <h4 class="result-description__title text indent-small">
+                                            Challenge Dubai 26 June 
+                                        </h4>
+                                        <div class="result__description-flex row-list">
+                                            <div class="calendar">
+                                                <img src="./img/previousWinners/calendar.svg" alt="calendar">
+                                            </div>
+                                            <span class="result-description__span">
+                                                January 29, 2022, Al Maktoum Stadium
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="result-submit center-submit">
+                                        <a href="#" class="result-btn register__link text open-popup">
+                                            Result
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- преимущества -->
+                <section class="benefits">
+                    <div class="benefits-container container">
+                        <ul class="benefits__wrapper row-list">
+                            <li class="benefits__item">
+                                <div class="benefits__icon">
+                                    <img src="./img/enumeration/create.svg" alt="create">
+                                </div>
+                                <h4>
+                                    Create
+                                </h4>
+                                <p class="benefits__text bold">
+                                    We provide the process step by step to create the perfect event
+                                </p>
+                            </li>
+                            <li class="benefits__item">
+                                <div class="benefits__icon">
+                                    <img src="./img/enumeration/customize.svg" alt="customize">
+                                </div>
+                                <h4>
+                                    Customize
+                                </h4>
+                                <p>
+                                    Set up the set and volume of personal services for participants
+                                </p>
+                            </li>
+                            <li class="benefits__item">
+                                <div class="benefits__icon">
+                                    <img src="./img/enumeration/speaker.png" alt="speaker">
+                                </div>
+                                <h4>
+                                    Promote
+                                </h4>
+                                <p class="benefits__text bold">
+                                    Use the platform's marketing services
+                                </p>
+                            </li>
+                            <li class="benefits__item">
+                                <div class="benefits__icon">
+                                    <img src="./img/enumeration/growth.svg" alt="growth">
+                                </div>
+                                <h4>
+                                    Analyze
+                                </h4>
+                                <p class="benefits__text bold">
+                                    Aggregated statistics on all participations in events presented on the platform
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="center-submit">
+                            <a href="#" class="benefits-btn register__link text">
+                                Create an event
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__description">
+                        <p class="footer__description-text black__text" data-aos="fade-right" data-aos-delay="100">
+                            ChallengeDrive
+                        </p>
+                        <p class="footer__description-text middle-text" data-aos="fade-right" data-aos-delay="150">
+                            Sports marketplace for selling tickets to all major sporting events - marathons, triathlons, races, trails, cross-country skiing, swimming competitions.
+                        </p>
+                        <p class="footer__description-text middle-text" data-aos="fade-right" data-aos-delay="200">
+                            A mobile application for dating, teaming, searching for a team 
+                            and coaches, uniting all fans of a healthy lifestyle.
+                            Digital Assistant improves workouts and motivates 
+                            to practice, analysis of training results, suggestion 
+                            of training and nutrition calendar.
+                        </p>
+                        <p class="footer__description-text middle-text" data-aos="fade-right" data-aos-delay="250">
+                            We made teams!
+                        </p>
+                        <ul class="footer__apps-list indent-top">
+                            <li class="footer__apps-item">
+                                <a href="#" class="footer__description-link grey-text" data-aos="fade-in" data-aos-delay="150">
+                                    Follow DRIVE
+                                </a>
+                            </li>
+                            <li class="footer__apps-item">
+                                <a href="#" class="footer__description-link grey-text" data-aos="fade-in" data-aos-delay="250">
+                                    About US
+                                </a>
+                            </li>
+                            <li class="footer__apps-item">
+                                <a href="#" class="footer__description-link grey-text" data-aos="fade-in" data-aos-delay="350">
+                                    Account
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="footer__description-copyright" data-aos="fade-in" data-aos-delay="250">
+                            &copy; Challenge Drive, LLC and/or its affiliates and licensors. All rights reserved.
+                        </p>
+                    </div>
+                    <div class="footer__apps">
+                        <h2 class="footer__apps-title" data-aos="fade-in" data-aos-delay="150">
+                            Join the Drive
+                        </h2>
+                        <h3 class="footer__apps-subtitle text" data-aos="fade-in" data-aos-delay="250">
+                            Challenge Drive  App
+                        </h3>
+                        <ul class="footer__apps-list">
+                            <li class="footer__apps-item">
+                                <a href="#" class="footer__apps-link">
+                                    <img src="./img/footer/google_play_store.png" alt="Скачать с Play Store" data-aos="fade-in" data-aos-delay="150">
+                                </a>
+                            </li>
+                            <li class="footer__apps-item">
+                                <a href="#" class="footer__apps-link">
+                                    <img src="./img/footer/app_store.png" alt="Скачать c App Store" data-aos="fade-in" data-aos-delay="250">
+                                </a>
+                            </li>
+                            <li class="footer__apps-item">
+                                <a href="#" class="footer__apps-link">
+                                    <img src="./img/footer/appgallery.png" alt="Скачать c Appgallery" data-aos="fade-in" data-aos-delay="350">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- модалка результата -->
+    <div class="popup">
+        <div class="popup__inner">
+            <div class="popup__content">
+                <ion-icon class="close-popup md hydrated" name="close-outline" role="img" aria-label="close outline"></ion-icon>
+                <div class="popup__center">
+                    <h3>
+                        Choose a competition
+                    </h3>
+                    <p>
+                        The results are available at the competitions:
+                    </p>
+                </div>
+                <div class="choose__column">
+                    <div class="choose__item light">
+                       <div class="choose-inner row-list">
+                           <div class="popup-choose__left row-list">
+                               <div class="choose-description__icon">
+                                   <img src="./img/previousWinners/popup/bike.svg" alt="">
+                               </div>
+                               <div class="choose-description__data">
+                                    <h3>
+                                        Individuals bike race
+                                    </h3>
+                                    <p>
+                                        Cycling - 8 km
+                                    </p>
+                               </div>
+                           </div>
+                           <div class="popup-choose__right row-list">
+                                <div class="popup__users row-list">
+                                    <div class="choose__users-icon">
+                                        <img src="./img/previousWinners/popup/users.svg" alt="users">
+                                    </div>
+                                    <p class="choose__users-text page-text">
+                                        118
+                                    </p>
+                                </div>
+                                <a href="#" class="send row-list text">
+                                    Send
+                                    <img src="./img/previousWinners/popup/arrow.svg" alt="send">
+                                </a>
+                           </div>
+                       </div> 
+                    </div>
+                    <div class="choose__item">
+                       <div class="choose-inner row-list">
+                           <div class="popup-choose__left row-list">
+                               <div class="choose-description__icon">
+                                   <img src="./img/previousWinners/popup/bike.svg" alt="">
+                               </div>
+                               <div class="choose-description__data">
+                                    <h3>
+                                        Duathlon bike race
+                                    </h3>
+                                    <p>
+                                        Cycling - 8 km
+                                    </p>
+                               </div>
+                           </div>
+                           <div class="popup-choose__right row-list">
+                                <div class="popup__users row-list">
+                                    <div class="choose__users-icon">
+                                        <img src="./img/previousWinners/popup/users.svg" alt="users">
+                                    </div>
+                                    <p class="choose__users-text page-text">
+                                        12
+                                    </p>
+                                </div>
+                                <a href="#" class="send row-list text">
+                                    Send
+                                    <img src="./img/previousWinners/popup/arrow.svg" alt="send">
+                                </a>
+                           </div>
+                       </div> 
+                    </div>
+                    <div class="choose__item light">
+                       <div class="choose-inner row-list">
+                           <div class="popup-choose__left row-list">
+                               <div class="choose-description__icon">
+                                   <img src="./img/previousWinners/popup/bike.svg" alt="">
+                               </div>
+                               <div class="choose-description__data">
+                                    <h3>
+                                        Relay race
+                                    </h3>
+                                    <p>
+                                        Cycling - 8 km
+                                    </p>
+                               </div>
+                           </div>
+                           <div class="popup-choose__right row-list">
+                                <div class="popup__users row-list">
+                                    <div class="choose__users-icon">
+                                        <img src="./img/previousWinners/popup/users.svg" alt="users">
+                                    </div>
+                                    <p class="choose__users-text page-text">
+                                        12
+                                    </p>
+                                </div>
+                                <a href="#" class="send row-list text">
+                                    Send
+                                    <img src="./img/previousWinners/popup/arrow.svg" alt="send">
+                                </a>
+                           </div>
+                       </div> 
+                    </div>
+                    <div class="choose__item">
+                       <div class="choose-inner row-list">
+                           <div class="popup-choose__left row-list">
+                               <div class="choose-description__icon">
+                                   <img src="./img/previousWinners/popup/sport-human.svg" alt="">
+                               </div>
+                               <div class="choose-description__data">
+                                    <h3>
+                                        Individuals running
+                                    </h3>
+                                    <p>
+                                        Cycling - 2 km
+                                    </p>
+                               </div>
+                           </div>
+                           <div class="popup-choose__right row-list">
+                                <div class="popup__users row-list">
+                                    <div class="choose__users-icon">
+                                        <img src="./img/previousWinners/popup/users.svg" alt="users">
+                                    </div>
+                                    <p class="choose__users-text page-text">
+                                        118
+                                    </p>
+                                </div>
+                                <a href="#" class="send row-list text">
+                                    Send
+                                    <img src="./img/previousWinners/popup/arrow.svg" alt="send">
+                                </a>
+                           </div>
+                       </div> 
+                    </div>
+                    <div class="choose__item light">
+                       <div class="choose-inner row-list">
+                           <div class="popup-choose__left row-list">
+                               <div class="choose-description__icon">
+                                   <img src="./img/previousWinners/popup/sport-human.svg" alt="">
+                               </div>
+                               <div class="choose-description__data">
+                                    <h3>
+                                        Duathlon run (1 stage)
+                                    </h3>
+                                    <p>
+                                        Cycling - 2 km
+                                    </p>
+                               </div>
+                           </div>
+                           <div class="popup-choose__right row-list">
+                                <div class="popup__users row-list">
+                                    <div class="choose__users-icon">
+                                        <img src="./img/previousWinners/popup/users.svg" alt="users">
+                                    </div>
+                                    <p class="choose__users-text page-text">
+                                        12
+                                    </p>
+                                </div>
+                                <a href="#" class="send row-list text">
+                                    Send
+                                    <img src="./img/previousWinners/popup/arrow.svg" alt="send">
+                                </a>
+                           </div>
+                       </div> 
+                    </div>
+                    <div class="choose__item">
+                       <div class="choose-inner row-list">
+                           <div class="popup-choose__left row-list">
+                               <div class="choose-description__icon">
+                                   <img src="./img/previousWinners/popup/sport-human.svg" alt="">
+                               </div>
+                               <div class="choose-description__data">
+                                    <h3>
+                                        Duathlon run (3 stage)
+                                    </h3>
+                                    <p>
+                                        Cycling - 2 km
+                                    </p>
+                               </div>
+                           </div>
+                           <div class="popup-choose__right row-list">
+                                <div class="popup__users row-list">
+                                    <div class="choose__users-icon">
+                                        <img src="./img/previousWinners/popup/users.svg" alt="users">
+                                    </div>
+                                    <p class="choose__users-text page-text">
+                                        12
+                                    </p>
+                                </div>
+                                <a href="#" class="send row-list text">
+                                    Send
+                                    <img src="./img/previousWinners/popup/arrow.svg" alt="send">
+                                </a>
+                           </div>
+                       </div> 
+                    </div>
+                    <div class="choose__item light">
+                       <div class="choose-inner row-list">
+                           <div class="popup-choose__left row-list">
+                               <div class="choose-description__icon">
+                                   <img src="./img/previousWinners/popup/sport-human.svg" alt="">
+                               </div>
+                               <div class="choose-description__data">
+                                    <h3>
+                                        Relay race
+                                    </h3>
+                                    <p>
+                                        Cycling - 2 km
+                                    </p>
+                               </div>
+                           </div>
+                           <div class="popup-choose__right row-list">
+                                <div class="popup__users row-list">
+                                    <div class="choose__users-icon">
+                                        <img src="./img/previousWinners/popup/users.svg" alt="users">
+                                    </div>
+                                    <p class="choose__users-text page-text">
+                                        12
+                                    </p>
+                                </div>
+                                <a href="#" class="send row-list text">
+                                    Send
+                                    <img src="./img/previousWinners/popup/arrow.svg" alt="send">
+                                </a>
+                           </div>
+                       </div> 
+                    </div>
+                    <div class="choose__item">
+                       <div class="choose-inner row-list">
+                           <div class="popup-choose__left row-list">
+                               <div class="choose-description__icon">
+                                   <img src="./img/previousWinners/popup/swim-human.svg" alt="">
+                               </div>
+                               <div class="choose-description__data">
+                                    <h3>
+                                        Individuals swimming
+                                    </h3>
+                                    <p>
+                                        Swimming
+                                    </p>
+                               </div>
+                           </div>
+                           <div class="popup-choose__right row-list">
+                                <div class="popup__users row-list">
+                                    <div class="choose__users-icon">
+                                        <img src="./img/previousWinners/popup/users.svg" alt="users">
+                                    </div>
+                                    <p class="choose__users-text page-text">
+                                        118
+                                    </p>
+                                </div>
+                                <a href="#" class="send row-list text">
+                                    Send
+                                    <img src="./img/previousWinners/popup/arrow.svg" alt="send">
+                                </a>
+                           </div>
+                       </div> 
+                    </div>
+                    <div class="choose__item light">
+                       <div class="choose-inner row-list">
+                           <div class="popup-choose__left row-list">
+                               <div class="choose-description__icon">
+                                   <img src="./img/previousWinners/popup/bike.svg" alt="">
+                               </div>
+                               <div class="choose-description__data">
+                                    <h3>
+                                        Individuals results
+                                    </h3>
+                                    <p>
+                                        Triathlon
+                                    </p>
+                               </div>
+                           </div>
+                           <div class="popup-choose__right row-list">
+                                <div class="popup__users row-list">
+                                    <div class="choose__users-icon">
+                                        <img src="./img/previousWinners/popup/users.svg" alt="users">
+                                    </div>
+                                    <p class="choose__users-text page-text">
+                                        118
+                                    </p>
+                                </div>
+                                <a href="#" class="send row-list text">
+                                    Send
+                                    <img src="./img/previousWinners/popup/arrow.svg" alt="send">
+                                </a>
+                           </div>
+                       </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- coming soon -->
+    <div class="popup-visually">
+        <div class="popup-visually__inner">
+            <ion-icon class="close-visually" name="close-outline" role="img" aria-label="close outline"></ion-icon>
+            <img src="./img/header/coming.png" alt="coming soon" title="coming soon">
+        </div>
+    </div>
+
+    <!-- модалка входа -->
+    <div class="modal__login">
+        <div class="modal__login-wrapper">
+            <ion-icon class="close" name="close-outline"></ion-icon>
+            <div class="wrapper">
+                <div class="main-content">
+                    <!-- header -->
+                    <header class="header header-bg" id="header">
+                        <div class="main__container">
+                            <div class="header__inner">
+                                <a href="index.html" class="header__logo">
+                                    <img src="./img/header/logo.svg" alt="Drive">                      
+                                </a>
+                                <div class="header-navigation">
+                                    <a href="#" class="header__login-icon">
+                                        <img src="./img/header/person.svg" alt="Войти/Зарегистрироваться">
+                                        <span class="header__login-text page-text">
+                                            Customer support
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <!-- window -->
+                    <form action="#" method="get" id="login-form" class="form">
+                        <div class="authorization-form">
+                            <p class="authorization__text">
+                                Sign in
+                            </p>
+                            <div class="not__sign-up">
+                                <span class="sign-up-text">
+                                    Don’t have an account?
+                                </span>
+                                <a href="#" class="sign-up__link">
+                                    Sign up
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row__authorization">
+                            <a href="#" class="authorization__with with-vk">
+                                <svg class="ionicon" viewBox="0 0 512 512">
+                                    <path d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z" fill-rule="evenodd"/>
+                                </svg>
+                                <span>
+                                    Sign in with Facebook
+                                </span>
+                            </a>
+                            <a href="#" class="authorization__with with-google">
+                                <img class="authorization__icon" src="./img/login/google.svg" alt="Войти через google">
+                                <span>
+                                    Sign in with Google
+                                </span>
+                            </a>
+                        </div>
+                        <span class="choice">
+                            or
+                        </span>
+                        <div class="form__inputs">
+                            <label for="email-input" class="form-label">
+                                <p class="form-label-text">
+                                    Email adress
+                                </p>
+                                <input type="email" class="main-input" name="mail" id="email-input" placeholder="Type email">
+                            </label>
+                            <label for="password-input" class="form-label">
+                                <p class="form-label-text">
+                                    Password
+                                </p>
+                                <input type="password" class="main-input" name="password" id="password-input" placeholder="Type password">
+                                <img class="form__icon" src="./img/login/eyeInvisible.svg" alt="скрыть пароль">
+                                <span id="error"></span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn__submit">
+                            Sign in
+                        </button>
+                    </form>
+                </div>
+                <footer class="footer footer__policy">
+                    <div class="container">
+                        <div class="footer__inner">
+                            <p class="footer__description-copyright indent-top-none">
+                                &copy; 2021 Challenge Drive, LLC and/or its affiliates and licensors. All rights reserved.
+                            </p>
+                            <ul class="footer__apps-list indent-top indent-top-none">
+                                <li class="footer__apps-item">
+                                    <a href="#" class="footer__description-link grey-text">
+                                        Privacy policy
+                                    </a>
+                                </li>
+                                <li class="footer__apps-item">
+                                    <a href="#" class="footer__description-link grey-text">
+                                        Terms of use
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <!-- error -->
+    <div class="notification error__top" id="errorText">
+        <div class="notification__inner error__top-inner">
+            <span>Error: The email is incorrect</span>
+            <ion-icon class="notification__close close__error" name="close-outline"></ion-icon>
+        </div>
+    </div>
+    <!-- successfully -->
+    <div class="notification successfully__top" id="successfullyText">
+        <div class="notification__inner successfully__inner">
+            <span>Successfully: The email is correct</span>
+            <ion-icon class="notification__close close__correct" name="close-outline"></ion-icon>
+        </div>
+    </div>
+    <!-- ionicon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- scripts -->
+    <script src="./js/modal-login.js"></script>
+    <script src="./js/animate.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/show-hide-eye.js"></script>
+    <script src="./js/validate.js"></script>
+    <script src="./js/loading-video.js"></script>
+    <script src="./js/validate-login-form.js"></script>
+</body>
+</html>

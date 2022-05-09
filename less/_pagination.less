@@ -1,0 +1,27 @@
+.pagination{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__item{
+        margin-right: 5px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &-btn{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background: var(--white);
+        border: 1px solid #E2E2E2;
+        &__active{
+            color: var(--white);
+            background: var(--turquoise);
+            border: 1px solid var(--turquoise);
+        }
+    }
+}

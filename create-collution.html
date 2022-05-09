@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create events</title>
+    <!-- animate -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- text editor -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body style="font-family: 'HelveticaNeueCyr';">
+    <!-- прижатие футера/основная обертка  -->
+    <div class="wrapper">
+        <div class="main-content">
+            <!-- header -->
+            <header class="header header-bg" id="header">
+                <div class="main__container">
+                    <div class="header__inner">
+                        <a href="index.html" class="header__logo" data-aos="fade-in">
+                            <img src="./img/header/logo.svg" alt="Drive">                      
+                        </a>
+                        <div class="header-navigation">
+                            <a href="#" class="header__login-icon">
+                                <img src="./img/header/person.svg" alt="Войти/Зарегистрироваться" data-aos="fade-in" data-aos-delay="150">
+                                <span class="header__login-text page-text" data-aos="fade-in" data-aos-delay="200">
+                                    Customer support
+                                </span>
+                            </a>
+                        </div>
+                        <!-- mobile menu -->
+                        <div class="mobile__menu">
+                            <div class="menu-btn"></div>
+                            <div class="mobile__list">
+                                <div class="mobile__social submenu__list">
+                                    <a href="#" class="header__login-icon open-login">
+                                        <img src="./img/header/person.svg" alt="Войти/Зарегистрироваться">
+                                        <span class="header__login-text page-text">
+                                            Log in
+                                        </span>
+                                    </a>
+                                    <ul class="language">
+                                        <li class="language__item">
+                                            <div class="row-list">
+                                                <button class="btn__language page-text eng" type="button" data-aos="fade-in" data-aos-delay="100">
+                                                    Eng
+                                                </button>
+                                                <img class="lang-arrow" src="../img/steps/review-check/arrow.svg" alt="">
+                                            </div>
+                                            <ul class="language__list-sub">
+                                                <li>
+                                                    <button class="btn__language page-text rus" type="button" data-aos="fade-in" data-aos-delay="100">
+                                                        Rus
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul class="mobile__menu-list">
+                                    <li class="mobile__menu-item">
+                                        <a href="./tikets.html" class="mobile__menu-link info-text">
+                                            Events
+                                        </a>
+                                    </li>
+                                    <li class="mobile__menu-item">
+                                        <a href="#" class="mobile__menu-link info-text">
+                                            Community
+                                        </a>
+                                    </li>
+                                    <li class="mobile__menu-item">
+                                        <a href="#" class="mobile__menu-link info-text">
+                                            Rating
+                                        </a>
+                                    </li>
+                                    <li class="mobile__menu-item mobile-open__menu">
+                                        <div class="mobile__menu-item mobile-dropdown jcsb row-list">
+                                            <p class="mobile__menu-link info-text">
+                                                My profile
+                                            </p>
+                                            <ion-icon class="down" name="chevron-down-outline"></ion-icon>
+                                        </div>
+                                        <ul class="submenu__list submenu-dropdown">
+                                            <li class="submenu__item">
+                                                <a href="profile.html" class="navbar__link info-text row-list">
+                                                    <img class="navbar__image" src="./img/profile/profile.svg" alt="profile">
+                                                    Profile
+                                                </a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a href="#" class="navbar__link info-text row-list">
+                                                    <img class="navbar__image" src="./img/profile/documents.svg" alt="document">
+                                                    Documents
+                                                </a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a href="#" class="navbar__link info-text row-list">
+                                                    <img class="navbar__image" src="./img/profile/ticket.svg" alt="tikets">
+                                                    Tickets
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- contacts -->
+            <main class="main">
+                <section class="create competitions">
+                    <div class="container">
+                        <picture class="create-img big__image">
+                            <source srcset="./img/contacts/unsplash.jpg">
+                            <img src="./img/contacts/unsplash.jpg" alt="run">
+                        </picture>
+                        <div class="create-description">
+                            <form class="create-form row-list jcsb" action="#" method="post">
+                                <div class="create__info-right">
+                                    <div class="create-description__item">
+                                        <div class="create-description__name row-list jcsb indent-small">
+                                            <h2 class="create-subtitle page-text">
+                                                Event name
+                                            </h2>
+                                            <div class="hint">
+                                                <img src="./img/events/question.svg" alt="подсказка">
+                                                <div class="hint-inner">
+                                                    <p class="grey-text">
+                                                        The EXPO operator can register and view the list of participants. Other functions of the organizer are not available to him
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label class="form__secondary-label" for="nameEventRus">
+                                            <input class="main-input" type="text" id="nameEventRus" placeholder="Event name">
+                                        </label>
+                                    </div>
+                                    <div class="create-description__item">
+                                        <div class="create-description__name indent-small">
+                                            <h2 class="create-subtitle page-text">
+                                                Competition date
+                                            </h2>
+                                        </div>
+                                        <label class="form__secondary-label" for="siteIdRus">
+                                            <input class="main-input" type="text" id="siteIdRus" placeholder="Enter a link to the site">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="create__info-left">
+                                    <div class="create__date-time">
+                                        <h2 class="create-subtitle page-text indent-small">
+                                            Registration period
+                                        </h2>
+                                        <div class="create__date-time__inner row-list">
+                                            <label class="form__secondary-label create__date-icon" for="dateBeforeRus">
+                                                <input class="input date-input info-text" type="text" id="dateBeforeRus" value="03/30/2022" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'">
+                                            </label>
+                                            <p class="info-text">
+                                                до
+                                            </p>
+                                            <label class="form__secondary-label create__date-icon" for="dateAfterRus">
+                                                <input class="input date-input info-text" type="text" id="dateAfterRus" value="03/30/2022" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="create__date-time">
+                                        <h2 class="create-subtitle page-text indent-small">
+                                            Discipline
+                                        </h2>
+                                        <div class="select-toggle">
+                                            <button class="arrow-down-icon" type="button">
+                                                Select
+                                            </button>
+                                            <ul class="select__list-sub">
+                                                <li class="select__item-sub" data-value="select_1">
+                                                    Select1
+                                                </li>
+                                                <li class="select__item-sub" data-value="select_2">
+                                                    Select2
+                                                </li>
+                                                <li class="select__item-sub" data-value="select_3">
+                                                    Select3
+                                                </li>
+                                                <li class="select__item-sub" data-value="select_4">
+                                                    Select4
+                                                </li>
+                                                <li class="select__item-sub" data-value="select_5">
+                                                    Select5
+                                                </li>
+                                                <li class="select__item-sub" data-value="select_6">
+                                                    Select6
+                                                </li>
+                                            </ul>
+                                            <input class="select__input-hidden" type="text" name="select-category" id="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="create-description">
+                            <form class="competitions-form" action="#" method="post">
+                                <div class="editor-places">
+                                    <h2 class="create-subtitle page-text indent-small">
+                                        Description of the competition
+                                    </h2>
+                                    <div class="competitions-drop-editor row-list jcsb">
+                                        <div class="competitions-drop-editor__inner">
+                                            <div class="text-editor__container indent-small">
+                                                <div id="text-editor"></div>
+                                            </div>
+                                        </div>
+                                        <div class="drop-inner">
+                                            <div class="drop-zone drop-zone__places indent-small">
+                                                <span class="drop-zone__prompt drop-prompt__place middle-text info-grey">
+                                                    Drag the map image<br> to this area
+                                                </span>
+                                                <input type="file" name="myFile" class="drop-zone__input">
+                                            </div>
+                                            <div class="drop-zone drop-center drop-zone__places">
+                                                <span class="drop-zone__prompt drop-prompt__place middle-text info-grey">
+                                                    Drag thumbnail image<br> to this area
+                                                </span>
+                                                <input type="file" name="myFile" class="drop-zone__input">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="competitions-wrapper">
+                                    <h2 class="create-subtitle page-text">
+                                        Payment Methods
+                                    </h2>
+                                    <div class="competitions-pay row-list">
+                                        <div class="pay-card">
+                                            <div class="pay-card__img">
+                                                <img src="./img/steps/review-check/visa.svg" alt="visa">
+                                            </div>
+                                            <button class="add-btn register__link" type="button">
+                                                Add
+                                            </button>
+                                        </div>
+                                        <div class="pay-card">
+                                            <div class="pay-card__img">
+                                                <img src="./img/steps/review-check/mastercard.svg" alt="mastercard">
+                                            </div>
+                                            <button class="add-btn register__link" type="button">
+                                                Add
+                                            </button>
+                                        </div>
+                                        <div class="pay-card">
+                                            <div class="pay-card__img">
+                                                <img src="./img/steps/review-check/PayPal.svg" alt="PayPal">
+                                            </div>
+                                            <button class="add-btn register__link" type="button">
+                                                Add
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="competitions-inner">
+                                    <h2 class="create-subtitle page-text indent-small">
+                                        Payment setup
+                                    </h2>
+                                    <div class="competitions-info row-list jcsb indent-small">
+                                        <h2 class="create-subtitle page-text indent-small">
+                                            Ticket price
+                                        </h2>
+                                        <label class="form__secondary-label label-width indent-small" for="priceTicket">
+                                            <input class="main-input" type="text" id="priceTicket" placeholder="Enter ticket price">
+                                        </label>
+                                        <div class="select-toggle select-width">
+                                            <button class="arrow-down-icon" type="button">
+                                                Create additional conditions
+                                            </button>
+                                            <ul class="select__list-sub">
+                                                <li class="select__item-sub" data-value="select_1">
+                                                    Discount 
+                                                </li>
+                                                <li class="select__item-sub" data-value="select_2">
+                                                    By date
+                                                </li>
+                                                <li class="select__item-sub" data-value="select_3">
+                                                    By number of participants
+                                                </li>
+                                                <li class="select__item-sub" data-value="select_4">
+                                                    Promotion(1+1)
+                                                </li>
+                                            </ul>
+                                            <input class="select__input-hidden" type="text" name="select-category" id="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="competitions-inner">
+                                    <h2 class="create-subtitle page-text indent-small">
+                                        Participants
+                                    </h2>
+                                    <div class="competitions-info row-list jcsb indent-small">
+                                        <div class="row-list indent-small">
+                                            <div class="option">
+                                                <input class="option__input" type="radio" checked name="radio_1" id="user_gender_3">
+                                                <label for="user_gender_3" class="radio-label option__text info-item__text black__text">
+                                                    Male
+                                                </label>    
+                                            </div>
+                                            <div class="option">
+                                                <input class="option__input" type="radio" name="radio_1" id="user_gender_4">
+                                                <label for="user_gender_4" class="radio-label option__text info-item__text black__text">
+                                                    Female
+                                                </label>    
+                                            </div>
+                                        </div>
+                                        <div class="select-toggle select-width indent-small">
+                                            <button class="arrow-down-icon" type="button">
+                                                Maximum age
+                                            </button>
+                                            <ul class="select__list-sub">
+                                                <li class="select__item-sub" data-value="select_1">
+                                                    50 
+                                                </li>
+                                                <li class="select__item-sub" data-value="select_2">
+                                                    60
+                                                </li>
+                                                <li class="select__item-sub" data-value="select_3">
+                                                    70
+                                                </li>
+                                                <li class="select__item-sub" data-value="select_4">
+                                                    80
+                                                </li>
+                                            </ul>
+                                            <input class="select__input-hidden" type="text" name="select-category" id="">
+                                        </div>
+                                        <label class="form__secondary-label label-width" for="maxQuantityPatic">
+                                            <input class="main-input" type="text" id="maxQuantityPatic" placeholder="Maximum quantity">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="competitions-inner indent-bottom">
+                                    <h2 class="create-subtitle page-text indent-small">
+                                        Other settings
+                                    </h2>
+                                    <div class="competitions-info row-list jcsb">
+                                        <div class="select-toggle indent-small">
+                                            <button class="arrow-down-icon" type="button">
+                                                Water temperature
+                                            </button>
+                                            <ul class="select__list-sub">
+                                                <li class="select__item-sub" data-value="select_1">
+                                                    50 
+                                                </li>
+                                                <li class="select__item-sub" data-value="select_2">
+                                                    60
+                                                </li>
+                                                <li class="select__item-sub" data-value="select_3">
+                                                    70
+                                                </li>
+                                                <li class="select__item-sub" data-value="select_4">
+                                                    80
+                                                </li>
+                                            </ul>
+                                            <input class="select__input-hidden" type="text" name="select-category" id="">
+                                        </div>
+                                        <div class="select-toggle indent-small">
+                                            <button class="arrow-down-icon" type="button">
+                                                Weather
+                                            </button>
+                                            <ul class="select__list-sub">
+                                                <li class="select__item-sub" data-value="select_1">
+                                                    Clear 
+                                                </li>
+                                                <li class="select__item-sub" data-value="select_2">
+                                                    Dull
+                                                </li>
+                                                <li class="select__item-sub" data-value="select_3">
+                                                    Rain
+                                                </li>
+                                                <li class="select__item-sub" data-value="select_4">
+                                                    Snow
+                                                </li>
+                                            </ul>
+                                            <input class="select__input-hidden" type="text" name="select-category" id="">
+                                        </div>
+                                        <label class="form__secondary-label label-width" for="airport">
+                                            <input class="main-input" type="text" id="airport" placeholder="Airport">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row-info contacts__info aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                                    <p class="grey-text contacts__text">
+                                        Customer support
+                                    </p>
+                                    <a href="#" class="contact__link register__link text">
+                                        Contact us
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__description">
+                        <p class="footer__description-text black__text" data-aos="fade-right" data-aos-delay="100">
+                            ChallengeDrive
+                        </p>
+                        <p class="footer__description-text middle-text" data-aos="fade-right" data-aos-delay="150">
+                            Sports marketplace for selling tickets to all major sporting events - marathons, triathlons, races, trails, cross-country skiing, swimming competitions.
+                        </p>
+                        <p class="footer__description-text middle-text" data-aos="fade-right" data-aos-delay="200">
+                            A mobile application for dating, teaming, searching for a team 
+                            and coaches, uniting all fans of a healthy lifestyle.
+                            Digital Assistant improves workouts and motivates 
+                            to practice, analysis of training results, suggestion 
+                            of training and nutrition calendar.
+                        </p>
+                        <p class="footer__description-text middle-text" data-aos="fade-right" data-aos-delay="250">
+                            We made teams!
+                        </p>
+                        <ul class="footer__apps-list indent-top">
+                            <li class="footer__apps-item">
+                                <a href="#" class="footer__description-link grey-text" data-aos="fade-in" data-aos-delay="150">
+                                    Follow DRIVE
+                                </a>
+                            </li>
+                            <li class="footer__apps-item">
+                                <a href="#" class="footer__description-link grey-text" data-aos="fade-in" data-aos-delay="250">
+                                    About US
+                                </a>
+                            </li>
+                            <li class="footer__apps-item">
+                                <a href="#" class="footer__description-link grey-text" data-aos="fade-in" data-aos-delay="350">
+                                    Account
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="footer__description-copyright" data-aos="fade-in" data-aos-delay="250">
+                            &copy; Challenge Drive, LLC and/or its affiliates and licensors. All rights reserved.
+                        </p>
+                    </div>
+                    <div class="footer__apps">
+                        <h2 class="footer__apps-title" data-aos="fade-in" data-aos-delay="150">
+                            Join the Drive
+                        </h2>
+                        <h3 class="footer__apps-subtitle text" data-aos="fade-in" data-aos-delay="250">
+                            Challenge Drive  App
+                        </h3>
+                        <ul class="footer__apps-list">
+                            <li class="footer__apps-item">
+                                <a href="#" class="footer__apps-link">
+                                    <img src="./img/footer/google_play_store.png" alt="Скачать с Play Store" data-aos="fade-in" data-aos-delay="150">
+                                </a>
+                            </li>
+                            <li class="footer__apps-item">
+                                <a href="#" class="footer__apps-link">
+                                    <img src="./img/footer/app_store.png" alt="Скачать c App Store" data-aos="fade-in" data-aos-delay="250">
+                                </a>
+                            </li>
+                            <li class="footer__apps-item">
+                                <a href="#" class="footer__apps-link">
+                                    <img src="./img/footer/appgallery.png" alt="Скачать c Appgallery" data-aos="fade-in" data-aos-delay="350">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- модалка входа -->
+    <div class="modal__login">
+        <div class="modal__login-wrapper">
+            <ion-icon class="close" name="close-outline"></ion-icon>
+            <div class="wrapper">
+                <div class="main-content">
+                    <!-- header -->
+                    <header class="header header-bg" id="header">
+                        <div class="main__container">
+                            <div class="header__inner">
+                                <a href="index.html" class="header__logo">
+                                    <img src="./img/header/logo.svg" alt="Drive">                      
+                                </a>
+                                <div class="header-navigation">
+                                    <a href="#" class="header__login-icon">
+                                        <img src="./img/header/person.svg" alt="Войти/Зарегистрироваться">
+                                        <span class="header__login-text page-text">
+                                            Customer support
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <!-- window -->
+                    <form action="#" method="get" id="login-form" class="form">
+                        <div class="authorization-form">
+                            <p class="authorization__text">
+                                Sign in
+                            </p>
+                            <div class="not__sign-up">
+                                <span class="sign-up-text">
+                                    Don’t have an account?
+                                </span>
+                                <a href="#" class="sign-up__link reg-open">
+                                    Sign up
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row__authorization">
+                            <a href="#" class="authorization__with with-vk">
+                                <svg class="ionicon" viewBox="0 0 512 512">
+                                    <path d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z" fill-rule="evenodd"/>
+                                </svg>
+                                <span>
+                                    Sign in with Facebook
+                                </span>
+                            </a>
+                            <a href="#" class="authorization__with with-google">
+                                <img class="authorization__icon" src="./img/login/google.svg" alt="Войти через google">
+                                <span>
+                                    Sign in with Google
+                                </span>
+                            </a>
+                        </div>
+                        <span class="choice">
+                            or
+                        </span>
+                        <div class="form__inputs">
+                            <label for="email-input" class="form-label">
+                                <p class="form-label-text">
+                                    Email adress
+                                </p>
+                                <input type="email" class="main-input" name="mail" id="email-input" placeholder="Type email">
+                            </label>
+                            <label for="password-input" class="form-label">
+                                <p class="form-label-text">
+                                    Password
+                                </p>
+                                <input type="password" class="main-input" name="password" id="password-input" placeholder="Type password">
+                                <img class="form__icon" src="./img/login/eyeInvisible.svg" alt="скрыть пароль">
+                                <span id="error"></span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn__submit">
+                            Sign in
+                        </button>
+                    </form>
+                </div>
+                <footer class="footer footer__policy">
+                    <div class="container">
+                        <div class="footer__inner">
+                            <p class="footer__description-copyright indent-top-none">
+                                &copy; 2021 Challenge Drive, LLC and/or its affiliates and licensors. All rights reserved.
+                            </p>
+                            <ul class="footer__apps-list indent-top indent-top-none">
+                                <li class="footer__apps-item">
+                                    <a href="#" class="footer__description-link grey-text">
+                                        Privacy policy
+                                    </a>
+                                </li>
+                                <li class="footer__apps-item">
+                                    <a href="#" class="footer__description-link grey-text">
+                                        Terms of use
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- модалка регистрации -->
+    <div class="registration__login modal__login">
+        <div class="registration__login-wrapper modal__login-wrapper">
+            <ion-icon class="reg-close close" name="close-outline"></ion-icon>
+            <div class="wrapper">
+                <div class="main-content">
+                    <!-- header -->
+                    <header class="header header-bg" id="header">
+                        <div class="main__container">
+                            <div class="header__inner">
+                                <a href="index.html" class="header__logo">
+                                    <img src="./img/header/logo.svg" alt="Drive">                      
+                                </a>
+                                <div class="header-navigation">
+                                    <a href="#" class="header__login-icon">
+                                        <img src="./img/header/person.svg" alt="Войти/Зарегистрироваться">
+                                        <span class="header__login-text page-text">
+                                            Customer support
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <!-- window -->
+                    <form action="#" method="get" id="login-form" class="form">
+                        <div class="authorization-form">
+                            <p class="authorization__text">
+                                Sign up
+                            </p>
+                        </div>
+                        <div class="form__inputs">
+                            <label for="regName" class="form-label">
+                                <p class="form-label-text">
+                                    Fist name
+                                </p>
+                                <input type="text" class="main-input" id="regName" placeholder="Fist name" required>
+                            </label>
+                            <label for="regLastName" class="form-label">
+                                <p class="form-label-text">
+                                    Second name
+                                </p>
+                                <input type="text" class="main-input" id="regLastName" placeholder="Second name" required>
+                            </label>
+                            <label for="regBirthday" class="form-label input-icon">
+                                <p class="form-label-text">
+                                    Birthday
+                                </p>
+                                <input type="text" class="main-input" id="regBirthday" placeholder="Birthday" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" required>
+                            </label>
+                            <label for="email-recovery" class="form-label">
+                                <p class="form-label-text">
+                                    Email
+                                </p>
+                                <input type="email" class="main-input" id="email-recovery" placeholder="Email" required>
+                            </label>
+                            <hr class="row-line">
+                            <label for="password-change" class="form-label">
+                                <p class="form-label-text">
+                                    Password
+                                </p>
+                                <input type="password" class="main-input" id="password-change" name="passwordName" placeholder="Password" onkeyup="checkPassword();" required>
+                            </label>
+                            <label for="passwordReTypeId" class="form-label">
+                                <p class="form-label-text">
+                                    Pre Password
+                                </p>
+                                <input type="password" class="main-input" name="password" id="passwordReTypeId" name="passwordReType" placeholder="Pre password" onkeyup="checkPassword();" required>
+                                <img class="form__icon" src="./img/login/eyeInvisible.svg" alt="скрыть пароль">
+                            </label>
+                        </div>
+                        <button type="submit" class="btn__submit">
+                            Send
+                        </button>
+                    </form>
+                </div>
+                <footer class="footer footer__policy">
+                    <div class="container">
+                        <div class="footer__inner">
+                            <p class="footer__description-copyright indent-top-none">
+                                &copy; 2021 Challenge Drive, LLC and/or its affiliates and licensors. All rights reserved.
+                            </p>
+                            <ul class="footer__apps-list indent-top indent-top-none">
+                                <li class="footer__apps-item">
+                                    <a href="#" class="footer__description-link grey-text">
+                                        Privacy policy
+                                    </a>
+                                </li>
+                                <li class="footer__apps-item">
+                                    <a href="#" class="footer__description-link grey-text">
+                                        Terms of use
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- error -->
+    <div class="notification error__top" id="errorText">
+        <div class="notification__inner error__top-inner">
+            <span>Error: The email is incorrect</span>
+            <ion-icon class="notification__close close__error" name="close-outline"></ion-icon>
+        </div>
+    </div>
+    <!-- successfully -->
+    <div class="notification successfully__top" id="successfullyText">
+        <div class="notification__inner successfully__inner">
+            <span>Successfully: The email is correct</span>
+            <ion-icon class="notification__close close__correct" name="close-outline"></ion-icon>
+        </div>
+    </div>
+
+    <!-- text editor -->
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <!-- ionicon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- scripts -->
+    <script src="./js/menu.js"></script>
+    <script src="./js/select.js"></script>
+    <script src="./js/animate.js"></script>
+    <script src="./js/validate.js"></script>
+    <script src="./js/modal-login.js"></script>
+    <script src="./js/compet-editor.js"></script>
+    <script src="./js/show-hide-eye.js"></script>
+    <script src="./js/validate-login-form.js"></script>
+
+</body>
+</html>

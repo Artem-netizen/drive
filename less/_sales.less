@@ -1,0 +1,100 @@
+.form{
+    &__user{
+        &-data{
+            margin-bottom: 40px;
+            padding: 30px;
+            border-radius: 20px;
+            background: var(--light-grey);
+        }
+        &-inner{
+            margin-bottom: 10px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        &-item{
+            &__wrapper{
+                margin-top: 30px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+    &-width__rus{
+        max-width: 750px !important;
+    }
+    &-row{
+        width: 100%;
+        max-width: 570px;
+        justify-content: space-between;
+        &-long{
+            width: 100%;
+            max-width: 790px;
+            justify-content: space-between;
+        }
+        &__average{
+            width: 100%;
+            max-width: 685px;
+            justify-content: space-between;
+        }
+        &__inputs{
+            width: 100%;
+            max-width: 345px;
+            justify-content: space-between;
+        }
+        &__width{
+            max-width: 770px;
+        }
+        &__phone{
+            max-width: 603px;
+        }
+    }
+    &-select__dropdown{
+        width: 100%;
+        max-width: 1060px;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+}
+.hint{
+    position: relative;
+    &-inner{
+        margin-bottom: 20px;
+        padding: 20px;
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        left: 50%;
+        z-index: 4;
+        bottom: 100%;
+        width: 227px;
+        transition: .3s;
+        border-radius: 10px;
+        background: var(--white);
+        transform: translateX(-50%);
+        filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.15));
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            width: 0;
+            height: 0;
+            line-height: 0px;
+            border-style: solid;
+            transform: translateX(-50%);
+            border-width: 20px 10px 0 10px;
+            _border-color: #ffffff #000000 #000000 #000000;
+            border-color: #ffffff transparent transparent transparent;
+            _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+        }
+    }
+    p{
+        font-weight: 400;
+    }
+    &:hover{
+        .hint-inner{
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+}

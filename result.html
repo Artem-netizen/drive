@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Event</title>
+    <!-- animate -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body style="font-family: 'HelveticaNeueCyr';">
+    <!-- прижатие футера/основная обертка  -->
+    <div class="wrapper">
+        <div class="main-content">
+            <!-- header -->
+            <header class="header header-bg" id="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <a href="index-rus.html" class="header__logo" data-aos="fade-in">
+                            <img src="./img/header/logo.svg" alt="Drive">                      
+                        </a>
+                        <div class="header-navigation">
+                            <a class="download row-list page-text" href="#" download="./Drive_eng.pdf" aria-label="Скачать презентацию" data-aos="fade-down" data-aos-delay="150">
+                                <div class="download-img">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.25 6.75H11.25V2.25H6.75V6.75H3.75L9 12.75L14.25 6.75ZM3 14.25H15V15.75H3V14.25Z" fill="#0FD7CB"/>
+                                    </svg>                                        
+                                </div>
+                                Presentation
+                            </a>
+                            <!-- navigation -->
+                            <nav class="nav">
+                                <ul class="nav__list">
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link page-text active open-visually" data-aos="fade-in" data-aos-delay="50">
+                                            Events
+                                        </a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link page-text open-visually" data-aos="fade-in" data-aos-delay="150">
+                                            Community
+                                        </a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link page-text open-visually" data-aos="fade-in" data-aos-delay="250">
+                                            Rating
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <ul class="language">
+                                <li class="language__item">
+                                    <div class="row-list">
+                                        <button class="btn__language page-text eng" type="button" data-aos="fade-in" data-aos-delay="100">
+                                            Eng
+                                        </button>
+                                        <img class="lang-arrow" src="../img/steps/review-check/arrow.svg" alt="">
+                                    </div>
+                                    <ul class="language__list-sub">
+                                        <li>
+                                            <button class="btn__language page-text rus" type="button" data-aos="fade-in" data-aos-delay="100">
+                                                Rus
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <a href="#" class="header__login-icon open-login">
+                                <img src="./img/header/person.svg" alt="Войти/Зарегистрироваться" data-aos="fade-in" data-aos-delay="150">
+                                <span class="header__login-text page-text" data-aos="fade-in" data-aos-delay="200">
+                                    Log in
+                                </span>
+                            </a>
+                            <!-- mobile menu -->
+                            <div class="mobile__menu">
+                                <div class="menu-btn"></div>
+                                <div class="mobile__list">
+                                    <a class="download row-list page-text" href="#" download="./Drive_eng.pdf" aria-label="Скачать презентацию">
+                                        <div class="download-img">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.25 6.75H11.25V2.25H6.75V6.75H3.75L9 12.75L14.25 6.75ZM3 14.25H15V15.75H3V14.25Z" fill="#0FD7CB"/>
+                                            </svg>                                        
+                                        </div>
+                                        Presentation
+                                    </a>
+                                    <div class="mobile__social submenu__list">
+                                        <a href="#" class="header__login-icon open-login">
+                                            <img src="./img/header/person.svg" alt="Войти/Зарегистрироваться">
+                                            <span class="header__login-text page-text">
+                                                Log in
+                                            </span>
+                                        </a>
+                                        <ul class="language">
+                                            <li class="language__item">
+                                                <div class="row-list">
+                                                    <button class="btn__language page-text eng" type="button" data-aos="fade-in" data-aos-delay="100">
+                                                        Eng
+                                                    </button>
+                                                    <img class="lang-arrow" src="../img/steps/review-check/arrow.svg" alt="">
+                                                </div>
+                                                <ul class="language__list-sub">
+                                                    <li>
+                                                        <button class="btn__language page-text rus" type="button" data-aos="fade-in" data-aos-delay="100">
+                                                            Rus
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <ul class="mobile__menu-list">
+                                        <li class="mobile__menu-item">
+                                            <a href="./tikets.html" class="mobile__menu-link info-text">
+                                                Events
+                                            </a>
+                                        </li>
+                                        <li class="mobile__menu-item">
+                                            <a href="#" class="mobile__menu-link info-text">
+                                                Community
+                                            </a>
+                                        </li>
+                                        <li class="mobile__menu-item">
+                                            <a href="#" class="mobile__menu-link info-text">
+                                                Rating
+                                            </a>
+                                        </li>
+                                        <li class="mobile__menu-item mobile-open__menu">
+                                            <div class="mobile__menu-item mobile-dropdown jcsb row-list">
+                                                <p class="mobile__menu-link info-text">
+                                                    My profile
+                                                </p>
+                                                <ion-icon class="down" name="chevron-down-outline"></ion-icon>
+                                            </div>
+                                            <ul class="submenu__list submenu-dropdown">
+                                                <li class="submenu__item">
+                                                    <a href="profile.html" class="navbar__link info-text row-list">
+                                                        <img class="navbar__image" src="./img/profile/profile.svg" alt="profile">
+                                                        Profile
+                                                    </a>
+                                                </li>
+                                                <li class="submenu__item">
+                                                    <a href="#" class="navbar__link info-text row-list">
+                                                        <img class="navbar__image" src="./img/profile/documents.svg" alt="document">
+                                                        Documents
+                                                    </a>
+                                                </li>
+                                                <li class="submenu__item">
+                                                    <a href="#" class="navbar__link info-text row-list">
+                                                        <img class="navbar__image" src="./img/profile/ticket.svg" alt="tikets">
+                                                        Tickets
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- result -->
+            <main class="main">
+                <section class="section-result">
+                    <div class="container">
+                        <!-- панель выбора и поиска -->
+                        <div class="choose__search">
+                            <form class="form__choose-search row-list" action="#" method="post" multiple>
+                                <div class="select-box gender">
+                                    <ul class="options-container">
+                                        <li class="option-item">
+                                            <input type="radio" class="radio" id="Androgyne" name="category">
+                                            <label class="info-text" for="Androgyne">Androgen</label>
+                                        </li>
+                                        <li class="option-item">
+                                            <input type="radio" class="radio" id="Bigender" name="category" />
+                                            <label class="info-text" for="Bigender">Bigender</label>
+                                        </li>
+                                        <li class="option-item">
+                                            <input type="radio" class="radio" id="Androgynous" name="category" />
+                                            <label class="info-text" for="Androgynous">Androgenic</label>
+                                        </li>
+                                    </ul>
+                                    <div class="selected selected__result info-text info-grey">
+                                        Gender
+                                    </div>
+                                </div>
+                                <div class="select-box age">
+                                    <ul class="options-container">
+                                        <li class="option-item">
+                                            <input type="radio" class="radio" id="eighteen" name="category">
+                                            <label class="info-text" for="eighteen">18</label>
+                                        </li>
+                                        <li class="option-item">
+                                            <input type="radio" class="radio" id="nineteen" name="category" />
+                                            <label class="info-text" for="nineteen">19</label>
+                                        </li>
+                                        <li class="option-item">
+                                            <input type="radio" class="radio" id="twenty" name="category" />
+                                            <label class="info-text" for="twenty">20</label>
+                                        </li>
+                                    </ul>
+                                    <div class="selected selected__result info-text info-grey">
+                                        Age
+                                    </div>
+                                </div>
+                                <div class="select-box categ">
+                                    <ul class="options-container">
+                                        <li class="option-item">
+                                            <input type="radio" class="radio" id="category1" name="category">
+                                            <label class="info-text" for="category1">category1</label>
+                                        </li>
+                                        <li class="option-item">
+                                            <input type="radio" class="radio" id="category2" name="category" />
+                                            <label class="info-text" for="category2">category2</label>
+                                        </li>
+                                        <li class="option-item">
+                                            <input type="radio" class="radio" id="category3" name="category" />
+                                            <label class="info-text" for="category3">category3</label>
+                                        </li>
+                                    </ul>
+                                    <div class="selected selected__result info-text info-grey">
+                                        Categories
+                                    </div>
+                                </div>
+                                <div class="search__form">
+                                    <label class="label__choose-search row-list" for="#">
+                                        <input class="main-input" type="search" name="" id="" placeholder="Surname, First name or number">
+                                        <button class="btn__choose-search black__text" type="submit">
+                                            Search
+                                        </button>
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- таблица результатов -->
+                        <div class="result-data">
+                            <table class="table__result">
+                                <thead class="table-head">
+                                    <tr class="table-tr">
+                                        <th class="table-th info-text">Place</th>
+                                        <th class="table-th info-text">Number</th>
+                                        <th class="table-th info-text">Participant</th>
+                                        <th class="table-th info-text">Category</th>
+                                        <th class="table-th info-text">Place in the category</th>
+                                        <th class="table-th info-text">Result</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table-tr white">
+                                        <td class="table-td result-text">1</td>
+                                        <td class="table-td result-text">502</td>
+                                        <td class="table-td result-text">
+                                            <span class="user__title info-text">
+                                                Smygunov Anton
+                                            </span>
+                                            <br class="indent-br">
+                                            <span class="result-text black__text">
+                                                42 years
+                                            </span>
+                                            <a class="share" href="#">
+                                                <img src="./img/results/share.svg" alt="Поделиться">
+                                            </a>
+                                        </td>
+                                        <td class="table-td result-text">
+                                            M 40-49
+                                        </td>
+                                        <td class="table-td result-text row-list">
+                                            <div class="timing__finish row-list">
+                                                <span class="result-icon time__result">
+                                                    <img src="./img/results/time.svg" alt="Время">
+                                                </span>
+                                                <span>
+                                                    1
+                                                </span>
+                                            </div>
+                                            <div class="timing__finish row-list">
+                                                <span class="result-icon finish__result">
+                                                    <img src="./img/results/finish.svg" alt="Финиш">
+                                                </span>
+                                                <span>
+                                                    1
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td class="table-td result-text">
+                                            <span class="time row-list">
+                                                <span class="result-icon time__result">
+                                                    <img src="./img/results/time.svg" alt="Время">
+                                                </span>
+                                                <p class="time__user bold row-list">
+                                                    <span>16:</span>
+                                                    <span>41</span>
+                                                </p>
+                                                <p class="extra__time-user grey-text row-list">
+                                                    <span>+00:</span>
+                                                    <span>00</span>
+                                                </p>
+                                            </span>
+                                            <span class="time row-list">
+                                                <span class="result-icon time__result">
+                                                    <img src="./img/results/finish.svg" alt="Время">
+                                                </span>
+                                                <p class="time__user bold row-list">
+                                                    <span>23:</span>
+                                                    <span>55</span>
+                                                </p>
+                                                <p class="extra__time-user grey-text row-list">
+                                                    <span>+00:</span>
+                                                    <span>00</span>
+                                                </p>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-tr">
+                                        <td class="table-td result-text">1</td>
+                                        <td class="table-td result-text">502</td>
+                                        <td class="table-td result-text">
+                                            <span class="user__title info-text">
+                                                Khrutsky Pavel
+                                            </span>
+                                            <br class="indent-br">
+                                            <span class="result-text black__text">
+                                                21 years
+                                            </span>
+                                            <a class="share" href="#">
+                                                <img src="./img/results/share.svg" alt="Поделиться">
+                                            </a>
+                                        </td>
+                                        <td class="table-td result-text">
+                                            M 40-49
+                                        </td>
+                                        <td class="table-td result-text row-list">
+                                            <div class="timing__finish row-list">
+                                                <span class="result-icon time__result">
+                                                    <img src="./img/results/time.svg" alt="Время">
+                                                </span>
+                                                <span>
+                                                    1
+                                                </span>
+                                            </div>
+                                            <div class="timing__finish row-list">
+                                                <span class="result-icon finish__result">
+                                                    <img src="./img/results/finish.svg" alt="Финиш">
+                                                </span>
+                                                <span>
+                                                    1
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td class="table-td result-text">
+                                            <span class="time row-list">
+                                                <span class="result-icon time__result">
+                                                    <img src="./img/results/time.svg" alt="Время">
+                                                </span>
+                                                <p class="time__user bold row-list">
+                                                    <span>16:</span>
+                                                    <span>41</span>
+                                                </p>
+                                                <p class="extra__time-user grey-text row-list">
+                                                    <span>+00:</span>
+                                                    <span>00</span>
+                                                </p>
+                                            </span>
+                                            <span class="time row-list">
+                                                <span class="result-icon time__result">
+                                                    <img src="./img/results/finish.svg" alt="Время">
+                                                </span>
+                                                <p class="time__user bold row-list">
+                                                    <span>23:</span>
+                                                    <span>55</span>
+                                                </p>
+                                                <p class="extra__time-user grey-text row-list">
+                                                    <span>+00:</span>
+                                                    <span>00</span>
+                                                </p>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-tr white">
+                                        <td class="table-td result-text">1</td>
+                                        <td class="table-td result-text">502</td>
+                                        <td class="table-td result-text">
+                                            <span class="user__title info-text">
+                                                Rak Alexander
+                                            </span>
+                                            <br class="indent-br">
+                                            <span class="result-text black__text">
+                                                26 years
+                                            </span>
+                                            <a class="share" href="#">
+                                                <img src="./img/results/share.svg" alt="Поделиться">
+                                            </a>
+                                        </td>
+                                        <td class="table-td result-text">
+                                            M 24-29
+                                        </td>
+                                        <td class="table-td result-text row-list">
+                                            <div class="timing__finish row-list">
+                                                <span class="result-icon time__result">
+                                                    <img src="./img/results/time.svg" alt="Время">
+                                                </span>
+                                                <span>
+                                                    1
+                                                </span>
+                                            </div>
+                                            <div class="timing__finish row-list">
+                                                <span class="result-icon finish__result">
+                                                    <img src="./img/results/finish.svg" alt="Финиш">
+                                                </span>
+                                                <span>
+                                                    1
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td class="table-td result-text">
+                                            <span class="time row-list">
+                                                <span class="result-icon time__result">
+                                                    <img src="./img/results/time.svg" alt="Время">
+                                                </span>
+                                                <p class="time__user bold row-list">
+                                                    <span>16:</span>
+                                                    <span>41</span>
+                                                </p>
+                                                <p class="extra__time-user grey-text row-list">
+                                                    <span>+00:</span>
+                                                    <span>00</span>
+                                                </p>
+                                            </span>
+                                            <span class="time row-list">
+                                                <span class="result-icon time__result">
+                                                    <img src="./img/results/finish.svg" alt="Время">
+                                                </span>
+                                                <p class="time__user bold row-list">
+                                                    <span>23:</span>
+                                                    <span>55</span>
+                                                </p>
+                                                <p class="extra__time-user grey-text row-list">
+                                                    <span>+00:</span>
+                                                    <span>00</span>
+                                                </p>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-tr">
+                                        <td class="table-td result-text">1</td>
+                                        <td class="table-td result-text">502</td>
+                                        <td class="table-td result-text">
+                                            <span class="user__title info-text">
+                                                Medianik Stanislav
+                                            </span>
+                                            <br class="indent-br">
+                                            <span class="result-text black__text">
+                                                31 years
+                                            </span>
+                                            <a class="share" href="#">
+                                                <img src="./img/results/share.svg" alt="Поделиться">
+                                            </a>
+                                        </td>
+                                        <td class="table-td result-text">
+                                            M 30-39
+                                        </td>
+                                        <td class="table-td result-text row-list">
+                                            <div class="timing__finish row-list">
+                                                <span class="result-icon time__result">
+                                                    <img src="./img/results/time.svg" alt="Время">
+                                                </span>
+                                                <span>
+                                                    1
+                                                </span>
+                                            </div>
+                                            <div class="timing__finish row-list">
+                                                <span class="result-icon finish__result">
+                                                    <img src="./img/results/finish.svg" alt="Финиш">
+                                                </span>
+                                                <span>
+                                                    1
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td class="table-td result-text">
+                                            <span class="time row-list">
+                                                <span class="result-icon time__result">
+                                                    <img src="./img/results/time.svg" alt="Время">
+                                                </span>
+                                                <p class="time__user bold row-list">
+                                                    <span>16:</span>
+                                                    <span>41</span>
+                                                </p>
+                                                <p class="extra__time-user grey-text row-list">
+                                                    <span>+00:</span>
+                                                    <span>00</span>
+                                                </p>
+                                            </span>
+                                            <span class="time row-list">
+                                                <span class="result-icon time__result">
+                                                    <img src="./img/results/finish.svg" alt="Время">
+                                                </span>
+                                                <p class="time__user bold row-list">
+                                                    <span>23:</span>
+                                                    <span>55</span>
+                                                </p>
+                                                <p class="extra__time-user grey-text row-list">
+                                                    <span>+00:</span>
+                                                    <span>00</span>
+                                                </p>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-tr white">
+                                        <td class="table-td result-text">1</td>
+                                        <td class="table-td result-text">502</td>
+                                        <td class="table-td result-text">
+                                            <span class="user__title info-text">
+                                                Golomysova Natalia
+                                            </span>
+                                            <br class="indent-br">
+                                            <span class="result-text black__text">
+                                                22 years
+                                            </span>
+                                            <a class="share" href="#">
+                                                <img src="./img/results/share.svg" alt="Поделиться">
+                                            </a>
+                                        </td>
+                                        <td class="table-td result-text">
+                                            M 24-29
+                                        </td>
+                                        <td class="table-td result-text row-list">
+                                            <div class="timing__finish row-list">
+                                                <span class="result-icon time__result">
+                                                    <img src="./img/results/time.svg" alt="Время">
+                                                </span>
+                                                <span>
+                                                    1
+                                                </span>
+                                            </div>
+                                            <div class="timing__finish row-list">
+                                                <span class="result-icon finish__result">
+                                                    <img src="./img/results/finish.svg" alt="Финиш">
+                                                </span>
+                                                <span>
+                                                    1
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td class="table-td result-text">
+                                            <span class="time row-list">
+                                                <span class="result-icon time__result">
+                                                    <img src="./img/results/time.svg" alt="Время">
+                                                </span>
+                                                <p class="time__user bold row-list">
+                                                    <span>16:</span>
+                                                    <span>41</span>
+                                                </p>
+                                                <p class="extra__time-user grey-text row-list">
+                                                    <span>+00:</span>
+                                                    <span>00</span>
+                                                </p>
+                                            </span>
+                                            <span class="time row-list">
+                                                <span class="result-icon time__result">
+                                                    <img src="./img/results/finish.svg" alt="Время">
+                                                </span>
+                                                <p class="time__user bold row-list">
+                                                    <span>23:</span>
+                                                    <span>55</span>
+                                                </p>
+                                                <p class="extra__time-user grey-text row-list">
+                                                    <span>+00:</span>
+                                                    <span>00</span>
+                                                </p>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-tr">
+                                        <td class="table-td result-text">1</td>
+                                        <td class="table-td result-text">502</td>
+                                        <td class="table-td result-text">
+                                            <span class="user__title info-text">
+                                                Sergeev Pavel
+                                            </span>
+                                            <br class="indent-br">
+                                            <span class="result-text black__text">
+                                                22 years
+                                            </span>
+                                            <a class="share" href="#">
+                                                <img src="./img/results/share.svg" alt="Поделиться">
+                                            </a>
+                                        </td>
+                                        <td class="table-td result-text">
+                                            M 30-39
+                                        </td>
+                                        <td class="table-td result-text row-list">
+                                            <div class="timing__finish row-list">
+                                                <span class="result-icon time__result">
+                                                    <img src="./img/results/time.svg" alt="Время">
+                                                </span>
+                                                <span>
+                                                    1
+                                                </span>
+                                            </div>
+                                            <div class="timing__finish row-list">
+                                                <span class="result-icon finish__result">
+                                                    <img src="./img/results/finish.svg" alt="Финиш">
+                                                </span>
+                                                <span>
+                                                    1
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td class="table-td result-text">
+                                            <span class="time row-list">
+                                                <span class="result-icon time__result">
+                                                    <img src="./img/results/time.svg" alt="Время">
+                                                </span>
+                                                <p class="time__user bold row-list">
+                                                    <span>16:</span>
+                                                    <span>41</span>
+                                                </p>
+                                                <p class="extra__time-user grey-text row-list">
+                                                    <span>+00:</span>
+                                                    <span>00</span>
+                                                </p>
+                                            </span>
+                                            <span class="time row-list">
+                                                <span class="result-icon time__result">
+                                                    <img src="./img/results/finish.svg" alt="Время">
+                                                </span>
+                                                <p class="time__user bold row-list">
+                                                    <span>23:</span>
+                                                    <span>55</span>
+                                                </p>
+                                                <p class="extra__time-user grey-text row-list">
+                                                    <span>+00:</span>
+                                                    <span>00</span>
+                                                </p>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-tr white">
+                                        <td class="table-td result-text">1</td>
+                                        <td class="table-td result-text">502</td>
+                                        <td class="table-td result-text">
+                                            <span class="user__title info-text">
+                                                Rak Veronica
+                                            </span>
+                                            <br class="indent-br">
+                                            <span class="result-text black__text">
+                                                31 years
+                                            </span>
+                                            <a class="share" href="#">
+                                                <img src="./img/results/share.svg" alt="Поделиться">
+                                            </a>
+                                        </td>
+                                        <td class="table-td result-text">
+                                            M 30-39
+                                        </td>
+                                        <td class="table-td result-text row-list">
+                                            <div class="timing__finish row-list">
+                                                <span class="result-icon time__result">
+                                                    <img src="./img/results/time.svg" alt="Время">
+                                                </span>
+                                                <span>
+                                                    1
+                                                </span>
+                                            </div>
+                                            <div class="timing__finish row-list">
+                                                <span class="result-icon finish__result">
+                                                    <img src="./img/results/finish.svg" alt="Финиш">
+                                                </span>
+                                                <span>
+                                                    1
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td class="table-td result-text">
+                                            <span class="time row-list">
+                                                <span class="result-icon time__result">
+                                                    <img src="./img/results/time.svg" alt="Время">
+                                                </span>
+                                                <p class="time__user bold row-list">
+                                                    <span>16:</span>
+                                                    <span>41</span>
+                                                </p>
+                                                <p class="extra__time-user grey-text row-list">
+                                                    <span>+00:</span>
+                                                    <span>00</span>
+                                                </p>
+                                            </span>
+                                            <span class="time row-list">
+                                                <span class="result-icon time__result">
+                                                    <img src="./img/results/finish.svg" alt="Время">
+                                                </span>
+                                                <p class="time__user bold row-list">
+                                                    <span>23:</span>
+                                                    <span>55</span>
+                                                </p>
+                                                <p class="extra__time-user grey-text row-list">
+                                                    <span>+00:</span>
+                                                    <span>00</span>
+                                                </p>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-tr">
+                                        <td class="table-td result-text">1</td>
+                                        <td class="table-td result-text">502</td>
+                                        <td class="table-td width result-text">
+                                            <span class="user__title info-text">
+                                                Mityanina Natalia
+                                            </span>
+                                            <br class="indent-br">
+                                            <span class="result-text black__text">
+                                                35 years
+                                            </span>
+                                            <a class="share" href="#">
+                                                <img src="./img/results/share.svg" alt="Поделиться">
+                                            </a>
+                                        </td>
+                                        <td class="table-td result-text">
+                                            M 40-49
+                                        </td>
+                                        <td class="table-td result-text row-list">
+                                            <div class="timing__finish row-list">
+                                                <span class="result-icon time__result">
+                                                    <img src="./img/results/time.svg" alt="Время">
+                                                </span>
+                                                <span>
+                                                    1
+                                                </span>
+                                            </div>
+                                            <div class="timing__finish row-list">
+                                                <span class="result-icon finish__result">
+                                                    <img src="./img/results/finish.svg" alt="Финиш">
+                                                </span>
+                                                <span>
+                                                    1
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td class="table-td result-text">
+                                            <span class="time row-list">
+                                                <span class="result-icon time__result">
+                                                    <img src="./img/results/time.svg" alt="Время">
+                                                </span>
+                                                <p class="time__user bold row-list">
+                                                    <span>16:</span>
+                                                    <span>41</span>
+                                                </p>
+                                                <p class="extra__time-user grey-text row-list">
+                                                    <span>+00:</span>
+                                                    <span>00</span>
+                                                </p>
+                                            </span>
+                                            <span class="time row-list">
+                                                <span class="result-icon time__result">
+                                                    <img src="./img/results/finish.svg" alt="Время">
+                                                </span>
+                                                <p class="time__user bold row-list">
+                                                    <span>23:</span>
+                                                    <span>55</span>
+                                                </p>
+                                                <p class="extra__time-user grey-text row-list">
+                                                    <span>+00:</span>
+                                                    <span>00</span>
+                                                </p>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__description">
+                        <p class="footer__description-text black__text" data-aos="fade-right" data-aos-delay="100">
+                            ChallengeDrive
+                        </p>
+                        <p class="footer__description-text middle-text" data-aos="fade-right" data-aos-delay="150">
+                            Sports marketplace for selling tickets to all major sporting events - marathons, triathlons, races, trails, cross-country skiing, swimming competitions.
+                        </p>
+                        <p class="footer__description-text middle-text" data-aos="fade-right" data-aos-delay="200">
+                            A mobile application for dating, teaming, searching for a team 
+                            and coaches, uniting all fans of a healthy lifestyle.
+                            Digital Assistant improves workouts and motivates 
+                            to practice, analysis of training results, suggestion 
+                            of training and nutrition calendar.
+                        </p>
+                        <p class="footer__description-text middle-text" data-aos="fade-right" data-aos-delay="250">
+                            We made teams!
+                        </p>
+                        <ul class="footer__apps-list indent-top">
+                            <li class="footer__apps-item">
+                                <a href="#" class="footer__description-link grey-text" data-aos="fade-in" data-aos-delay="150">
+                                    Follow DRIVE
+                                </a>
+                            </li>
+                            <li class="footer__apps-item">
+                                <a href="#" class="footer__description-link grey-text" data-aos="fade-in" data-aos-delay="250">
+                                    About US
+                                </a>
+                            </li>
+                            <li class="footer__apps-item">
+                                <a href="#" class="footer__description-link grey-text" data-aos="fade-in" data-aos-delay="350">
+                                    Account
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="footer__description-copyright" data-aos="fade-in" data-aos-delay="250">
+                            &copy; Challenge Drive, LLC and/or its affiliates and licensors. All rights reserved.
+                        </p>
+                    </div>
+                    <div class="footer__apps">
+                        <h2 class="footer__apps-title" data-aos="fade-in" data-aos-delay="150">
+                            Join the Drive
+                        </h2>
+                        <h3 class="footer__apps-subtitle text" data-aos="fade-in" data-aos-delay="250">
+                            Challenge Drive  App
+                        </h3>
+                        <ul class="footer__apps-list">
+                            <li class="footer__apps-item">
+                                <a href="#" class="footer__apps-link">
+                                    <img src="./img/footer/google_play_store.png" alt="Скачать с Play Store" data-aos="fade-in" data-aos-delay="150">
+                                </a>
+                            </li>
+                            <li class="footer__apps-item">
+                                <a href="#" class="footer__apps-link">
+                                    <img src="./img/footer/app_store.png" alt="Скачать c App Store" data-aos="fade-in" data-aos-delay="250">
+                                </a>
+                            </li>
+                            <li class="footer__apps-item">
+                                <a href="#" class="footer__apps-link">
+                                    <img src="./img/footer/appgallery.png" alt="Скачать c Appgallery" data-aos="fade-in" data-aos-delay="350">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- coming soon -->
+    <div class="popup-visually">
+        <div class="popup-visually__inner">
+            <ion-icon class="close-visually" name="close-outline" role="img" aria-label="close outline"></ion-icon>
+            <img src="./img/header/coming.png" alt="coming soon" title="coming soon">
+        </div>
+    </div>
+
+    <!-- модалка входа -->
+    <div class="modal__login">
+        <div class="modal__login-wrapper">
+            <ion-icon class="close" name="close-outline"></ion-icon>
+            <div class="wrapper">
+                <div class="main-content">
+                    <!-- header -->
+                    <header class="header header-bg" id="header">
+                        <div class="main__container">
+                            <div class="header__inner">
+                                <a href="index.html" class="header__logo">
+                                    <img src="./img/header/logo.svg" alt="Drive">                      
+                                </a>
+                                <div class="header-navigation">
+                                    <a href="#" class="header__login-icon">
+                                        <img src="./img/header/person.svg" alt="Войти/Зарегистрироваться">
+                                        <span class="header__login-text page-text">
+                                            Customer support
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <!-- window -->
+                    <form action="#" method="get" id="login-form" class="form">
+                        <div class="authorization-form">
+                            <p class="authorization__text">
+                                Sign in
+                            </p>
+                            <div class="not__sign-up">
+                                <span class="sign-up-text">
+                                    Don’t have an account?
+                                </span>
+                                <a href="#" class="sign-up__link">
+                                    Sign up
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row__authorization">
+                            <a href="#" class="authorization__with with-vk">
+                                <svg class="ionicon" viewBox="0 0 512 512">
+                                    <path d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z" fill-rule="evenodd"/>
+                                </svg>
+                                <span>
+                                    Sign in with Facebook
+                                </span>
+                            </a>
+                            <a href="#" class="authorization__with with-google">
+                                <img class="authorization__icon" src="./img/login/google.svg" alt="Войти через google">
+                                <span>
+                                    Sign in with Google
+                                </span>
+                            </a>
+                        </div>
+                        <span class="choice">
+                            or
+                        </span>
+                        <div class="form__inputs">
+                            <label for="email-input" class="form-label">
+                                <p class="form-label-text">
+                                    Email adress
+                                </p>
+                                <input type="email" class="main-input" name="mail" id="email-input" placeholder="Type email">
+                            </label>
+                            <label for="password-input" class="form-label">
+                                <p class="form-label-text">
+                                    Password
+                                </p>
+                                <input type="password" class="main-input" name="password" id="password-input" placeholder="Type password">
+                                <img class="form__icon" src="./img/login/eyeInvisible.svg" alt="скрыть пароль">
+                                <span id="error"></span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn__submit">
+                            Sign in
+                        </button>
+                    </form>
+                </div>
+                <footer class="footer footer__policy">
+                    <div class="container">
+                        <div class="footer__inner">
+                            <p class="footer__description-copyright indent-top-none">
+                                &copy; 2021 Challenge Drive, LLC and/or its affiliates and licensors. All rights reserved.
+                            </p>
+                            <ul class="footer__apps-list indent-top indent-top-none">
+                                <li class="footer__apps-item">
+                                    <a href="#" class="footer__description-link grey-text">
+                                        Privacy policy
+                                    </a>
+                                </li>
+                                <li class="footer__apps-item">
+                                    <a href="#" class="footer__description-link grey-text">
+                                        Terms of use
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- error -->
+    <div class="notification error__top" id="errorText">
+        <div class="notification__inner error__top-inner">
+            <span>Error: The email is incorrect</span>
+            <ion-icon class="notification__close close__error" name="close-outline"></ion-icon>
+        </div>
+    </div>
+    <!-- successfully -->
+    <div class="notification successfully__top" id="successfullyText">
+        <div class="notification__inner successfully__inner">
+            <span>Successfully: The email is correct</span>
+            <ion-icon class="notification__close close__correct" name="close-outline"></ion-icon>
+        </div>
+    </div>
+    <!-- ionicon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- scripts -->
+    <script src="./js/animate.js"></script>
+    <script src="./js/validate.js"></script>
+    <script src="./js/modal-login.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/select.js"></script>
+    <script src="./js/show-hide-eye.js"></script>
+    <script src="./js/validate-login-form.js"></script>
+</body>
+</html>

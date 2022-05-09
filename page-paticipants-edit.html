@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Language" content="en">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Кабинет организатора</title>
+        <!-- animate -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <!-- styles -->
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+<body class="profile__body" style="font-family: 'HelveticaNeueCyr';">
+    <!-- mobile menu -->
+    <div class="mobile__menu menu-profile">
+        <div class="menu-btn"></div>
+        <div class="mobile__list">
+            <div class="mobile__social submenu__list">
+                <a href="#" class="header__login-icon open-login">
+                    <img src="./img/header/person.svg" alt="Войти/Зарегистрироваться">
+                    <span class="header__login-text page-text">
+                        Log in
+                    </span>
+                </a>
+                <ul class="language">
+                    <li class="language__item">
+                        <div class="row-list">
+                            <button class="btn__language page-text eng" type="button" data-aos="fade-in" data-aos-delay="100">
+                                Eng
+                            </button>
+                            <img class="lang-arrow" src="../img/steps/review-check/arrow.svg" alt="">
+                        </div>
+                        <ul class="language__list-sub">
+                            <li>
+                                <button class="btn__language page-text rus" type="button" data-aos="fade-in" data-aos-delay="100">
+                                    Rus
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <ul class="mobile__menu-list">
+                <li class="mobile__menu-item">
+                    <a href="./tikets.html" class="mobile__menu-link info-text">
+                        Events
+                    </a>
+                </li>
+                <li class="mobile__menu-item">
+                    <a href="#" class="mobile__menu-link info-text">
+                        Community
+                    </a>
+                </li>
+                <li class="mobile__menu-item">
+                    <a href="#" class="mobile__menu-link info-text">
+                        Rating
+                    </a>
+                </li>
+                <li class="mobile__menu-item mobile-open__menu">
+                    <div class="mobile__menu-item mobile-dropdown jcsb row-list">
+                        <p class="mobile__menu-link info-text">
+                            My profile
+                        </p>
+                        <ion-icon class="down" name="chevron-down-outline"></ion-icon>
+                    </div>
+                    <ul class="submenu__list submenu-dropdown">
+                        <li class="submenu__item">
+                            <a href="profile.html" class="navbar__link info-text row-list">
+                                <img class="navbar__image" src="./img/profile/profile.svg" alt="profile">
+                                Profile
+                            </a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="navbar__link info-text row-list">
+                                <img class="navbar__image" src="./img/profile/documents.svg" alt="document">
+                                Documents
+                            </a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="navbar__link info-text row-list">
+                                <img class="navbar__image" src="./img/profile/ticket.svg" alt="tikets">
+                                Tickets
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile__menu-item mobile-open__menu">
+                    <div class="mobile__menu-item jcsb row-list">
+                        <p class="mobile__menu-link info-text">
+                            Organizer's office
+                        </p>
+                        <ion-icon class="down" name="chevron-down-outline"></ion-icon>
+                    </div>
+                    <ul class="submenu__list">
+                        <li class="submenu__item">
+                            <a href="profile.html" class="info-text row-list">
+                                <img class="navbar__image" src="./img/profile/check.svg" alt="profile">
+                                Заказ услуг
+                            </a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="info-text row-list">
+                                <img class="navbar__image" src="./img/profile/documents.svg" alt="documents">
+                                Документы
+                            </a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="info-text row-list">
+                                <img class="navbar__image" src="./img/profile/profile.svg" alt="profile">
+                                Участники
+                            </a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="info-text row-list">
+                                <img class="navbar__image" src="./img/profile/terms.svg" alt="terms">
+                                Присвоение номеров
+                            </a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="info-text row-list">
+                                <img class="navbar__image" src="./img/profile/pay.svg" alt="pay">
+                                Продажи
+                            </a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="info-text row-list">
+                                <img class="navbar__image" src="./img/profile/ticket.svg" alt="tikets">
+                                Промо-коды
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <section class="profile">
+        <div class="profile__wrapper tabs">
+            <!-- navbar right -->
+            <div class="navbar">
+                <div class="navbar-full">
+                    <div class="profile-logo">
+                        <a href="index.html" class="header__logo">
+                            <img src="./img/header/logo.svg" alt="Drive" data-aos="fade-in">                      
+                        </a>
+                    </div>
+                    <div class="navbar-inner">
+                        <ul class="navbar__list">
+                            <li class="navbar__item" data-aos="fade-in" data-aos-delay="250">
+                                <div class="navbar__main-title navbar-icon row-list">
+                                    <a href="./page-company.html" class="navbar__link black__text row-list">
+                                        <img class="navbar__image" src="./img/profile/company.svg" alt="company">
+                                        Company
+                                    </a>
+                                    <svg class="arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="8" cy="8" r="7.5" stroke="#0FD7CB"/>
+                                        <path d="M6.66675 12L10.6667 8L6.66675 4" stroke="#0FD7CB"/>
+                                    </svg>
+                                </div>
+                                <ul class="navbar__sub-list">
+                                    <li>
+                                        <a class="navbar__link tab-link black__text" href="./page-company.html">
+                                            OOO Sportlife
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="navbar__item" data-aos="fade-in" data-aos-delay="250">
+                                <div class="navbar__main-title navbar-icon row-list">
+                                    <a href="./page-events.html" class="navbar__link tab-link black__text row-list">
+                                        <img class="navbar__image" src="./img/profile/medal.svg" alt="medal">
+                                        Event
+                                    </a>
+                                    <svg class="arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="8" cy="8" r="7.5" stroke="#0FD7CB"/>
+                                        <path d="M6.66675 12L10.6667 8L6.66675 4" stroke="#0FD7CB"/>
+                                    </svg>
+                                </div>
+                                <ul class="navbar__sub-list">
+                                    <li>
+                                        <a class="navbar__link tab-link black__text" href="#">
+                                            Challenge Moscow
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="navbar__link tab-link black__text" href="./page-all-events.html">
+                                            All events
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="navbar__item" data-aos="fade-in" data-aos-delay="250">
+                                <div class="navbar__main-title navbar-icon row-list">
+                                    <a href="./page-competitions.html" class="navbar__link tab-link black__text row-list">
+                                        <img class="navbar__image" src="./img/profile/club.svg" alt="club">
+                                        Competitions
+                                    </a>
+                                    <svg class="arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="8" cy="8" r="7.5" stroke="#0FD7CB"/>
+                                        <path d="M6.66675 12L10.6667 8L6.66675 4" stroke="#0FD7CB"/>
+                                    </svg>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="navbar__list">
+                            <li class="navbar__item navbar-icon row-list" data-aos="fade-in" data-aos-delay="250">
+                                <a href="./page-services.html" class="navbar__link tab-link info-text row-list">
+                                    <img class="navbar__image" src="./img/profile/check.svg" alt="Service order">
+                                    Service order
+                                </a>
+                            </li>
+                            <li class="navbar__item navbar-icon row-list" data-aos="fade-in" data-aos-delay="250">
+                                <a href="./page-documents.html" class="navbar__link tab-link info-text row-list">
+                                    <img class="navbar__image" src="./img/profile/documents.svg" alt="Documentation">
+                                    Documentation
+                                </a>
+                            </li>
+                            <li class="navbar__item navbar-icon row-list" data-aos="fade-in" data-aos-delay="250">
+                                <a href="./page-paticipants.html" class="navbar__link tab-link info-text row-list tab-link--active">
+                                    <img class="navbar__image" src="./img/profile/profile.svg" alt="Members">
+                                    Members
+                                </a>
+                            </li>
+                            <li class="navbar__item navbar-icon row-list" data-aos="fade-in" data-aos-delay="250">
+                                <a href="./page-assignment-number.html" class="navbar__link tab-link info-text row-list">
+                                    <img class="navbar__image" src="./img/profile/terms.svg" alt=" Assignment of numbers">
+                                    Assignment of numbers
+                                </a>
+                            </li>
+                            <li class="navbar__item navbar-icon row-list" data-aos="fade-in" data-aos-delay="250">
+                                <a href="./page-sales.html" class="navbar__link tab-link info-text row-list">
+                                    <img class="navbar__image" src="./img/profile/pay.svg" alt="Sales">
+                                    Sales
+                                </a>
+                            </li>
+                            <li class="navbar__item navbar-icon row-list" data-aos="fade-in" data-aos-delay="250">
+                                <a href="./page-promo.html" class="navbar__link tab-link info-text row-list">
+                                    <img class="navbar__image" src="./img/profile/ticket.svg" alt="Promo codes">
+                                    Promo codes
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="center-submit">
+                        <a href="#" class="write-btn register__link page-text">
+                            Write to us
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- left information -->
+            <div class="wrapper">
+                <div class="main-content">
+                    <div class="profile__top-info" data-aos="fade-down" data-aos-delay="250">
+                        <div class="profile-inform full__header-profile row-list">
+                            <div class="info-users__language row-list">
+                                <a class="organizer__office tab-link row-list tab-cabinet__active" href="./cabinet-organizer.html">
+                                    <svg class="cabinet-img" width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.0034 4.02439C16.0034 4.40854 16.0034 4.77439 16.0034 5.15854C16.0034 5.19513 15.9853 5.23171 15.9853 5.2683C15.8216 6.42074 15.1671 7.17074 14.058 7.50001C12.3489 8.0122 10.6398 8.5061 8.9489 9.00001C8.33072 9.18293 7.73072 9.18293 7.11253 9.00001C5.40344 8.48781 3.69435 7.99391 1.98526 7.50001C1.05799 7.22561 0.421625 6.62196 0.130715 5.68903C-0.0329209 5.23171 0.00344271 4.7561 0.00344271 4.29878C0.00344271 3.29269 0.694352 2.61586 1.69435 2.61586C2.7489 2.61586 3.80344 2.61586 4.85799 2.61586C4.91253 2.61586 4.98526 2.61586 5.05799 2.61586C5.05799 2.54268 5.05799 2.48781 5.05799 2.43293C5.05799 2.04878 5.05799 1.64634 5.05799 1.2622C5.07617 0.567074 5.56708 0.0365854 6.25799 0.0365854C7.42163 0 8.58526 0 9.76708 0C10.458 0 10.9489 0.530488 10.9671 1.22561C10.9671 1.60976 10.9671 2.0122 10.9671 2.39634C10.9671 2.45122 10.9671 2.5061 10.9671 2.57927C11.0398 2.57927 11.1125 2.57927 11.1671 2.57927C12.2398 2.57927 13.3125 2.57927 14.3853 2.57927C15.1125 2.57927 15.7125 3.01829 15.9307 3.69512C15.9489 3.82317 15.9671 3.91464 16.0034 4.02439ZM6.05799 2.59756C7.36708 2.59756 8.63981 2.59756 9.93072 2.59756C9.93072 2.15854 9.93072 1.73781 9.93072 1.29878C9.93072 1.07927 9.87617 1.02439 9.65799 1.02439C8.69435 1.02439 7.73072 1.02439 6.7489 1.02439C6.58526 1.02439 6.42163 1.02439 6.25799 1.02439C6.13072 1.02439 6.05799 1.09756 6.05799 1.20732C6.05799 1.68293 6.05799 2.12195 6.05799 2.59756Z" fill="#323232"/>
+                                        <path d="M16.0034 13.6098C15.9671 13.7012 15.9489 13.811 15.9125 13.9025C15.6943 14.5793 15.0943 15 14.3307 15C12.9852 15 11.6398 15 10.2943 15C7.4216 15 4.56705 15 1.69433 15C0.930691 15 0.330691 14.5976 0.0943271 13.9025C0.0397816 13.7378 0.00341797 13.5732 0.00341797 13.3903C0.00341797 11.7988 0.00341797 10.2073 0.00341797 8.61588C0.00341797 8.59758 0.00341797 8.57929 0.00341797 8.54271C0.0397816 8.561 0.0761452 8.57929 0.0943271 8.61588C0.548873 9.01832 1.05796 9.311 1.63978 9.47563C3.29433 9.96954 4.96705 10.4451 6.6216 10.939C7.13069 11.0854 7.63978 11.2317 8.18524 11.1769C8.60342 11.122 9.0216 11.0488 9.4216 10.9208C11.0943 10.4451 12.7671 9.95124 14.4398 9.45734C15.0034 9.29271 15.4943 9.00002 15.9125 8.59759C15.9489 8.561 15.9671 8.54271 16.0034 8.52441C16.0034 10.2073 16.0034 11.9086 16.0034 13.6098Z" fill="#323232"/>
+                                    </svg>
+                                    Organizer's office
+                                </a>
+                                <a class="organizer__office tab-link row-list" href="./profile-main.html">
+                                    <svg class="cabinet-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 8C10.21 8 12 6.21 12 4C12 1.79 10.21 0 8 0C5.79 0 4 1.79 4 4C4 6.21 5.79 8 8 8ZM8 10C5.33 10 0 11.34 0 14V16H16V14C16 11.34 10.67 10 8 10Z" fill="#323232"/>
+                                    </svg>
+                                    Member's account
+                                </a>
+                                <div class="profile-lang">
+                                    <button class="profile-lang__btn grey-text">
+                                        ru
+                                    </button>
+                                    <button class="profile-lang__btn grey-text current-btn">
+                                        en
+                                    </button>
+                                </div>
+                            </div>
+                            <a class="exit row-list" href="#" id="exit">
+                                <div class="exit-image">
+                                    <img src="./img/profile/exit.svg" alt="выход">
+                                </div>
+                                Output
+                            </a>
+                        </div>
+                    </div>
+                    <div class="profile__main-content tabs">
+                        <form class="form__profile new__form-profile profile-inform" action="#" method="post" id="prof-form">
+                            <!-- редактирование участников -->
+                            <div class="page__content sales" data-aos="fade-left" data-aos-delay="250">
+                                <article class="article-block">
+                                    <h2 class="article-block__title text-bold text-indent">
+                                        Editing members
+                                    </h2>
+                                    <div class="table-edit text-indent">
+                                        <table class="table-edit__data">
+                                            <tbody>
+                                                <tr>
+                                                    <th class="info-table__subtitle black__text" role="rowheader" scope="row">
+                                                        Event:
+                                                    </th>
+                                                    <td class="info-table__td">
+                                                        <b>
+                                                            CHALLENGE MOSCOW
+                                                        </b>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="info-table__subtitle black__text" role="rowheader" scope="row">
+                                                        Date:
+                                                    </th>
+                                                    <td class="info-table__td">
+                                                        <b>
+                                                            26.06.2022
+                                                        </b>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="info-table__subtitle black__text" role="rowheader" scope="row">
+                                                        Competition:
+                                                    </th>
+                                                    <td class="info-table__td">
+                                                        <b>
+                                                            Challenge Middle Distance
+                                                        </b>
+                                                    </td>
+                                                    <td class="info-table__td">
+                                                        <button class="build-btn row-list page-text" type="button">
+                                                            <span class="create-btn">
+                                                                <img src="./img/profile/change.svg" alt="Change distance">
+                                                            </span>
+                                                            Change distance
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="row-list">
+                                        <a class="write-btn register__link page-text input-indent" href="#">
+                                            Registration
+                                        </a>
+                                        <a class="write-btn register__link delete-btn page-text" href="#">
+                                            List of participants
+                                        </a>
+                                    </div>
+                                </article>
+                                <div class="choose__status choose-full article-block">
+                                    <div class="article-left">
+                                        <p class="choose__status-text middle-text">
+                                            Profile search by E-mail:
+                                        </p>
+                                    </div>
+                                    <div class="article-center row-list">
+                                        <label class="choose__status-label label input-indent" for="emailSearch">
+                                            <input class="input" type="text" id="emailSearch" placeholder="Search for a profile to pre-fill the questionnaire">
+                                        </label>
+                                        <button class="write-btn register__link page-text" type="button">
+                                            To find
+                                        </button>
+                                    </div>
+                                    <div class="article-right">
+                                        <a class="build-btn row-list page-text" href="#" download="#" disabled>
+                                            <span class="create-btn" disabled>
+                                                <img src="./img/profile/plus.svg" alt="Fill">
+                                            </span>
+                                            Fill
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="positions row-list">
+                                    <div class="positions__btns-flex row-list">
+                                        <a class="positions-btn build-btn row-list page-text" href="#" disabled>
+                                            <span class="create-btn" disabled>
+                                                <img src="./img/profile/arrow-btn.svg" alt="Prev" style="transform: rotate(90deg);">
+                                            </span>
+                                            Prev
+                                        </a>
+                                        <a class="positions-btn build-btn row-list page-text" href="#">
+                                            <span class="create-btn">
+                                                <img src="./img/profile/arrow-btn.svg" alt="Next" style="transform: rotate(-90deg);">
+                                            </span>
+                                            Next
+                                        </a>
+                                    </div>
+                                    <button class="build-btn row-list page-text">
+                                        <span class="create-btn delete-btn">
+                                            <img src="./img/profile/delete.svg" alt="Block">
+                                        </span>
+                                        Block
+                                    </button>
+                                </div>
+                                <div class="form__user-data">
+                                    <!-- Номер участника -->
+                                    <div class="form__user-item">
+                                        <p class="border middle-text">
+                                            Member number
+                                        </p>
+                                        <div class="form__user-item__wrapper">
+                                            <div class="form__user-inner row-list">
+                                                <div class="form-row row-list">
+                                                    <p class="expiration__text black__text">
+                                                        Number:
+                                                    </p>
+                                                    <label class="label data-width" for="numUser">
+                                                        <input class="input input-user" type="number" id="numUser" value="360">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form__user-inner row-list">
+                                                <div class="form-row-long row-list">
+                                                    <p class="expiration__text black__text">
+                                                        Chip code:
+                                                    </p>
+                                                    <div class="row-list">
+                                                        <label class="label data-width input-indent" for="chipCode">
+                                                            <input class="input input-user" type="number" id="chipCode" disabled placeholder="0000360">
+                                                        </label>
+                                                        <div class="option">
+                                                            <input class="option__input" type="checkbox" id="manuallyCheck">
+                                                            <label for="manuallyCheck" class="option__text chip-text info-item__text black__text">
+                                                                Assign a chip code manually
+                                                            </label>    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Команда -->
+                                    <div class="form__user-item">
+                                        <p class="border middle-text">
+                                            Team
+                                        </p>
+                                        <div class="form__user-item__wrapper">
+                                            <div class="form__user-inner row-list">
+                                                <div class="form-select__dropdown row-list">
+                                                    <p class="expiration__text black__text">
+                                                        Category:
+                                                    </p>
+                                                    <div class="select-box dropdown-input">
+                                                        <ul class="options-container">
+                                                            <li class="option-item">
+                                                                <input type="radio" class="radio" id="data_category_1" name="category">
+                                                                <label class="black__text" for="data_category_1">Category</label>
+                                                            </li>
+                                                            <li class="option-item">
+                                                                <input type="radio" class="radio" id="data_category_2" name="category">
+                                                                <label class="black__text" for="data_category_2">Category</label>
+                                                            </li>
+                                                            <li class="option-item">
+                                                                <input type="radio" class="radio" id="data_category_3" name="category">
+                                                                <label class="black__text" for="data_category_3">Category</label>
+                                                            </li>
+                                                        </ul>
+                                                        <button class="selected selected-color black__text info-grey" type="button">
+                                                            Select a category
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form__user-inner row-list">
+                                                <div class="form-select__dropdown row-list">
+                                                    <p class="expiration__text black__text">
+                                                        Team:
+                                                    </p>
+                                                    <div class="select-box dropdown-input">
+                                                        <ul class="options-container">
+                                                            <li class="option-item">
+                                                                <input type="radio" class="radio" id="data_team_1" name="category">
+                                                                <label class="black__text" for="data_team_1">Kомандa</label>
+                                                            </li>
+                                                            <li class="option-item">
+                                                                <input type="radio" class="radio" id="data_team_2" name="category">
+                                                                <label class="black__text" for="data_team_2">Kомандa</label>
+                                                            </li>
+                                                            <li class="option-item">
+                                                                <input type="radio" class="radio" id="data_team_3" name="category">
+                                                                <label class="black__text" for="data_team_3">Kомандa</label>
+                                                            </li>
+                                                        </ul>
+                                                        <button class="selected selected-color black__text info-grey" type="button">
+                                                            Choose a team
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row row-list">
+                                                <p class="expiration__text black__text">
+                                                    Issue code:
+                                                </p>
+                                                <label class="label data-width" for="numDeliv">
+                                                    <input class="input input-user" type="number" id="numDeliv" placeholder="Issue code">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Персональная информация -->
+                                    <div class="form__user-item">
+                                        <p class="border middle-text">
+                                            Personal information
+                                        </p>
+                                        <div class="form__user-item__wrapper">
+                                            <div class="form__user-inner row-list">
+                                                <div class="form-select__dropdown row-list">
+                                                    <p class="expiration__text black__text">
+                                                        Last Name:
+                                                    </p>
+                                                    <label class="label data-width dropdown-input" for="userLastName">
+                                                        <input class="input input-user" type="text" id="userLastName" placeholder="Last Name" value="Трикоз">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form__user-inner row-list">
+                                                <div class="form-select__dropdown row-list">
+                                                    <p class="expiration__text black__text">
+                                                        Name:
+                                                    </p>
+                                                    <div class="row-list">
+                                                        <label class="label data-width dropdown-input" for="userDataName">
+                                                            <input class="input input-user" type="text" id="userDataName" placeholder="Name" value="Никита">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form__user-inner row-list">
+                                                <div class="form-select__dropdown row-list">
+                                                    <p class="expiration__text black__text">
+                                                        Birthday:
+                                                    </p>
+                                                    <div class="form-select__dropdown dropdown-input row-list">
+                                                        <div class="select-box input-indent data-width">
+                                                            <ul class="options-container">
+                                                                <li class="option-item">
+                                                                    <input type="radio" class="radio" id="data_num_1" name="category">
+                                                                    <label class="black__text" for="data_num_1">20</label>
+                                                                </li>
+                                                                <li class="option-item">
+                                                                    <input type="radio" class="radio" id="data_num_2" name="category">
+                                                                    <label class="black__text" for="data_num_2">21</label>
+                                                                </li>
+                                                                <li class="option-item">
+                                                                    <input type="radio" class="radio" id="data_num_3" name="category">
+                                                                    <label class="black__text" for="data_num_3">22</label>
+                                                                </li>
+                                                            </ul>
+                                                            <button class="selected selected-color black__text info-grey" type="button">
+                                                                Number
+                                                            </button>
+                                                        </div>
+                                                        <div class="select-box input-indent data-width">
+                                                            <ul class="options-container">
+                                                                <li class="option-item">
+                                                                    <input type="radio" class="radio" id="data_month_1" name="category">
+                                                                    <label class="black__text" for="data_month_1">Июнь</label>
+                                                                </li>
+                                                                <li class="option-item">
+                                                                    <input type="radio" class="radio" id="data_month_2" name="category">
+                                                                    <label class="black__text" for="data_month_2">Август</label>
+                                                                </li>
+                                                                <li class="option-item">
+                                                                    <input type="radio" class="radio" id="data_month_3" name="category">
+                                                                    <label class="black__text" for="data_month_3">Март</label>
+                                                                </li>
+                                                            </ul>
+                                                            <button class="selected selected-color black__text info-grey" type="button">
+                                                                Month
+                                                            </button>
+                                                        </div>
+                                                        <div class="select-box data-width">
+                                                            <ul class="options-container">
+                                                                <li class="option-item">
+                                                                    <input type="radio" class="radio" id="data_year_1" name="category">
+                                                                    <label class="black__text" for="data_year_1">1990</label>
+                                                                </li>
+                                                                <li class="option-item">
+                                                                    <input type="radio" class="radio" id="data_year_2" name="category">
+                                                                    <label class="black__text" for="data_year_2">1991</label>
+                                                                </li>
+                                                                <li class="option-item">
+                                                                    <input type="radio" class="radio" id="data_year_3" name="category">
+                                                                    <label class="black__text" for="data_year_3">1994</label>
+                                                                </li>
+                                                            </ul>
+                                                            <button class="selected selected-color black__text info-grey" type="button">
+                                                                Year
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row__average row-list">
+                                                <p class="expiration__text black__text">
+                                                    Gender:
+                                                </p>
+                                                <div class="form-row__inputs row-list">
+                                                    <div class="option">
+                                                        <input class="option__input" type="radio" checked name="radio_1" id="user_gender_1">
+                                                        <label for="user_gender_1" class="radio-label option__text info-item__text black__text">
+                                                            Male
+                                                        </label>    
+                                                    </div>
+                                                    <div class="option">
+                                                        <input class="option__input" type="radio" name="radio_1" id="user_gender_2">
+                                                        <label for="user_gender_2" class="radio-label option__text info-item__text black__text">
+                                                            Female
+                                                        </label>    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Место жительства -->
+                                    <div class="form__user-item">
+                                        <p class="border middle-text">
+                                            Location
+                                        </p>
+                                        <div class="form__user-item__wrapper">
+                                            <div class="form__user-inner row-list">
+                                                <div class="form-select__dropdown row-list">
+                                                    <p class="expiration__text black__text">
+                                                        Country:
+                                                    </p>
+                                                    <div class="select-box dropdown-input">
+                                                        <ul class="options-container">
+                                                            <li class="option-item">
+                                                                <input type="radio" class="radio" id="data_country_1" name="category">
+                                                                <label class="black__text" for="data_country_1">Россия</label>
+                                                            </li>
+                                                            <li class="option-item">
+                                                                <input type="radio" class="radio" id="data_country_2" name="category">
+                                                                <label class="black__text" for="data_country_2">Иран</label>
+                                                            </li>
+                                                            <li class="option-item">
+                                                                <input type="radio" class="radio" id="data_country_3" name="category">
+                                                                <label class="black__text" for="data_country_3">Сирия</label>
+                                                            </li>
+                                                        </ul>
+                                                        <button class="selected selected-color black__text info-grey" type="button">
+                                                            Country
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form__user-inner row-list">
+                                                <div class="form-select__dropdown row-list">
+                                                    <p class="expiration__text black__text">
+                                                        Region:
+                                                    </p>
+                                                    <div class="select-box dropdown-input">
+                                                        <ul class="options-container">
+                                                            <li class="option-item">
+                                                                <input type="radio" class="radio" id="data_region_1" name="category">
+                                                                <label class="black__text" for="data_region_1">Москва и Московская область</label>
+                                                            </li>
+                                                            <li class="option-item">
+                                                                <input type="radio" class="radio" id="data_region_2" name="category">
+                                                                <label class="black__text" for="data_region_2">Иркутская область</label>
+                                                            </li>
+                                                            <li class="option-item">
+                                                                <input type="radio" class="radio" id="data_region_3" name="category">
+                                                                <label class="black__text" for="data_region_3">Северный Кавказ</label>
+                                                            </li>
+                                                        </ul>
+                                                        <button class="selected selected-color black__text info-grey" type="button">
+                                                            Region
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form__user-inner row-list">
+                                                <div class="form-select__dropdown row-list">
+                                                    <p class="expiration__text black__text">
+                                                        City:
+                                                    </p>
+                                                    <div class="select-box dropdown-input">
+                                                        <ul class="options-container">
+                                                            <li class="option-item">
+                                                                <input type="radio" class="radio" id="data_city_1" name="category">
+                                                                <label class="black__text" for="data_city_1">Москва</label>
+                                                            </li>
+                                                            <li class="option-item">
+                                                                <input type="radio" class="radio" id="data_city_2" name="category">
+                                                                <label class="black__text" for="data_city_2">Иркутск</label>
+                                                            </li>
+                                                            <li class="option-item">
+                                                                <input type="radio" class="radio" id="data_city_3" name="category">
+                                                                <label class="black__text" for="data_city_3">Киев</label>
+                                                            </li>
+                                                        </ul>
+                                                        <button class="selected selected-color black__text info-grey" type="button">
+                                                            City
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form__user-inner row-list">
+                                                <div class="form-select__dropdown row-list">
+                                                    <p class="expiration__text black__text">
+                                                        Street:
+                                                    </p>
+                                                    <div class="row-list">
+                                                        <label class="label data-width dropdown-input" for="street">
+                                                            <input class="input input-user" type="text" id="street" placeholder="Street" value="Удальцова">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form__user-inner row-list">
+                                                <div class="form-row row-list">
+                                                    <p class="expiration__text black__text">
+                                                        House:
+                                                    </p>
+                                                    <label class="label data-width" for="user_house">
+                                                        <input class="input input-user" type="number" id="user_house" placeholder="House" value="46">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form__user-inner row-list">
+                                                <div class="form-row row-list">
+                                                    <p class="expiration__text black__text">
+                                                        Flat:
+                                                    </p>
+                                                    <label class="label data-width" for="user_flat">
+                                                        <input class="input input-user" type="number" id="user_flat" placeholder="Flat" value="103">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form__user-inner row-list">
+                                                <div class="form-row form-row__width form-width__rus row-list">
+                                                    <p class="expiration__text black__text">
+                                                        Postcode:
+                                                    </p>
+                                                    <div class="row-list">
+                                                        <label class="label data-width input-indent" for="postCode">
+                                                            <input class="input input-user" type="number" id="postCode" disabled placeholder="Postcode">
+                                                        </label>
+                                                        <div class="option">
+                                                            <input class="option__input" type="checkbox" id="manuallyCheckPost">
+                                                            <label for="manuallyCheckPost" class="option__text chip-text info-item__text black__text">
+                                                                Specify index manually
+                                                            </label>    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Контактная информация -->
+                                    <div class="form__user-item">
+                                        <p class="border middle-text">
+                                            Contact Information
+                                        </p>
+                                        <div class="form__user-item__wrapper">
+                                            <div class="form__user-inner row-list">
+                                                <div class="form-row form-row__phone row-list">
+                                                    <p class="expiration__text black__text">
+                                                        Mobile phone:
+                                                    </p>
+                                                    <div class="row-list">
+                                                        <label class="label data-width input-indent" for="userPhone">
+                                                            <input class="input input-user" type="number" id="userPhone" value="+ 7 9856973336">
+                                                        </label>
+                                                        <div class="form-data__icon hint">
+                                                            <img src="./img/profile/note.svg" alt="подсказка">
+                                                            <div class="hint-inner">
+                                                                <p class="grey-text">
+                                                                    The EXPO operator can register and view the list of participants. Other functions of the organizer are not available to him
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form__user-inner row-list">
+                                                <div class="form-row form-row__phone row-list">
+                                                    <p class="expiration__text black__text">
+                                                        Emergency phone number:
+                                                    </p>
+                                                    <div class="row-list">
+                                                        <label class="label data-width input-indent" for="emergencyPhone">
+                                                            <input class="input input-user" type="number" id="emergencyPhone" value="+7 9857654638">
+                                                        </label>
+                                                        <div class="form-data__icon hint">
+                                                            <img src="./img/profile/note.svg" alt="подсказка">
+                                                            <div class="hint-inner">
+                                                                <p class="grey-text">
+                                                                    The EXPO operator can register and view the list of participants. Other functions of the organizer are not available to him
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form__user-inner row-list">
+                                                <div class="form-row row-list">
+                                                    <p class="expiration__text black__text">
+                                                        E-mail:
+                                                    </p>
+                                                    <label class="label data-width" for="userEmail">
+                                                        <input class="input input-user" type="email" id="userEmail" value="triknik94@gmail.com">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Дополнительно -->
+                                    <div class="form__user-item">
+                                        <p class="border middle-text">
+                                            Additionally
+                                        </p>
+                                        <div class="form__user-item__wrapper">
+                                            <div class="form__user-inner row-list">
+                                                <div class="form-row row-list">
+                                                    <p class="expiration__text black__text">
+                                                        Select T-shirt size:
+                                                    </p>
+                                                    <div class="select-box input-indent data-width">
+                                                        <ul class="options-container">
+                                                            <li class="option-item">
+                                                                <input type="radio" class="radio" id="data_size_1" name="category">
+                                                                <label class="black__text" for="data_size_1">XS</label>
+                                                            </li>
+                                                            <li class="option-item">
+                                                                <input type="radio" class="radio" id="data_size_2" name="category">
+                                                                <label class="black__text" for="data_size_2">S</label>
+                                                            </li>
+                                                            <li class="option-item">
+                                                                <input type="radio" class="radio" id="data_size_3" name="category">
+                                                                <label class="black__text" for="data_size_3">M</label>
+                                                            </li>
+                                                            <li class="option-item">
+                                                                <input type="radio" class="radio" id="data_size_4" name="category">
+                                                                <label class="black__text" for="data_size_4">L</label>
+                                                            </li>
+                                                            <li class="option-item">
+                                                                <input type="radio" class="radio" id="data_size_5" name="category">
+                                                                <label class="black__text" for="data_size_5">XL</label>
+                                                            </li>
+                                                            <li class="option-item">
+                                                                <input type="radio" class="radio" id="data_size_6" name="category">
+                                                                <label class="black__text" for="data_size_6">XXL</label>
+                                                            </li>
+                                                            <li class="option-item">
+                                                                <input type="radio" class="radio" id="data_size_7" name="category">
+                                                                <label class="black__text" for="data_size_7">XXXL</label>
+                                                            </li>
+                                                        </ul>
+                                                        <button class="selected selected-color black__text info-grey" type="button">
+                                                            S
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row-list">
+                                    <button class="write-btn register__link page-text input-indent" type="button">
+                                        Save
+                                    </button>
+                                    <button class="write-btn register__link delete-btn page-text" type="button">
+                                        Delete
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <footer class="footer">
+                    <div class="profile-inform">
+                        <div class="footer__inner">
+                            <div class="footer__description">
+                                <p class="footer__description-text black__text" data-aos="fade-right" data-aos-delay="100">
+                                    ChallengeDrive
+                                </p>
+                                <p class="footer__description-text middle-text" data-aos="fade-right" data-aos-delay="150">
+                                    Sports marketplace for selling tickets to all major sporting events - marathons, triathlons, races, trails, cross-country skiing, swimming competitions.
+                                </p>
+                                <p class="footer__description-text middle-text" data-aos="fade-right" data-aos-delay="200">
+                                    A mobile application for dating, teaming, searching for a team 
+                                    and coaches, uniting all fans of a healthy lifestyle.
+                                    Digital Assistant improves workouts and motivates 
+                                    to practice, analysis of training results, suggestion 
+                                    of training and nutrition calendar.
+                                </p>
+                                <p class="footer__description-text middle-text" data-aos="fade-right" data-aos-delay="250">
+                                    We made teams!
+                                </p>
+                                <ul class="footer__apps-list indent-top">
+                                    <li class="footer__apps-item">
+                                        <a href="#" class="footer__description-link grey-text" data-aos="fade-in" data-aos-delay="150">
+                                            Follow DRIVE
+                                        </a>
+                                    </li>
+                                    <li class="footer__apps-item">
+                                        <a href="#" class="footer__description-link grey-text" data-aos="fade-in" data-aos-delay="250">
+                                            About US
+                                        </a>
+                                    </li>
+                                    <li class="footer__apps-item">
+                                        <a href="#" class="footer__description-link grey-text" data-aos="fade-in" data-aos-delay="350">
+                                            Account
+                                        </a>
+                                    </li>
+                                </ul>
+                                <p class="footer__description-copyright" data-aos="fade-in" data-aos-delay="250">
+                                    &copy; Challenge Drive, LLC and/or its affiliates and licensors. All rights reserved.
+                                </p>
+                            </div>
+                            <div class="footer__apps">
+                                <h2 class="footer__apps-title" data-aos="fade-in" data-aos-delay="150">
+                                    Join the Drive
+                                </h2>
+                                <h3 class="footer__apps-subtitle text" data-aos="fade-in" data-aos-delay="250">
+                                    Challenge Drive  App
+                                </h3>
+                                <ul class="footer__apps-list">
+                                    <li class="footer__apps-item">
+                                        <a href="#" class="footer__apps-link">
+                                            <img src="./img/footer/google_play_store.png" alt="Скачать с Play Store" data-aos="fade-in" data-aos-delay="150">
+                                        </a>
+                                    </li>
+                                    <li class="footer__apps-item">
+                                        <a href="#" class="footer__apps-link">
+                                            <img src="./img/footer/app_store.png" alt="Скачать c App Store" data-aos="fade-in" data-aos-delay="250">
+                                        </a>
+                                    </li>
+                                    <li class="footer__apps-item">
+                                        <a href="#" class="footer__apps-link">
+                                            <img src="./img/footer/appgallery.png" alt="Скачать c Appgallery" data-aos="fade-in" data-aos-delay="350">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </section>
+     <!-- модалка входа -->
+     <div class="modal__login">
+        <div class="modal__login-wrapper">
+            <ion-icon class="close" name="close-outline"></ion-icon>
+            <div class="wrapper">
+                <div class="main-content">
+                    <!-- header -->
+                    <header class="header header-bg" id="header">
+                        <div class="main__container">
+                            <div class="header__inner">
+                                <a href="index.html" class="header__logo">
+                                    <img src="./img/header/logo.svg" alt="Drive">                      
+                                </a>
+                                <div class="header-navigation">
+                                    <a href="#" class="header__login-icon">
+                                        <img src="./img/header/person.svg" alt="Войти/Зарегистрироваться">
+                                        <span class="header__login-text page-text">
+                                            Customer support
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <!-- window -->
+                    <form action="#" method="get" id="login-form" class="form">
+                        <div class="authorization-form">
+                            <p class="authorization__text">
+                                Sign in
+                            </p>
+                            <div class="not__sign-up">
+                                <span class="sign-up-text">
+                                    Don’t have an account?
+                                </span>
+                                <a href="#" class="sign-up__link reg-open">
+                                    Sign up
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row__authorization">
+                            <a href="#" class="authorization__with with-vk">
+                                <svg class="ionicon" viewBox="0 0 512 512">
+                                    <path d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z" fill-rule="evenodd"/>
+                                </svg>
+                                <span>
+                                    Sign in with Facebook
+                                </span>
+                            </a>
+                            <a href="#" class="authorization__with with-google">
+                                <img class="authorization__icon" src="./img/login/google.svg" alt="Войти через google">
+                                <span>
+                                    Sign in with Google
+                                </span>
+                            </a>
+                        </div>
+                        <span class="choice">
+                            or
+                        </span>
+                        <div class="form__inputs">
+                            <label for="email-input" class="form-label">
+                                <p class="form-label-text">
+                                    Email adress
+                                </p>
+                                <input type="email" class="main-input" name="mail" id="email-input" placeholder="Type email">
+                            </label>
+                            <label for="password-input" class="form-label">
+                                <p class="form-label-text">
+                                    Password
+                                </p>
+                                <input type="password" class="main-input" name="password" id="password-input" placeholder="Type password">
+                                <img class="form__icon" src="./img/login/eyeInvisible.svg" alt="скрыть пароль">
+                                <span id="error"></span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn__submit">
+                            Sign in
+                        </button>
+                    </form>
+                </div>
+                <footer class="footer footer__policy">
+                    <div class="container">
+                        <div class="footer__inner">
+                            <p class="footer__description-copyright indent-top-none">
+                                &copy; 2021 Challenge Drive, LLC and/or its affiliates and licensors. All rights reserved.
+                            </p>
+                            <ul class="footer__apps-list indent-top indent-top-none">
+                                <li class="footer__apps-item">
+                                    <a href="#" class="footer__description-link grey-text">
+                                        Privacy policy
+                                    </a>
+                                </li>
+                                <li class="footer__apps-item">
+                                    <a href="#" class="footer__description-link grey-text">
+                                        Terms of use
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- модалка регистрации -->
+    <div class="registration__login modal__login">
+        <div class="registration__login-wrapper modal__login-wrapper">
+            <ion-icon class="reg-close close" name="close-outline"></ion-icon>
+            <div class="wrapper">
+                <div class="main-content">
+                    <!-- header -->
+                    <header class="header header-bg" id="header">
+                        <div class="main__container">
+                            <div class="header__inner">
+                                <a href="index.html" class="header__logo">
+                                    <img src="./img/header/logo.svg" alt="Drive">                      
+                                </a>
+                                <div class="header-navigation">
+                                    <a href="#" class="header__login-icon">
+                                        <img src="./img/header/person.svg" alt="Войти/Зарегистрироваться">
+                                        <span class="header__login-text page-text">
+                                            Customer support
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <!-- window -->
+                    <form action="#" method="get" id="login-form" class="form">
+                        <div class="authorization-form">
+                            <p class="authorization__text">
+                                Sign up
+                            </p>
+                        </div>
+                        <div class="form__inputs">
+                            <label for="regName" class="form-label">
+                                <p class="form-label-text">
+                                    Fist name
+                                </p>
+                                <input type="text" class="main-input" id="regName" placeholder="Fist name" required>
+                            </label>
+                            <label for="regLastName" class="form-label">
+                                <p class="form-label-text">
+                                    Second name
+                                </p>
+                                <input type="text" class="main-input" id="regLastName" placeholder="Second name" required>
+                            </label>
+                            <label for="regBirthday" class="form-label input-icon">
+                                <p class="form-label-text">
+                                    Birthday
+                                </p>
+                                <input type="text" class="main-input" id="regBirthday" placeholder="Birthday" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" required>
+                            </label>
+                            <label for="email-recovery" class="form-label">
+                                <p class="form-label-text">
+                                    Email
+                                </p>
+                                <input type="email" class="main-input" id="email-recovery" placeholder="Email" required>
+                            </label>
+                            <hr class="row-line">
+                            <label for="password-change" class="form-label">
+                                <p class="form-label-text">
+                                    Password
+                                </p>
+                                <input type="password" class="main-input" id="password-change" name="passwordName" placeholder="Password" onkeyup="checkPassword();" required>
+                            </label>
+                            <label for="passwordReTypeId" class="form-label">
+                                <p class="form-label-text">
+                                    Pre Password
+                                </p>
+                                <input type="password" class="main-input" name="password" id="passwordReTypeId" name="passwordReType" placeholder="Pre password" onkeyup="checkPassword();" required>
+                                <img class="form__icon" src="./img/login/eyeInvisible.svg" alt="скрыть пароль">
+                            </label>
+                        </div>
+                        <button type="submit" class="btn__submit">
+                            Send
+                        </button>
+                    </form>
+                </div>
+                <footer class="footer footer__policy">
+                    <div class="container">
+                        <div class="footer__inner">
+                            <p class="footer__description-copyright indent-top-none">
+                                &copy; 2021 Challenge Drive, LLC and/or its affiliates and licensors. All rights reserved.
+                            </p>
+                            <ul class="footer__apps-list indent-top indent-top-none">
+                                <li class="footer__apps-item">
+                                    <a href="#" class="footer__description-link grey-text">
+                                        Privacy policy
+                                    </a>
+                                </li>
+                                <li class="footer__apps-item">
+                                    <a href="#" class="footer__description-link grey-text">
+                                        Terms of use
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- error -->
+    <div class="notification error__top" id="errorText">
+        <div class="notification__inner error__top-inner">
+            <span>Error: The email is incorrect</span>
+            <ion-icon class="notification__close close__error" name="close-outline"></ion-icon>
+        </div>
+    </div>
+    <!-- successfully -->
+    <div class="notification successfully__top" id="successfullyText">
+        <div class="notification__inner successfully__inner">
+            <span>Successfully: The email is correct</span>
+            <ion-icon class="notification__close close__correct" name="close-outline"></ion-icon>
+        </div>
+    </div>
+    <!-- ionicon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- scripts -->
+    <script src="./js/animate.js"></script>
+    <script src="./js/select.js"></script>
+    <script src="./js/upload.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal-login.js"></script>
+    <script src="./js/show-hide-eye.js"></script>
+    <script src="./js/sign-tabs.js"></script>
+    <script src="./js/validate.js"></script>
+    <script src="./js/choose-btn-application.js"></script>
+    <script src="./js/validate-login-form.js"></script>
+</body>
+</html>

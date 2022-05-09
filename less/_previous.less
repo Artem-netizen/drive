@@ -1,0 +1,109 @@
+.previous{
+    padding-bottom: 100px;
+}
+.previous-wrapper{
+    margin-top: 55px;
+    display: grid;
+    gap: 22px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.card__result{
+    width: 100%;
+    max-width: 413px;
+    overflow: hidden;
+    border-radius: 14px;
+    background: var(--white);
+    border: 1px solid #DADADA;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.11);
+}
+.result__description{
+    padding: 22px;
+    width: 100%;
+    height: 216px;
+    display: flex;
+    object-fit: cover;
+    background-size: cover;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+}
+.result-description__title,
+.result-description__span{
+    color: var(--white);
+}
+.calendar{
+    margin-right: 10px;
+}
+.result-btn{
+    max-width: 197px;
+}
+// фон для каждой карты с результатом
+.run__tula{
+    background-image: url('../img/previousWinners/run_1.jpg');
+}
+.run-petersburg{
+    background-image: url('../img/previousWinners/run_2.jpg');
+}
+.run-rich{
+    background-image: url('../img/previousWinners/run_3.jpg');
+}
+// 
+.user__result{
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+}
+.user__flex{
+    margin-bottom: 22px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.user__data,
+.user__result-data,
+.user__data .row-list,
+.result__description-flex{
+    flex-wrap: nowrap;
+}
+.result__description-flex{
+    align-items: flex-start;
+}
+.user-result__number{
+    margin-right: 24px;
+    font-weight: normal;
+    color: var(--dark-grey);
+}
+.photo{
+    margin-right: 12px;
+    max-width: 48px;
+    flex: 0 0 48px;
+    width: 100%;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.data__time .info-text{
+    width: 167px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.place__user{
+    font-weight: normal;
+    color: var(--dark-grey);
+}
+.time{
+    flex: 0 0 60px;
+}
+.time__user{
+    font-weight: 300;
+    color: var(--bl);
+}
+.extra__time-user{
+    font-weight: normal;
+    color: var(--dark-grey);
+}

@@ -1,0 +1,111 @@
+.company{
+    &__main-info{
+        margin-bottom: 50px;
+        width: 100%;
+        padding: 30px;
+        border-radius: 20px;
+        background: var(white);
+        box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.09);
+    }
+    &-inner{
+        width: 100%;
+        max-width: 1060px;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    &__main-title{
+        margin-bottom: 30px;
+        color: var(--bl);
+    }
+    &-photo{
+        position: relative;
+        width: 197px;
+        height: 197px;
+        display: block;
+        transition: .3s;
+        cursor: pointer;
+        overflow: hidden;
+        object-fit: cover;
+        border-radius: 10px;
+        background: #C4C4C4;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            right: 5px;
+            bottom: 5px;
+            z-index: 3;
+            border-radius: 5px;
+            pointer-events: none;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+    }
+}
+.photo-title{
+    margin-right: 15px;
+}
+.photo-subtitle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+.not-photo{
+    margin-top: 15px;
+    font-weight: 800;
+    color: var(--dark-grey);
+    text-transform: uppercase;
+}
+// 
+.info-description{
+    display: flex;
+    // display: grid;
+    // grid-gap: 20px;
+    // justify-self: center;
+    // grid-template-columns: repeat(auto-fit, minmax(473px, 1fr));
+}
+.information-block{
+    margin-right: 20px;
+    overflow-x: auto;
+}
+.info-table{
+    width: 100%;
+    border-spacing: 10px;
+    display: inline-table;
+    border-collapse: collapse;
+    &__title{
+        color: var(--bl);
+    }
+    &__subtitle{
+        text-align: left;
+        font-weight: 300;
+        width: 297px;
+    }
+    &__th{
+        text-align: left;
+        font-weight: 300;
+        width: 190px;
+    }
+    thead{
+        display: block;
+        padding: 5px 10px;
+        text-align: left;
+        border-radius: 5px;
+        background: var(--light-grey);
+    }
+    tbody{
+        padding: 20px 10px 0 10px;
+        display: block;
+        th,
+        td{
+            padding-bottom: 10px;
+        }
+    }
+}
